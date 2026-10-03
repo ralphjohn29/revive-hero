@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Signature Welcome — Branding Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME (not part of the heroes) ============ */
+:root{
+  --ink:#1C1B1A; --canvas:#FAF7F2; --gold:#C6A55C; --gold-deep:#A8853F;
+  --gold-ink:#8A6D2F; --taupe:#E7DFD3; --ink60:rgba(28,27,26,.62);
+  --paper:#FFFFFF; --coal:#171614; --coal2:#201E1B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);
+  -webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(20px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:44rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.72);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:44rem;font-size:.82rem;line-height:1.7;color:rgba(250,247,242,.5)}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;
+  padding:.9rem 1.3rem;color:var(--canvas);min-width:220px;transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);
+  padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.92rem;line-height:1.75;
+  font-weight:300;color:rgba(250,247,242,.75)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.browser{flex:1;min-width:0;background:#26231f;border-radius:14px;overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}
+.dots i:nth-child(2){background:#febc2e}
+.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.7rem;
+  letter-spacing:.06em;color:rgba(250,247,242,.45);text-align:center}
+.frame{container-type:inline-size;background:var(--canvas)}
+.phone{width:399px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;
+  box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%}}
+.screen{container-type:inline-size;border-radius:34px;overflow:hidden;background:var(--canvas)}
+.phone-cap{text-align:center;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(250,247,242,.5);margin-top:.9rem}
+.stage-cap{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.5);
+  margin-bottom:.8rem}
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.84rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.75)}
+.footer-block ul{list-style:none}
+.footer-block li{padding-left:1.1em;position:relative;margin-bottom:.45rem}
+.footer-block li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+.footer-block code{font-family:ui-monospace,Menlo,monospace;font-size:.78rem;color:var(--canvas);
+  background:rgba(250,247,242,.08);padding:.1em .4em;border-radius:3px}
+
+/* ============ SHARED HERO SYSTEM ============ */
+.rsc{--ink:#1C1B1A;--canvas:#FAF7F2;--gold:#C6A55C;--gold-deep:#A8853F;--gold-ink:#8A6D2F;
+  --taupe:#E7DFD3;--ink60:rgba(28,27,26,.62);--paper:#fff;--navy:#121E3F;
+  font-family:'Josefin Sans',sans-serif;color:var(--ink);background:var(--canvas)}
+.rsc img{display:block}
+.hero-h1{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.1;letter-spacing:.005em;text-wrap:balance}
+.badge-pill{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-ink);border:1px solid var(--gold);border-radius:999px;padding:.5rem 1.05rem;white-space:nowrap}
+.btn-gold{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;text-align:center;
+  font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:1rem 2.1rem;border-radius:2px;border:0;cursor:pointer;transition:background .2s}
+.btn-gold:hover{background:var(--gold-deep)}
+.btn-charcoal{display:inline-block;background:var(--navy);color:var(--canvas);text-decoration:none;text-align:center;
+  font-weight:600;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:.95rem 1.8rem;border-radius:2px;border:0;cursor:pointer;width:100%;transition:opacity .2s}
+.btn-charcoal:hover{opacity:.86}
+.stars{color:var(--gold);letter-spacing:.18em;font-size:.9rem}
+@container (max-width:620px){
+  .badge-pill{font-size:.6rem;letter-spacing:.12em;padding:.45rem .75rem}
+}
+.trust{display:flex;align-items:center;gap:.6rem;font-size:.76rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold-ink)}
+.rsc .top{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;
+  padding:1rem 4cqi}
+.rsc .brand img{height:46px;width:auto}
+.navlinks{display:flex;gap:2cqi;list-style:none}
+.navlinks a{text-decoration:none;color:inherit;font-size:.76rem;letter-spacing:.16em;
+  text-transform:uppercase;opacity:.82;padding:.4rem 0;border-bottom:2px solid transparent}
+.navlinks a:hover{opacity:1;border-bottom-color:var(--gold)}
+.nav-cta{display:flex;align-items:center;gap:.9rem}
+.btn-gold-sm{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;
+  font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:.72rem 1.35rem;border-radius:2px;white-space:nowrap;transition:background .2s}
+.btn-gold-sm:hover{background:var(--gold-deep)}
+.nav-phone{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold-ink);text-decoration:none;white-space:nowrap}
+.nav-phone:hover{color:var(--ink)}
+.v2 .nav-phone{color:var(--gold)}
+.v2 .nav-phone:hover{color:var(--canvas)}
+.phone-fab{display:none;width:42px;height:42px;flex:none;border:1px solid var(--gold);border-radius:50%;
+  align-items:center;justify-content:center;color:var(--gold-ink);text-decoration:none;font-size:1rem}
+.burger{display:none;width:30px;flex-direction:column;gap:6px}
+.burger i{display:block;height:2px;background:var(--ink)}
+
+/* Navy nav blend: her live header is #121E3F */
+.v1 .top,.v3 .top{background:var(--navy)}
+.v1 .navlinks a,.v3 .navlinks a{color:var(--canvas)}
+.v1 .nav-phone,.v3 .nav-phone{color:var(--gold)}
+.v1 .phone-fab,.v3 .phone-fab{color:var(--gold);border-color:var(--gold)}
+.v1 .burger i,.v3 .burger i{background:var(--canvas)}
+
+/* ============ MOBILE MENU (slide right-to-left, full width) ============ */
+.rsc{position:relative;overflow:hidden}
+.m-menu{position:absolute;inset:0;z-index:60;background:var(--navy);
+  display:none;flex-direction:column;padding:0 5cqi 2.2rem;
+  transform:translateX(100%);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
+.rsc.menu-open .m-menu{transform:translateX(0)}
+.m-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 1.2rem;padding:.85rem 0 0}
+.m-head img{height:54px;width:auto}
+.m-close{background:none;border:1px solid rgba(198,165,92,.6);color:var(--gold);
+  width:52px;height:52px;border-radius:50%;font-size:2.5rem;line-height:1;cursor:pointer;flex:none}
+.m-menu a{display:block;text-decoration:none;color:var(--canvas);
+  font-size:1.28rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;
+  padding:1rem 0;border-bottom:1px solid rgba(250,247,242,.14);
+  opacity:0;transform:translateX(26px);
+  transition:opacity .32s ease,transform .32s ease,padding .2s}
+.m-menu a:hover{color:var(--gold);padding-left:.4rem}
+.rsc.menu-open .m-menu a{opacity:1;transform:none}
+.rsc.menu-open .m-menu a:nth-child(2){transition-delay:.08s}
+.rsc.menu-open .m-menu a:nth-child(3){transition-delay:.14s}
+.rsc.menu-open .m-menu a:nth-child(4){transition-delay:.2s}
+.rsc.menu-open .m-menu a:nth-child(5){transition-delay:.26s}
+.m-menu .m-cta{margin-top:4.1rem;background:var(--gold);color:var(--ink);text-align:center;
+  border:0;border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.18em;
+  text-transform:uppercase;padding:1.05rem}
+.m-menu .m-cta:hover{color:var(--ink)}
+.m-menu .m-phone{border:0;color:var(--gold);font-size:.95rem;letter-spacing:.16em;text-align:center;margin-top:1.3rem}
+@container (max-width:620px){
+  .m-menu{display:flex}
+}
+@container (min-width:621px){
+  .m-menu{display:none!important}
+}
+/* burger to X */
+.burger{transition:transform .2s;cursor:pointer;z-index:70}
+.rsc.menu-open .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.rsc.menu-open .burger i:nth-child(2){opacity:0}
+.rsc.menu-open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.burger i{transition:transform .25s ease,opacity .2s ease}
+.top{transition:opacity .25s ease}
+.rsc.menu-open .top{position:relative;z-index:70;opacity:0;pointer-events:none}
+/* V1 brand tagline */
+.v1-tag{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--gold-ink);margin:1.1rem 0 -.6rem}
+
+/* ============ VARIANT 1 — THE SOLA ============ */
+.v1-ribbon{background:var(--gold);color:var(--ink);text-align:center;
+  font-size:.72rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;padding:.6rem 1rem}
+.v1-hero{display:grid;grid-template-columns:1.06fr .94fr;min-height:620px}
+.v1-copy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  padding:3rem 3.5cqi 3rem 4cqi}
+.v1-copy .hero-h1{font-size:clamp(2.1rem,4.6cqi,3.5rem);margin:1.3rem 0 1.1rem}
+.v1-copy .sub{font-size:1rem;font-weight:300;line-height:1.8;color:var(--ink60);max-width:32rem;margin-bottom:1.3rem}
+.v1-copy .trust{margin-bottom:1.9rem}
+.v1-photo{position:relative;min-height:420px}
+.v1-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v1-card{position:absolute;left:-64px;bottom:44px;width:min(330px,84%);
+  background:var(--paper);border:1px solid var(--taupe);box-shadow:0 20px 55px rgba(28,27,26,.16);
+  padding:1.5rem 1.45rem}
+.v1-card::before{content:"Book a Private Tour";display:block;font-size:.68rem;font-weight:600;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:.35rem}
+.v1-card .field label{display:block;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink60);margin:.8rem 0 .28rem}
+.v1-card input{width:100%;border:1px solid var(--taupe);background:var(--canvas);
+  padding:.68rem .75rem;font-family:inherit;font-size:.88rem;color:var(--ink)}
+.v1-card .micro{font-size:.66rem;letter-spacing:.06em;color:var(--ink60);margin-top:.7rem;text-align:center}
+@container (max-width:620px){
+  .v1-ribbon{font-size:.62rem;letter-spacing:.2em;padding:.55rem .8rem}
+  .rsc .top{padding:.85rem 5cqi}
+  .navlinks{display:none}
+  .burger{display:flex}
+  .phone-fab{display:inline-flex}
+  .v1-hero{grid-template-columns:1fr;min-height:0}
+  .v1-copy{padding:2.2rem 6cqi 2rem;align-items:stretch;text-align:left}
+  .v1-copy .badge-pill{align-self:flex-start}
+  .v1-copy .hero-h1{font-size:2.05rem;margin:1.15rem 0 .9rem}
+  .v1-copy .sub{font-size:.94rem;margin-bottom:1.4rem}
+  .v1-copy .btn-gold{width:100%}
+  .v1-copy .trust{margin-bottom:0;order:5}
+  .v1-copy{display:flex;flex-direction:column}
+  .v1-copy .trust{margin-top:1.2rem}
+  .v1-photo{min-height:0;margin-top:1.6rem}
+  .v1-photo>img{position:static;width:100%;height:300px;object-fit:cover}
+  .v1-card{position:relative;left:0;z-index:2;width:100%;box-shadow:none;border:0;background:transparent;padding:0 6cqi 2.4rem;margin-top:-56px}
+  .v1-card form{background:var(--paper);border:1px solid var(--taupe);
+    box-shadow:0 16px 44px rgba(28,27,26,.14);padding:1.4rem 1.3rem}
+  .v1-card::before{display:none}
+}
+
+/* ============ VARIANT 2 — THE LOOK, REFINED ============ */
+.v2{background:#0F1B33;color:var(--canvas)}
+.v2 .top{background:transparent;border-bottom:1px solid rgba(198,165,92,.45);position:relative;z-index:3}
+.v2 .navlinks a{color:var(--canvas)}
+.v2-hero{position:relative;overflow:hidden;text-align:center;
+  padding:4.2rem 6cqi 4.6rem;min-height:600px;display:flex;flex-direction:column;
+  justify-content:center;align-items:center}
+.v2-hero::before{content:"";position:absolute;inset:0;
+  background:url("assets/opt/suite-exterior-1200.jpg") center 38%/cover no-repeat;
+  filter:grayscale(.1) sepia(.38) brightness(.55) contrast(1.02);opacity:.55}
+.v2-hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(15,27,51,.8) 0%,rgba(15,27,51,.56) 45%,rgba(15,27,51,.86) 100%)}
+.v2-hero>*{position:relative;z-index:2}
+.v2 .badge-pill{color:var(--gold);border-color:rgba(198,165,92,.65)}
+.v2 .hero-h1{font-size:clamp(2.2rem,5cqi,3.9rem);max-width:22ch;margin:1.5rem 0 1.2rem;color:var(--canvas)}
+.v2 .sub{font-size:1.02rem;font-weight:300;line-height:1.85;color:rgba(231,223,211,.85);max-width:36rem;margin-bottom:1.5rem}
+.v2-price{font-family:'DM Serif Display',serif;font-size:1.35rem;letter-spacing:.02em;
+  color:var(--taupe);margin-bottom:2.1rem}
+.v2-price strong{color:var(--gold);font-weight:400}
+.v2-price .unit{font-family:'Josefin Sans',sans-serif;font-size:.78rem;letter-spacing:.2em;
+  text-transform:uppercase;color:rgba(231,223,211,.75);display:block;margin-top:.3rem}
+.v2 .btn-gold{min-width:270px}
+.v2 .trust{color:rgba(250,247,242,.85);margin-top:1.5rem}
+.v2 .trust .stars{font-size:.95rem}
+.v2-rule{width:64px;height:1px;background:var(--gold);margin:0 auto}
+@container (max-width:620px){
+  .rsc .top{padding:.85rem 5cqi}
+  .navlinks{display:none}
+  .burger{display:flex}
+  .phone-fab{display:inline-flex}
+  .v2 .burger i{background:var(--canvas)}
+  .v2-hero{min-height:0;padding:3rem 7cqi 3.2rem}
+  .v2 .hero-h1{font-size:2.1rem}
+  .v2 .sub{font-size:.94rem;margin-bottom:1.3rem}
+  .v2-price{font-size:1.25rem;margin-bottom:1.8rem}
+  .v2 .btn-gold{width:100%;min-width:0}
+}
+
+/* ============ VARIANT 3 — THE PROFESSIONAL SHOWCASE ============ */
+.v3 .top{border-bottom:1px solid var(--taupe)}
+.v3-aud{display:flex;gap:.5rem;align-items:center}
+.v3-aud a{text-decoration:none;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:.5rem .95rem;border-radius:999px;border:1px solid var(--taupe);color:var(--ink60);white-space:nowrap}
+.v3-aud a.on{border-color:var(--navy);color:var(--navy);background:rgba(18,30,63,.06)}
+.v3-hero{display:grid;grid-template-columns:1.04fr .96fr;gap:3cqi;
+  padding:3.2rem 4cqi 3.6rem;min-height:600px;align-items:center}
+.v3-copy .hero-h1{font-size:clamp(2.1rem,4.6cqi,3.5rem);margin:1.3rem 0 1.05rem}
+.v3-copy .sub{font-size:1rem;font-weight:300;line-height:1.8;color:var(--ink60);max-width:32rem;margin-bottom:1.6rem}
+.v3-ctas{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.meet{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:.3rem}
+.meet:hover{color:var(--gold-ink)}
+.chips{display:flex;gap:.6rem;flex-wrap:wrap}
+.chip{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);
+  background:var(--taupe);border-radius:999px;padding:.55rem 1rem;display:inline-flex;align-items:center;gap:.45rem}
+.chip .stars{font-size:.72rem;letter-spacing:.1em}
+.v3-gallery{position:relative;padding:0 0 3.2rem 3.2rem;min-height:520px}
+.g-main{width:100%;height:520px;object-fit:cover;border-radius:4px}
+.g-small{position:absolute;left:0;bottom:0;width:42%;border:6px solid var(--canvas);border-radius:4px;overflow:hidden;
+  box-shadow:0 16px 40px rgba(28,27,26,.18)}
+.g-small img{width:100%;height:auto}
+.g-dir{position:absolute;right:4%;bottom:1.6rem;background:var(--paper);border:1px solid var(--taupe);
+  border-radius:4px;box-shadow:0 14px 36px rgba(28,27,26,.15);padding:.95rem 1.1rem;display:flex;
+  align-items:center;gap:.8rem;max-width:270px}
+.g-dir .avs{display:flex}
+.g-dir .avs i{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--gold);
+  font-style:normal;font-size:.62rem;font-weight:600;display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--paper);margin-left:-8px;letter-spacing:.04em}
+.g-dir .avs i:first-child{margin-left:0;background:var(--gold);color:var(--ink)}
+.g-dir p{font-size:.72rem;line-height:1.5;color:var(--ink);font-weight:400}
+.g-dir p b{font-weight:600}
+.g-dir p span{color:var(--gold-ink);display:block;font-size:.64rem;letter-spacing:.14em;
+  text-transform:uppercase;margin-top:.2rem}
+@container (max-width:620px){
+  .rsc .top{padding:.85rem 5cqi}
+  .navlinks,.v3-aud{display:none}
+  .burger{display:flex}
+  .phone-fab{display:inline-flex}
+  .v3-hero{grid-template-columns:1fr;min-height:0;padding:2.2rem 6cqi 2.6rem;gap:0}
+  .v3-copy .hero-h1{font-size:2.05rem}
+  .v3-copy .sub{font-size:.94rem;margin-bottom:1.5rem}
+  .v3-ctas{margin-bottom:1.3rem}
+  .v3-ctas .btn-gold{width:100%}
+  .chips{gap:.5rem}
+  .v3-gallery{min-height:0;padding:0 0 2.6rem 2.2rem;margin-top:2.2rem}
+  .g-main{height:340px}
+  .g-small{width:40%}
+  .g-dir{right:0;bottom:1rem;padding:.75rem .85rem;max-width:238px}
+  .g-dir p{font-size:.64rem}
+  .g-dir .avs i{width:28px;height:28px;font-size:.54rem}
+  .g-dir p span.dir-long{display:none}
+  .chip{font-size:.64rem;letter-spacing:.08em;padding:.5rem .8rem}
+}
+
+/* ============ BRANDING OPTION MODIFIERS (The Signature Welcome) ============ */
+/* 02 Navy Lead: navy takes every solid block, gold steps back to accents */
+.b2 .btn-gold{background:var(--navy);color:var(--canvas)}
+.b2 .btn-gold:hover{background:#0d1730}
+.b2 .btn-gold-sm{background:var(--navy);color:var(--canvas)}
+.b2 .btn-gold-sm:hover{background:#0d1730}
+.b2 .v1-ribbon{background:var(--navy);color:var(--canvas);border-bottom:1px solid rgba(198,165,92,.45)}
+.b2 .v1-tag{color:var(--gold-deep)}
+.b2 .hero-h1::after{content:"";display:block;width:64px;height:2px;background:var(--gold);margin-top:1.2rem}
+.b2 .badge-pill{color:var(--navy);border-color:var(--navy)}
+.b2 .v1-card .btn-charcoal{background:var(--navy)}
+.b2 .m-cta{background:var(--navy);color:var(--canvas)}
+/* 03 Navy Stage: whole hero on a deep navy stage, gold pops */
+.b3{background:#0F1B33}
+.b3 .v1-ribbon{background:var(--navy);color:var(--gold);border-bottom:1px solid rgba(198,165,92,.35)}
+.b3 .top{background:transparent!important}
+.b3 .v1-copy .badge-pill{color:var(--gold);border-color:rgba(198,165,92,.65)}
+.b3 .v1-copy .hero-h1{color:var(--canvas)}
+.b3 .v1-tag{color:var(--gold)}
+.b3 .v1-copy .sub{color:rgba(231,223,211,.85)}
+.b3 .v1-copy .trust{color:rgba(250,247,242,.85)}
+.b3 .v1<!-- ==================== BRANDING 01 — GOLD LEAD ==================== -->
+<!-- ==================== VARIANT 1 ==================== -->
+  <section class="variant" id="b1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The Signature Welcome &mdash; Gold Lead</h2>
+    </div>
+
+    <p class="v-desc">The current build &mdash; the one Julia picked, kept as-is. <b>Gold leads:</b> gold ribbon, gold Book a Tour, gold tour-request accents, with navy held to the nav bar and the submit button.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="rsc v1 b1">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <ul class="navlinks">
+                  <li><a href="#">How to Join</a></li>
+                  <li><a href="#">A Look Inside</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                  <a class="nav-phone" href="tel:+19193466607">(919) 346-6607</a>
+                  <a class="btn-gold-sm" href="#tour-v1d">Book a Tour</a>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                  <a class="btn-gold" href="#tour-v1d">Book a Tour</a>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1d">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1d-name">Full name</label>
+                        <input id="v1d-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-phone">Phone</label>
+                        <input id="v1d-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-date">Preferred tour date</label>
+                        <input id="v1d-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px &middot; iPhone SE</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="rsc v1 b1">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <div class="nav-cta" style="gap:.8rem">
+                  <a class="phone-fab" href="tel:+19193466607" aria-label="Call Revive Salon Collective">&#9742;</a>
+                  <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <a class="btn-gold" href="#tour-v1m">Book a Tour</a>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1m">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1m-name">Full name</label>
+                        <input id="v1m-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-phone">Phone</label>
+                        <input id="v1m-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-date">Preferred tour date</label>
+                        <input id="v1m-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; iPhone SE &middot; thumb-zone CTA</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ==================== BRANDING 02 — NAVY LEAD ==================== -->
+<!-- ==================== VARIANT 1 ==================== -->
+  <section class="variant" id="b2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The Signature Welcome &mdash; Navy Lead</h2>
+    </div>
+
+    <p class="v-desc">Navy takes the dominant role &mdash; echoing her current site where every button is navy. <b>Gold steps back to accents:</b> the badge outline, a thin rule under the headline, the stars, the logo. All buttons go navy.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="rsc v1 b2">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <ul class="navlinks">
+                  <li><a href="#">How to Join</a></li>
+                  <li><a href="#">A Look Inside</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                  <a class="nav-phone" href="tel:+19193466607">(919) 346-6607</a>
+                  <a class="btn-gold-sm" href="#tour-v1d">Book a Tour</a>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                  <a class="btn-gold" href="#tour-v1d">Book a Tour</a>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1d">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1d-name">Full name</label>
+                        <input id="v1d-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-phone">Phone</label>
+                        <input id="v1d-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-date">Preferred tour date</label>
+                        <input id="v1d-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px &middot; iPhone SE</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="rsc v1 b2">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <div class="nav-cta" style="gap:.8rem">
+                  <a class="phone-fab" href="tel:+19193466607" aria-label="Call Revive Salon Collective">&#9742;</a>
+                  <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <a class="btn-gold" href="#tour-v1m">Book a Tour</a>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1m">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1m-name">Full name</label>
+                        <input id="v1m-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-phone">Phone</label>
+                        <input id="v1m-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-date">Preferred tour date</label>
+                        <input id="v1m-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; iPhone SE &middot; thumb-zone CTA</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ==================== BRANDING 03 — NAVY STAGE ==================== -->
+<!-- ==================== VARIANT 1 ==================== -->
+  <section class="variant" id="b3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The Signature Welcome &mdash; Navy Stage</h2>
+    </div>
+
+    <p class="v-desc">The boldest read. <b>A deep navy stage</b> for the entire hero: off-white headline, gold tagline and CTA, white tour card. The two brand colors in equal measure &mdash; evening-luxury feel.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="rsc v1 b3">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <ul class="navlinks">
+                  <li><a href="#">How to Join</a></li>
+                  <li><a href="#">A Look Inside</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                  <a class="nav-phone" href="tel:+19193466607">(919) 346-6607</a>
+                  <a class="btn-gold-sm" href="#tour-v1d">Book a Tour</a>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                  <a class="btn-gold" href="#tour-v1d">Book a Tour</a>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1d">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1d-name">Full name</label>
+                        <input id="v1d-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-phone">Phone</label>
+                        <input id="v1d-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1d-date">Preferred tour date</label>
+                        <input id="v1d-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px &middot; iPhone SE</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="rsc v1 b3">
+              <p class="v1-ribbon">Move-In Specials Available</p>
+              <header class="top">
+                <a class="brand" href="#"><img src="assets/opt/logo-600.png" alt="Revive Salon Collective"></a>
+                <div class="nav-cta" style="gap:.8rem">
+                  <a class="phone-fab" href="tel:+19193466607" aria-label="Call Revive Salon Collective">&#9742;</a>
+                  <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+                </div>
+              </header>
+              <div class="v1-hero">
+                <div class="v1-copy">
+                  <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
+                  <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
+                  <p class="sub">License a private, fully-equipped suite and keep 100% of your
+                    profits. Move-in ready, all utilities included.</p>
+                  <a class="btn-gold" href="#tour-v1m">Book a Tour</a>
+                  <p class="trust"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 stars on Google</p>
+                </div>
+                <div class="v1-photo">
+                  <img src="assets/opt/pro-hair-1000.jpg" alt="Stylist cutting a client's hair inside a warm, private suite at Revive Salon Collective">
+                  <div class="v1-card" id="tour-v1m">
+                    <form onsubmit="return false">
+                      <div class="field">
+                        <label for="v1m-name">Full name</label>
+                        <input id="v1m-name" type="text" autocomplete="name">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-phone">Phone</label>
+                        <input id="v1m-phone" type="tel" autocomplete="tel">
+                      </div>
+                      <div class="field">
+                        <label for="v1m-date">Preferred tour date</label>
+                        <input id="v1m-date" type="date">
+                      </div>
+                      <div style="margin-top:1.1rem"><button class="btn-charcoal" type="submit">Request My Tour</button></div>
+                      <p class="micro">No obligation &mdash; see the suite first.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; iPhone SE &middot; thumb-zone CTA</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 Gold Lead</b> is the current build Julia approved. <b>02 Navy Lead</b> matches her
+        live site most closely, where every button is navy. <b>03 Navy Stage</b> is the boldest
+        presentation of the two colors together.</p>
+      <p style="margin-top:.9rem">Same layout, same locked copy in all three &mdash; only the color
+        hierarchy changes. Pick one (or a blend) and it becomes the build standard.</p>
+    <div>
+      <h3>Locked copy &mdash; identical in all three</h3>
+      <ul>
+        <li>H1: <code>Private Salon Suites for Rent in Raleigh, NC</code> (production page&rsquo;s single H1)</li>
+        <li>Sub: <code>License a private, fully-equipped suite and keep 100% of your profits. Move-in ready, all utilities included.</code></li>
+        <li>Primary CTA: <code>Book a Tour</code> &mdash; gold, always</li>
+        <li>Scarcity: <code>Now Leasing: Limited Signature Suites</code></li>
+        <li>Trust: <code>5.0 stars on Google</code></li>
+        <li>Vocabulary: &ldquo;license a suite&rdquo;, never &ldquo;rent&rdquo; (H1 keyword excepted &mdash; it&rsquo;s the search term)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Production notes</h3>
+      <ul>
+        <li><b>(919) 346-6607 is a placeholder</b> &mdash; swap in Revive&rsquo;s real number; keep the <code>tel:</code> link so one tap dials</li>
+        <li>Price figure removed per client preference &mdash; Option 02 carries the all-inclusive promise, no public rate; revisit only if she changes her mind</li>
+        <li>&ldquo;28 professionals&rdquo; and directory avatars in Variant 3 are illustrative &mdash; swap for real tenant count</li>
+        <li>All photography = direction only. Final art: warm, golden, in-use suite shots from the Revive photo shoot; then rewrite alt text to match</li>
+        <li>Fonts: DM Serif Display (headlines) + Josefin Sans (body/UI) &mdash; the only pair; subset to used weights</li>
+        <li>Palette locked: charcoal #1C1B1A, off-white #FAF7F2, gold #C6A55C (actions/highlights only), taupe #E7DFD3, navy #121E3F (her live site header and button navy; site gold accent #DB9446 noted), blended per Julia. Two CTA colors max (gold primary, charcoal secondary) &mdash; respected in all three</li>
+        <li>Accessibility: pinch-zoom allowed, one H1, descriptive alt, explicit image dimensions, 44px+ touch targets, gold paired with charcoal text for contrast</li>
+        <li>Banned &amp; absent: popups, hero carousels, white-spa stock, glow effects</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.rsc').forEach(function(rsc){
+    if(rsc.querySelector('.m-menu')) return;
+    var nav=rsc.querySelector('.navlinks');
+    var phone=rsc.querySelector('.nav-phone');
+    var panel=document.createElement('nav');
+    panel.className='m-menu';
+    panel.setAttribute('aria-label','Mobile menu');
+    var head=document.createElement('div');
+    head.className='m-head';
+    head.innerHTML='<img src="assets/opt/logo-600.png" alt="Revive Salon Collective">'+
+      '<button type="button" class="m-close" aria-label="Close menu">&times;</button>';
+    panel.appendChild(head);
+    var links=[];
+    if(nav){ nav.querySelectorAll('a').forEach(function(a){ links.push([a.href,a.textContent]); }); }
+    else {
+      var d={'v1':[['#','How to Join'],['#','A Look Inside'],['#','Directory'],['#','Contact']],
+             'v2':[['#','The Suites'],['#','Pricing'],['#','The Professionals'],['#','Contact']],
+             'v3':[['#','The Suites'],['#','Pricing'],['#','Contact']]};
+      var k=Object.keys(d).find(function(c){return rsc.classList.contains(c);});
+      if(k) links=d[k];
+    }
+    links.forEach(function(pair){
+      var l=document.createElement('a');
+      l.href=pair[0]; l.textContent=pair[1];
+      panel.appendChild(l);
+    });
+    var cta=document.createElement('a');
+    cta.className='m-cta'; cta.href='#'; cta.textContent='Book a Tour';
+    panel.appendChild(cta);
+    var ph=document.createElement('a');
+    ph.className='m-phone';
+    if(phone){ph.href=phone.href; ph.textContent='Call ' + phone.textContent;}
+    else {ph.href='tel:+19193466607'; ph.textContent='Call (919) 346-6607';}
+    panel.appendChild(ph);
+    rsc.appendChild(panel);
+  });
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('.burger');
+    if(b){
+      var r=b.closest('.rsc');
+      var pan=r.querySelector('.m-menu');
+      var rib=r.querySelector('.v1-ribbon');
+      if(pan) pan.style.top=(rib?rib.offsetHeight:0)+'px';
+      r.classList.toggle('menu-open');
+      b.setAttribute('aria-expanded', r.classList.contains('menu-open'));
+      return;
+    }
+    if(e.target.closest('.m-close')||e.target.closest('.m-cta')||e.target.closest('.m-menu a:not(.m-phone):not(.m-cta)')){
+      var r2=e.target.closest('.rsc');
+      if(r2){r2.classList.remove('menu-open');
+        var bg=r2.querySelector('.burger'); if(bg) bg.setAttribute('aria-expanded','false');}
+    }
+  });
+})();
+</script>
+</body>
+</html>
