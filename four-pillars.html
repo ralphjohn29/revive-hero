@@ -166,6 +166,33 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .sect.tp .pillar .num{color:var(--navy)}
 .sect.tp .pillar .rule{background:var(--gold)}
 
+
+/* ============ NON-BOXED REDESIGN 04/05/06 ============ */
+/* 04 Pure White -> ledger rows: numeral left, content right, hairline between */
+.sect.wh .pillars{gap:0}
+.sect.wh .pillar{display:grid;grid-template-columns:88px 1fr;gap:1.6rem;align-items:start;
+  border-bottom:1px solid var(--taupe);padding:1.7rem 0}
+.sect.wh .pillar:first-child{padding-top:0}
+.sect.wh .pillar:last-child{border-bottom:0}
+.sect.wh .pillar .num{font-size:2rem;margin-top:.2rem}
+.sect.wh .pillar .rule{display:none}
+.sect.wh .pillar h3{margin:0 0 .5rem}
+/* 05 Navy Split -> centered columns, small-caps numeral, no boxes */
+.sect.sp .pillars{gap:2.2rem}
+.sect.sp .pillar{border:0;text-align:center;padding:0}
+.sect.sp .pillar .num{font-family:'Josefin Sans',sans-serif;font-size:.75rem;font-weight:600;
+  letter-spacing:.32em;color:var(--gold);margin-bottom:.8rem}
+.sect.sp .pillar .rule{width:34px;margin:0 auto .9rem}
+.sect.sp .pillar h3{margin:0 0 .5rem}
+.sect.sp .pillar p{font-size:.85rem}
+/* 06 Taupe Interlude -> ghost numerals, open 2x2 */
+.sect.tp .pillars{gap:2.2rem 2rem}
+.sect.tp .pillar{border:0;padding:0;position:relative}
+.sect.tp .pillar .num{font-size:4.4rem;line-height:.9;color:rgba(198,165,92,.32);margin-bottom:-1.4rem}
+.sect.tp .pillar h3{position:relative;margin:0 0 .5rem}
+.sect.tp .pillar .rule{display:none}
+.sect.tp .pillar p{position:relative}
+
 </style>
 </head>
 <body>
@@ -508,7 +535,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <span class="num">04</span>
     <h2>The Signature Welcome Pillars &mdash; Pure White</h2>
   </div>
-  <p class="v-desc"><b>White ground, nothing boxed.</b> Navy numerals, thin gold rules, generous whitespace &mdash; the quietest, most gallery-like read.</p>
+  <p class="v-desc"><b>White ground, ledger style.</b> Each pillar is a row: gold numeral left, promise right, hairline between rows. The quietest read of the six.</p>
 
 
 
@@ -611,7 +638,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <span class="num">05</span>
     <h2>The Signature Welcome Pillars &mdash; Navy Split</h2>
   </div>
-  <p class="v-desc"><b>Split structure:</b> a navy band up top carries the proof and the heading, then the four pillars sit below on white as compact cards. Clear two-act rhythm.</p>
+  <p class="v-desc"><b>Split structure:</b> a navy band up top carries the heading, then four centered columns below &mdash; small-caps numerals, gold rules, no boxes.</p>
 
 
 
@@ -716,7 +743,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <span class="num">06</span>
     <h2>The Signature Welcome Pillars &mdash; Taupe Interlude</h2>
   </div>
-  <p class="v-desc"><b>Warm neutral bridge:</b> taupe ground, white pillar cards, navy numerals with gold rules. Sits gently between the light heroes and the navy footer.</p>
+  <p class="v-desc"><b>Warm neutral bridge:</b> taupe ground with oversized ghost numerals in soft gold &mdash; the pillars float, nothing boxed. Sits gently between the light heroes and the navy footer.</p>
 
 
 
