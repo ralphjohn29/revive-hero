@@ -153,13 +153,15 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .sect.sp .sp-band .p-head{margin-bottom:0}
 .sect.sp .sp-band .p-head h2{color:var(--canvas);font-size:clamp(1.5rem,3cqi,2.1rem)}
 .sect.sp .sp-band .p-head p{display:none}
-.sect.sp .pillars{grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:2.4rem 4cqi}
+.sect.sp .pillars{grid-template-columns:repeat(4,1fr);gap:1.2rem;padding:2.6rem 6cqi}
 .sect.sp .pillar{background:transparent;border:0;padding:0 1rem}
 .sect.sp .pillar .num{color:var(--navy)}
 .sect.sp .pillar h3{color:var(--ink);font-size:1.08rem}
 @container (max-width:620px){
-  .sect.sp .pillars{grid-template-columns:1fr}
-  .sect.sp .pillar{padding:1.4rem 1.2rem}
+  .sect.sp{padding:0 0 2.4rem}
+  .sect.sp .pillars{grid-template-columns:1fr;padding:2.2rem 7cqi 0}
+  .sect.sp .pillar{padding:0 0 1.6rem}
+  .sect.sp .pillar:last-child{padding-bottom:0}
 }
 /* ============ 06 TAUPE INTERLUDE ============ */
 .sect.tp{background:var(--taupe)}
@@ -174,7 +176,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 /* ============ NON-BOXED REDESIGN 04/05/06 ============ */
 /* 04 Pure White -> ledger rows: numeral left, content right, hairline between */
 .sect.wh .pillars{gap:0}
-.sect.wh .pillar{display:grid;grid-template-columns:88px 1fr;gap:1.6rem;align-items:start;
+.sect.wh .pillar{display:grid;grid-template-columns:64px 1fr;gap:1.4rem;align-items:start;
   border-bottom:1px solid var(--taupe);padding:1.7rem 0}
 .sect.wh .pillar:first-child{padding-top:0}
 .sect.wh .pillar:last-child{border-bottom:0}
@@ -711,12 +713,12 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
       <div class="phone">
         <div class="screen">
           <section class="sect sp">
-            <div class="p-head">
+            <div class="sp-band"><div class="p-head">
               <p class="p-eyebrow">Why Revive</p>
               <h2>Built for professionals ready to own their success.</h2>
               <p>Everything at Revive is designed around one idea: your suite, your business,
                 your future &mdash; on your terms.</p>
-            </div>
+            </div></div>
             <div class="pillars">
               <div class="pillar">
                 <div class="num">01</div>
