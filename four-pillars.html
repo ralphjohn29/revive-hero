@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective — The Four Pillars (3 Options)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME ============ */
+:root{
+  --ink:#1C1B1A; --canvas:#FAF7F2; --gold:#C6A55C; --gold-deep:#A8853F;
+  --gold-ink:#8A6D2F; --taupe:#E7DFD3; --ink60:rgba(28,27,26,.62);
+  --paper:#FFFFFF; --navy:#121E3F; --coal:#171614;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(20px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:44rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.72);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:44rem;font-size:.82rem;line-height:1.7;color:rgba(250,247,242,.5)}
+.deck-note a{color:var(--gold)}
+.deck-note b{color:var(--canvas);font-weight:600}
+
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);
+  padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.92rem;line-height:1.75;
+  font-weight:300;color:rgba(250,247,242,.75)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.browser{flex:1;min-width:0;background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}
+.dots i:nth-child(2){background:#febc2e}
+.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.7rem;letter-spacing:.06em;color:rgba(250,247,242,.45);text-align:center}
+.frame{container-type:inline-size;background:var(--canvas)}
+.phone{width:399px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%}}
+.screen{container-type:inline-size;border-radius:34px;overflow:hidden;background:var(--canvas)}
+.phone-cap{text-align:center;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.5);margin-top:.9rem}
+.stage-cap{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.5);margin-bottom:.8rem}
+
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.84rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.75)}
+.footer-block ul{list-style:none}
+.footer-block li{padding-left:1.1em;position:relative;margin-bottom:.45rem}
+.footer-block li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+.footer-block b{color:var(--canvas);font-weight:600}
+
+/* ============ SECTION: PROOF STRIP + FOUR PILLARS ============ */
+.sect{--ink:#1C1B1A;--canvas:#FAF7F2;--gold:#C6A55C;--gold-deep:#A8853F;--gold-ink:#8A6D2F;
+  --taupe:#E7DFD3;--ink60:rgba(28,27,26,.62);--paper:#fff;--navy:#121E3F;
+  font-family:'Josefin Sans',sans-serif;color:var(--ink);background:var(--canvas);
+  padding:3.2rem 4cqi 3.8rem}
+.sect .stars{color:var(--gold);letter-spacing:.18em;font-size:.95rem}
+
+/* proof strip */
+.proof{display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;
+  background:var(--taupe);border-radius:4px;padding:1.1rem 1.6rem;margin-bottom:3rem;
+  font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.proof b{font-weight:600;color:var(--ink)}
+.proof .sep{width:1px;height:1.1rem;background:var(--gold)}
+
+/* section head */
+.p-head{text-align:center;max-width:46rem;margin:0 auto 2.8rem}
+.p-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:1rem}
+.p-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;margin-bottom:.8rem}
+.p-head p{font-weight:300;font-size:.98rem;line-height:1.8;color:var(--ink60)}
+
+/* pillars grid */
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.pillar{background:var(--paper);border:1px solid var(--taupe);border-radius:4px;padding:2rem 1.8rem}
+.pillar .num{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--gold);line-height:1}
+.pillar h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.35rem;margin:.9rem 0 .7rem}
+.pillar .rule{width:38px;height:2px;background:var(--gold);margin-bottom:.9rem}
+.pillar p{font-size:.9rem;font-weight:300;line-height:1.75;color:var(--ink60)}
+@container (max-width:620px){
+  .sect{padding:2.4rem 6cqi 2.8rem}
+  .proof{gap:.8rem;padding:1rem 1.1rem;font-size:.7rem}
+  .proof .sep{display:none}
+  .pillars{grid-template-columns:1fr}
+  .pillar{padding:1.6rem 1.4rem}
+}
+
+/* ============ 02 NAVY LEAD ============ */
+.sect.nl{background:var(--navy);color:var(--canvas)}
+.sect.nl .proof{background:var(--navy-deep);color:var(--gold);border:1px solid rgba(198,165,92,.35)}
+.sect.nl .proof b{color:var(--canvas)}
+.sect.nl .p-eyebrow{color:var(--gold)}
+.sect.nl .p-head h2{color:var(--canvas)}
+.sect.nl .p-head p{color:rgba(231,223,211,.8)}
+.sect.nl .pillar{background:transparent;border:1px solid rgba(198,165,92,.35)}
+.sect.nl .pillar .num{color:var(--gold)}
+.sect.nl .pillar h3{color:var(--canvas)}
+.sect.nl .pillar p{color:rgba(231,223,211,.8)}
+/* ============ 03 NAVY STAGE ============ */
+.sect.st{background:#0F1B33;color:var(--canvas)}
+.sect.st .proof{background:transparent;border:0;border-top:1px solid rgba(198,165,92,.35);
+  border-bottom:1px solid rgba(198,165,92,.35);border-radius:0;padding:1.1rem 0;color:var(--gold)}
+.sect.st .proof b{color:var(--canvas)}
+.sect.st .p-eyebrow{color:var(--gold)}
+.sect.st .p-head h2{color:var(--canvas)}
+.sect.st .p-head p{color:rgba(231,223,211,.8)}
+.sect.st .pillars{grid-template-columns:repeat(4,1fr);gap:0}
+.sect.st .pillar{background:transparent;border:0;border-left:1px solid rgba(198,165,92,.35);
+  padding:0 1.7rem;tex  <div class="v-head">
+    <span class="num">01</span>
+    <h2>Gold &amp; Canvas</h2>
+  </div>
+  <p class="v-desc"><b>The current build</b> &mdash; warm canvas, taupe proof strip, white pillar cards, gold numerals and rules. Matches the Signature Welcome (Gold Lead) hero directly.</p>
+
+
+<div class="stage">
+    <div style="flex:1;min-width:0">
+      <p class="stage-cap">Desktop</p>
+      <div class="browser">
+        <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="frame">
+          <section class="sect">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="stage-cap">Mobile &middot; 375px</p>
+      <div class="phone">
+        <div class="screen">
+          <section class="sect">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="phone-cap">375 &times; 667 &middot; single column</p>
+    </div>
+  </div>
+
+
+  <div class="v-head">
+    <span class="num">02</span>
+    <h2>Navy Lead</h2>
+  </div>
+  <p class="v-desc"><b>Navy takes the section:</b> deep navy ground, darker proof strip, transparent pillar cards edged in gold hairlines. Gold numerals and rules carry the accent. Matches the Navy Lead branding direction and her current site identity.</p>
+
+<div class="stage">
+    <div style="flex:1;min-width:0">
+      <p class="stage-cap">Desktop</p>
+      <div class="browser">
+        <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="frame">
+          <section class="sect nl">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="stage-cap">Mobile &middot; 375px</p>
+      <div class="phone">
+        <div class="screen">
+          <section class="sect nl">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="phone-cap">375 &times; 667 &middot; single column</p>
+    </div>
+  </div>
+
+
+  <div class="v-head">
+    <span class="num">03</span>
+    <h2>Navy Stage</h2>
+  </div>
+  <p class="v-desc"><b>The open editorial read:</b> deep navy stage, slim proof rule, and the four pillars in a single row divided by vertical gold rules. The most dramatic of the three.</p>
+
+<div class="stage">
+    <div style="flex:1;min-width:0">
+      <p class="stage-cap">Desktop</p>
+      <div class="browser">
+        <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="frame">
+          <section class="sect st">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="stage-cap">Mobile &middot; 375px</p>
+      <div class="phone">
+        <div class="screen">
+          <section class="sect st">
+            <div class="proof">
+              <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <b>5.0 stars on Google</b>
+              <span class="sep"></span>
+              <span>Trusted by independent beauty professionals in Raleigh</span>
+            </div>
+            <div class="p-head">
+              <p class="p-eyebrow">Why Revive</p>
+              <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="phone-cap">375 &times; 667 &middot; single column</p>
+    </div>
+  </div>
+
+
+     <h2>Built for professionals ready to own their success.</h2>
+              <p>Everything at Revive is designed around one idea: your suite, your business,
+                your future &mdash; on your terms.</p>
+            </div>
+            <div class="pillars">
+              <div class="pillar">
+                <div class="num">01</div>
+                <h3>Keep 100% of Your Profits</h3>
+                <div class="rule"></div>
+                <p>No commission splits, no hidden fees. Every dollar you earn behind the chair
+                  stays exactly where it belongs &mdash; in your pocket.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">02</div>
+                <h3>Fully-Equipped Studios</h3>
+                <div class="rule"></div>
+                <p>Move-in ready private suites with all utilities included. Bring your talent
+                  and your clients &mdash; we handle the rest.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">03</div>
+                <h3>Work-Life Balance</h3>
+                <div class="rule"></div>
+                <p>Your suite, your key, your hours. Set the schedule that fits your life
+                  and serve your clients on your terms.</p>
+              </div>
+              <div class="pillar">
+                <div class="num">04</div>
+                <h3>100% Creative Freedom</h3>
+                <div class="rule"></div>
+                <p>Design your space, build your brand, run your business your way &mdash;
+                  without compromise.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="phone-cap">375 &times; 667 &middot; single column</p>
+    </div>
+  </div>
+
+  <footer class="footer-block" style="margin-top:3rem">
+    <div>
+      <h3>Why this section, here</h3>
+      <p>Standard marketing-homepage flow: hero makes the promise, the proof strip backs it with
+        social proof, the pillars explain exactly how it works. It bridges The Signature Welcome
+        hero into everything deeper on the page.</p>
+    </div>
+    <div>
+      <h3>Content status</h3>
+      <ul>
+        <li>Pillar names: <b>verbatim from her current site</b> (Keep 100% of Your Profits / Fully-Equipped Studios / Work-Life Balance / 100% Creative Freedom)</li>
+        <li>Pillar descriptions + section heading: <b>drafted in her voice &mdash; example copy, needs Julia's approval</b></li>
+        <li>Star rating: 5.0 / 7 reviews (real, live knowledge panel)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Build notes</h3>
+      <ul>
+        <li>Pure CSS, container queries, single column at 375px</li>
+        <li>Gold = numbers, rules, stars only; charcoal text everywhere</li>
+        <li>2&times;2 grid on desktop, 1-column stack on mobile; touch targets 44px+</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
