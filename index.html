@@ -694,13 +694,20 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     head.innerHTML='<img src="assets/opt/logo-600.png" alt="Revive Salon Collective">'+
       '<button type="button" class="m-close" aria-label="Close menu">&times;</button>';
     panel.appendChild(head);
-    if(nav){
-      nav.querySelectorAll('a').forEach(function(a){
-        var l=document.createElement('a');
-        l.href=a.href; l.textContent=a.textContent;
-        panel.appendChild(l);
-      });
+    var links=[];
+    if(nav){ nav.querySelectorAll('a').forEach(function(a){ links.push([a.href,a.textContent]); }); }
+    else {
+      var d={'v1':[['#','How to Join'],['#','A Look Inside'],['#','Directory'],['#','Contact']],
+             'v2':[['#','The Suites'],['#','Pricing'],['#','The Professionals'],['#','Contact']],
+             'v3':[['#','The Suites'],['#','Pricing'],['#','Contact']]};
+      var k=Object.keys(d).find(function(c){return rsc.classList.contains(c);});
+      if(k) links=d[k];
     }
+    links.forEach(function(pair){
+      var l=document.createElement('a');
+      l.href=pair[0]; l.textContent=pair[1];
+      panel.appendChild(l);
+    });
     var cta=document.createElement('a');
     cta.className='m-cta'; cta.href='#'; cta.textContent='Book a Tour';
     panel.appendChild(cta);
