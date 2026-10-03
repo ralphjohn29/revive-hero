@@ -308,8 +308,6 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   .chip{font-size:.64rem;letter-spacing:.08em;padding:.5rem .8rem}
 }
 
-/* ============ BRANDING OPTION MODIFIERS (The Signature Welcome) ============ */
-/* 02 Navy Lead: navy takes every solid block, gold steps back to accents */
 .b2 .btn-gold{background:var(--navy);color:var(--canvas)}
 .b2 .btn-gold:hover{background:#0d1730}
 .b2 .btn-gold-sm{background:var(--navy);color:var(--canvas)}
@@ -320,7 +318,6 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .b2 .badge-pill{color:var(--navy);border-color:var(--navy)}
 .b2 .v1-card .btn-charcoal{background:var(--navy)}
 .b2 .m-cta{background:var(--navy);color:var(--canvas)}
-/* 03 Navy Stage: whole hero on a deep navy stage, gold pops */
 .b3{background:#0F1B33}
 .b3 .v1-ribbon{background:var(--navy);color:var(--gold);border-bottom:1px solid rgba(198,165,92,.35)}
 .b3 .top{background:transparent!important}
@@ -329,15 +326,45 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .b3 .v1-tag{color:var(--gold)}
 .b3 .v1-copy .sub{color:rgba(231,223,211,.85)}
 .b3 .v1-copy .trust{color:rgba(250,247,242,.85)}
-.b3 .v1<!-- ==================== BRANDING 01 — GOLD LEAD ==================== -->
-<!-- ==================== VARIANT 1 ==================== -->
+.b3 .v1-photo{border-left:1px solid rgba(198,165,92,.35)}
+.b3 .v1-card{border-color:rgba(198,165,92,.35)}
+
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Hero Concepts &middot; For Review</p>
+    <h1>The Signature Welcome &mdash; Branding Options</h1>
+    <p class="lede">Julia picked The Signature Welcome. Now choose how the brand colors lead the design:
+      <b>Gold Lead</b> (the current build), <b>Navy Lead</b>, or the <b>Navy Stage</b>. Same layout,
+      same locked copy &mdash; only the color hierarchy changes.</p>
+    <p class="deck-note">Photography below uses current Revive assets for direction only &mdash; final art
+      comes from the suite photo shoot (warm, golden, in-use). One job of this page: get a beauty
+      professional to book a suite tour.
+      Palette per her live site: navy #121E3F (header and buttons), gold #C6A55C (logo, actions),
+      taupe #E7DFD3. Other layout options remain at
+      <a href="index.html" style="color:var(--gold)">the full hero concepts page</a>.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a branding option">
+    <a href="#b1"><span class="n">01</span><span class="t">Gold Lead</span><span class="p">Current build &mdash; gold primary</span></a>
+    <a href="#b2"><span class="n">02</span><span class="t">Navy Lead</span><span class="p">Navy primary, gold accents</span></a>
+    <a href="#b3"><span class="n">03</span><span class="t">Navy Stage</span><span class="p">Full navy hero, gold pops</span></a>
+  </nav>
+
+  <!-- ==================== VARIANT 1 ==================== -->
   <section class="variant" id="b1">
     <div class="v-head">
       <span class="num">01</span>
       <h2>The Signature Welcome &mdash; Gold Lead</h2>
     </div>
 
-    <p class="v-desc">The current build &mdash; the one Julia picked, kept as-is. <b>Gold leads:</b> gold ribbon, gold Book a Tour, gold tour-request accents, with navy held to the nav bar and the submit button.</p>
+    <p class="v-desc">Form-in-hero converter &mdash; the fastest path to a booked tour. Navy nav + accents blended from her live site header and buttons (#121E3F), per Julia
+      Gold move-in ribbon, split layout with a warm suite photo, and a <b>mini booking card
+      (name, phone, pick-a-date) right in the hero</b>, so visitors act without scrolling.
+      On mobile the full-width gold CTA lands mid-screen, with the booking card as a second path below.. <b>Kept exactly as Julia approved it.</b></p>
 
     <div class="stage">
       <div style="flex:1;min-width:0">
@@ -450,11 +477,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     </div>
   </section>
 
-  
-
   <!-- ==================== BRANDING 02 — NAVY LEAD ==================== -->
-<!-- ==================== VARIANT 1 ==================== -->
-  <section class="variant" id="b2">
+<section class="variant" id="b2">
     <div class="v-head">
       <span class="num">02</span>
       <h2>The Signature Welcome &mdash; Navy Lead</h2>
@@ -573,11 +597,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     </div>
   </section>
 
-  
-
   <!-- ==================== BRANDING 03 — NAVY STAGE ==================== -->
-<!-- ==================== VARIANT 1 ==================== -->
-  <section class="variant" id="b3">
+<section class="variant" id="b3">
     <div class="v-head">
       <span class="num">03</span>
       <h2>The Signature Welcome &mdash; Navy Stage</h2>
@@ -695,8 +716,6 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
       </div>
     </div>
   </section>
-
-  
 
   <footer class="footer-block">
     <div>
