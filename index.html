@@ -77,7 +77,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 
 /* ============ SHARED HERO SYSTEM ============ */
 .rsc{--ink:#1C1B1A;--canvas:#FAF7F2;--gold:#C6A55C;--gold-deep:#A8853F;--gold-ink:#8A6D2F;
-  --taupe:#E7DFD3;--ink60:rgba(28,27,26,.62);--paper:#fff;--navy:#183C66;
+  --taupe:#E7DFD3;--ink60:rgba(28,27,26,.62);--paper:#fff;--navy:#121E3F;
   font-family:'Josefin Sans',sans-serif;color:var(--ink);background:var(--canvas)}
 .rsc img{display:block}
 .hero-h1{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.1;letter-spacing:.005em;text-wrap:balance}
@@ -119,8 +119,15 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .burger{display:none;width:30px;flex-direction:column;gap:6px}
 .burger i{display:block;height:2px;background:var(--ink)}
 
+/* Navy nav blend: her live header is #121E3F */
+.v1 .top,.v3 .top{background:var(--navy)}
+.v1 .navlinks a,.v3 .navlinks a{color:var(--canvas)}
+.v1 .nav-phone,.v3 .nav-phone{color:var(--gold)}
+.v1 .phone-fab,.v3 .phone-fab{color:var(--gold);border-color:var(--gold)}
+.v1 .burger i,.v3 .burger i{background:var(--canvas)}
+
 /* ============ VARIANT 1 — THE SOLA ============ */
-.v1-ribbon{background:var(--navy);color:var(--gold);text-align:center;
+.v1-ribbon{background:var(--gold);color:var(--ink);text-align:center;
   font-size:.72rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;padding:.6rem 1rem}
 .v1-hero{display:grid;grid-template-columns:1.06fr .94fr;min-height:620px}
 .v1-copy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
@@ -164,7 +171,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 }
 
 /* ============ VARIANT 2 — THE LOOK, REFINED ============ */
-.v2{background:var(--ink);color:var(--canvas)}
+.v2{background:#0F1B33;color:var(--canvas)}
 .v2 .top{background:transparent;border-bottom:1px solid rgba(198,165,92,.45);position:relative;z-index:3}
 .v2 .navlinks a{color:var(--canvas)}
 .v2-hero{position:relative;overflow:hidden;text-align:center;
@@ -174,7 +181,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   background:url("assets/opt/suite-exterior-1200.jpg") center 38%/cover no-repeat;
   filter:grayscale(.1) sepia(.38) brightness(.55) contrast(1.02);opacity:.55}
 .v2-hero::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(28,27,26,.8) 0%,rgba(28,27,26,.56) 45%,rgba(28,27,26,.86) 100%)}
+  background:linear-gradient(180deg,rgba(15,27,51,.8) 0%,rgba(15,27,51,.56) 45%,rgba(15,27,51,.86) 100%)}
 .v2-hero>*{position:relative;z-index:2}
 .v2 .badge-pill{color:var(--gold);border-color:rgba(198,165,92,.65)}
 .v2 .hero-h1{font-size:clamp(2.2rem,5cqi,3.9rem);max-width:22ch;margin:1.5rem 0 1.2rem;color:var(--canvas)}
@@ -206,7 +213,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .v3-aud{display:flex;gap:.5rem;align-items:center}
 .v3-aud a{text-decoration:none;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
   padding:.5rem .95rem;border-radius:999px;border:1px solid var(--taupe);color:var(--ink60);white-space:nowrap}
-.v3-aud a.on{border-color:var(--gold);color:var(--gold-ink);background:rgba(198,165,92,.1)}
+.v3-aud a.on{border-color:var(--navy);color:var(--navy);background:rgba(18,30,63,.06)}
 .v3-hero{display:grid;grid-template-columns:1.04fr .96fr;gap:3cqi;
   padding:3.2rem 4cqi 3.6rem;min-height:600px;align-items:center}
 .v3-copy .hero-h1{font-size:clamp(2.1rem,4.6cqi,3.5rem);margin:1.3rem 0 1.05rem}
@@ -286,7 +293,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
       <h2>The Signature Welcome</h2>
     </div>
 
-    <p class="v-desc">Form-in-hero converter &mdash; the fastest path to a booked tour. Navy accent added per Julia (her current brand navy).
+    <p class="v-desc">Form-in-hero converter &mdash; the fastest path to a booked tour. Navy nav + accents blended from her live site header and buttons (#121E3F), per Julia
       Gold move-in ribbon, split layout with a warm suite photo, and a <b>mini booking card
       (name, phone, pick-a-date) right in the hero</b>, so visitors act without scrolling.
       On mobile the full-width gold CTA lands mid-screen, with the booking card as a second path below.</p>
@@ -619,7 +626,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
         <li>&ldquo;28 professionals&rdquo; and directory avatars in Variant 3 are illustrative &mdash; swap for real tenant count</li>
         <li>All photography = direction only. Final art: warm, golden, in-use suite shots from the Revive photo shoot; then rewrite alt text to match</li>
         <li>Fonts: DM Serif Display (headlines) + Josefin Sans (body/UI) &mdash; the only pair; subset to used weights</li>
-        <li>Palette locked: charcoal #1C1B1A, off-white #FAF7F2, gold #C6A55C (actions/highlights only), taupe #E7DFD3, navy #183C66 (Julia's current brand navy, added per her note). Two CTA colors max (gold primary, charcoal secondary) &mdash; respected in all three</li>
+        <li>Palette locked: charcoal #1C1B1A, off-white #FAF7F2, gold #C6A55C (actions/highlights only), taupe #E7DFD3, navy #121E3F (her live site header and button navy; site gold accent #DB9446 noted), blended per Julia. Two CTA colors max (gold primary, charcoal secondary) &mdash; respected in all three</li>
         <li>Accessibility: pinch-zoom allowed, one H1, descriptive alt, explicit image dimensions, 44px+ touch targets, gold paired with charcoal text for contrast</li>
         <li>Banned &amp; absent: popups, hero carousels, white-spa stock, glow effects</li>
       </ul>
