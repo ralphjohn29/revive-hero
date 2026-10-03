@@ -126,6 +126,49 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .v1 .phone-fab,.v3 .phone-fab{color:var(--gold);border-color:var(--gold)}
 .v1 .burger i,.v3 .burger i{background:var(--canvas)}
 
+/* ============ MOBILE MENU (slide right-to-left, full width) ============ */
+.rsc{position:relative;overflow:hidden}
+.m-menu{position:absolute;inset:0;z-index:60;background:var(--navy);
+  display:none;flex-direction:column;padding:1.1rem 7cqi 2.2rem;
+  transform:translateX(100%);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
+.rsc.menu-open .m-menu{transform:translateX(0)}
+.m-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.m-head img{height:40px;width:auto}
+.m-close{background:none;border:1px solid rgba(198,165,92,.6);color:var(--gold);
+  width:42px;height:42px;border-radius:50%;font-size:1.15rem;line-height:1;cursor:pointer}
+.m-menu a{display:block;text-decoration:none;color:var(--canvas);
+  font-size:1.28rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;
+  padding:1rem 0;border-bottom:1px solid rgba(250,247,242,.14);
+  opacity:0;transform:translateX(26px);
+  transition:opacity .32s ease,transform .32s ease,padding .2s}
+.m-menu a:hover{color:var(--gold);padding-left:.4rem}
+.rsc.menu-open .m-menu a{opacity:1;transform:none}
+.rsc.menu-open .m-menu a:nth-child(2){transition-delay:.08s}
+.rsc.menu-open .m-menu a:nth-child(3){transition-delay:.14s}
+.rsc.menu-open .m-menu a:nth-child(4){transition-delay:.2s}
+.rsc.menu-open .m-menu a:nth-child(5){transition-delay:.26s}
+.m-menu .m-cta{margin-top:1.6rem;background:var(--gold);color:var(--ink);text-align:center;
+  border:0;border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.18em;
+  text-transform:uppercase;padding:1.05rem}
+.m-menu .m-cta:hover{color:var(--ink)}
+.m-menu .m-phone{border:0;color:var(--gold);font-size:.95rem;letter-spacing:.16em;text-align:center;margin-top:1rem}
+@container (max-width:620px){
+  .m-menu{display:flex}
+}
+@container (min-width:621px){
+  .m-menu{display:none!important}
+}
+/* burger to X */
+.burger{transition:transform .2s;cursor:pointer;z-index:70}
+.rsc.menu-open .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.rsc.menu-open .burger i:nth-child(2){opacity:0}
+.rsc.menu-open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.burger i{transition:transform .25s ease,opacity .2s ease}
+.rsc.menu-open .top{position:relative;z-index:70}
+/* V1 brand tagline */
+.v1-tag{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--gold-ink);margin:1.1rem 0 -.6rem}
+
 /* ============ VARIANT 1 — THE SOLA ============ */
 .v1-ribbon{background:var(--gold);color:var(--ink);text-align:center;
   font-size:.72rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;padding:.6rem 1rem}
@@ -322,6 +365,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
               <div class="v1-hero">
                 <div class="v1-copy">
                   <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
                   <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
                   <p class="sub">License a private, fully-equipped suite and keep 100% of your
                     profits. Move-in ready, all utilities included.</p>
@@ -371,6 +415,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
               <div class="v1-hero">
                 <div class="v1-copy">
                   <span class="badge-pill">Now Leasing: Limited Signature Suites</span>
+                  <p class="v1-tag">Elevate &middot; Own &middot; Inspire</p>
                   <h2 class="hero-h1">Private Salon Suites for Rent in Raleigh, NC</h2>
                   <p class="sub">License a private, fully-equipped suite and keep 100% of your
                     profits. Move-in ready, all utilities included.</p>
@@ -634,5 +679,53 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   </footer>
 
 </div>
+
+<script>
+(function(){
+  document.querySelectorAll('.rsc').forEach(function(rsc){
+    if(rsc.querySelector('.m-menu')) return;
+    var nav=rsc.querySelector('.navlinks');
+    var phone=rsc.querySelector('.nav-phone');
+    var panel=document.createElement('nav');
+    panel.className='m-menu';
+    panel.setAttribute('aria-label','Mobile menu');
+    var head=document.createElement('div');
+    head.className='m-head';
+    head.innerHTML='<img src="assets/opt/logo-600.png" alt="Revive Salon Collective">'+
+      '<button type="button" class="m-close" aria-label="Close menu">&times;</button>';
+    panel.appendChild(head);
+    if(nav){
+      nav.querySelectorAll('a').forEach(function(a){
+        var l=document.createElement('a');
+        l.href=a.href; l.textContent=a.textContent;
+        panel.appendChild(l);
+      });
+    }
+    var cta=document.createElement('a');
+    cta.className='m-cta'; cta.href='#'; cta.textContent='Book a Tour';
+    panel.appendChild(cta);
+    var ph=document.createElement('a');
+    ph.className='m-phone';
+    if(phone){ph.href=phone.href; ph.textContent='Call ' + phone.textContent;}
+    else {ph.href='tel:+19193466607'; ph.textContent='Call (919) 346-6607';}
+    panel.appendChild(ph);
+    rsc.appendChild(panel);
+  });
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('.burger');
+    if(b){
+      var r=b.closest('.rsc');
+      r.classList.toggle('menu-open');
+      b.setAttribute('aria-expanded', r.classList.contains('menu-open'));
+      return;
+    }
+    if(e.target.closest('.m-close')||e.target.closest('.m-cta')||e.target.closest('.m-menu a:not(.m-phone):not(.m-cta)')){
+      var r2=e.target.closest('.rsc');
+      if(r2){r2.classList.remove('menu-open');
+        var bg=r2.querySelector('.burger'); if(bg) bg.setAttribute('aria-expanded','false');}
+    }
+  });
+})();
+</script>
 </body>
 </html>
