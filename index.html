@@ -129,13 +129,13 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 /* ============ MOBILE MENU (slide right-to-left, full width) ============ */
 .rsc{position:relative;overflow:hidden}
 .m-menu{position:absolute;inset:0;z-index:60;background:var(--navy);
-  display:none;flex-direction:column;padding:1.1rem 7cqi 2.2rem;
+  display:none;flex-direction:column;padding:0 5cqi 2.2rem;
   transform:translateX(100%);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
 .rsc.menu-open .m-menu{transform:translateX(0)}
-.m-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.m-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 1.2rem;padding:.85rem 0 0}
 .m-head img{height:54px;width:auto}
 .m-close{background:none;border:1px solid rgba(198,165,92,.6);color:var(--gold);
-  width:52px;height:52px;border-radius:50%;font-size:1.5rem;line-height:1;cursor:pointer;flex:none}
+  width:52px;height:52px;border-radius:50%;font-size:2.5rem;line-height:1;cursor:pointer;flex:none}
 .m-menu a{display:block;text-decoration:none;color:var(--canvas);
   font-size:1.28rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;
   padding:1rem 0;border-bottom:1px solid rgba(250,247,242,.14);
@@ -147,7 +147,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .rsc.menu-open .m-menu a:nth-child(3){transition-delay:.14s}
 .rsc.menu-open .m-menu a:nth-child(4){transition-delay:.2s}
 .rsc.menu-open .m-menu a:nth-child(5){transition-delay:.26s}
-.m-menu .m-cta{margin-top:2.1rem;background:var(--gold);color:var(--ink);text-align:center;
+.m-menu .m-cta{margin-top:4.1rem;background:var(--gold);color:var(--ink);text-align:center;
   border:0;border-radius:2px;font-weight:600;font-size:.82rem;letter-spacing:.18em;
   text-transform:uppercase;padding:1.05rem}
 .m-menu .m-cta:hover{color:var(--ink)}
@@ -723,6 +723,9 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     var b=e.target.closest('.burger');
     if(b){
       var r=b.closest('.rsc');
+      var pan=r.querySelector('.m-menu');
+      var rib=r.querySelector('.v1-ribbon');
+      if(pan) pan.style.top=(rib?rib.offsetHeight:0)+'px';
       r.classList.toggle('menu-open');
       b.setAttribute('aria-expanded', r.classList.contains('menu-open'));
       return;
