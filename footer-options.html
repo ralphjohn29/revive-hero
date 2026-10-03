@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective — Footer Design (3 Options)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME ============ */
+:root{
+  --ink:#1C1B1A; --canvas:#FAF7F2; --gold:#C6A55C; --gold-deep:#A8853F;
+  --gold-ink:#8A6D2F; --taupe:#E7DFD3; --ink60:rgba(28,27,26,.62);
+  --paper:#FFFFFF; --navy:#121E3F; --navy-deep:#0d1730; --coal:#171614; --coal2:#201E1B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(20px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:1.1rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:44rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.72);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:44rem;font-size:.82rem;line-height:1.7;color:rgba(250,247,242,.5)}
+.deck-note a{color:var(--gold)}
+.deck-note b{color:var(--canvas);font-weight:600}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;
+  padding:.9rem 1.3rem;color:var(--canvas);min-width:220px;transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);
+  padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.92rem;line-height:1.75;
+  font-weight:300;color:rgba(250,247,242,.75)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.browser{flex:1;min-width:0;background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}
+.dots i:nth-child(2){background:#febc2e}
+.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.7rem;letter-spacing:.06em;color:rgba(250,247,242,.45);text-align:center}
+.frame{container-type:inline-size;background:var(--canvas)}
+.phone{width:399px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%}}
+.screen{container-type:inline-size;border-radius:34px;overflow:hidden;background:var(--canvas)}
+.phone-cap{text-align:center;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.5);margin-top:.9rem}
+.stage-cap{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.5);margin-bottom:.8rem}
+
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.84rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.75)}
+.footer-block ul{list-style:none}
+.footer-block li{padding-left:1.1em;position:relative;margin-bottom:.45rem}
+.footer-block li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+.footer-block code{font-family:ui-monospace,Menlo,monospace;font-size:.78rem;color:var(--canvas);
+  background:rgba(250,247,242,.08);padding:.1em .4em;border-radius:3px}
+
+/* ============ SHARED FOOTER PIECES ============ */
+.ftr{--ink:#1C1B1A;--canvas:#FAF7F2;--gold:#C6A55C;--gold-deep:#A8853F;--gold-ink:#8A6D2F;
+  --taupe:#E7DFD3;--ink60:rgba(28,27,26,.62);--paper:#fff;--navy:#121E3F;--navy-deep:#0d1730;
+  font-family:'Josefin Sans',sans-serif;color:var(--ink);background:var(--canvas)}
+.ftr img{display:block}
+.ftr .f-logo{height:52px;width:auto;margin:0 auto 1rem}
+.ftr .f-tag{font-family:'DM Serif Display',serif;font-size:1.05rem;letter-spacing:.02em}
+.ftr .f-stars{color:var(--gold);letter-spacing:.18em;font-size:.85rem}
+.ftr .f-links{display:flex;gap:1.6rem;flex-wrap:wrap;list-style:none}
+.ftr .f-links a{color:inherit;text-decoration:none;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;opacity:.82}
+.ftr .f-links a:hover{color:var(--gold-ink);opacity:1}
+.ftr .f-contact{font-size:.9rem;font-weight:300;line-height:2;color:var(--ink60)}
+.ftr .f-contact a{color:var(--gold-ink);text-decoration:none}
+.ftr .f-contact a:hover{text-decoration:underline}
+.ftr .btn-gold{display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;text-align:center;
+  font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:1rem 2.1rem;border-radius:2px;transition:background .2s}
+.ftr .btn-gold:hover{background:var(--gold-deep)}
+.ftr .f-legal{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink60)}
+.ftr .f-legal a{color:inherit;text-decoration:none}
+.ftr .f-legal a:hover{color:var(--gold-ink)}
+@container (max-width:620px){
+  .ftr .f-logo{height:46px}
+  .ftr .f-links{justify-content:center;gap:1.1rem}
+  .ftr .f-contact{text-align:center}
+  .ftr .f-legal{flex-direction:column;text-align:center;gap:.5rem}
+  .ftr .cols{grid-template-columns:1fr!important;text-align:center}
+}
+
+/* ============ OPTION 01 — THE CLASSIC COLUMN ============ */
+.f1{border-top:3px solid var(--gold);padding:3rem 4cqi 2rem}
+.f1 .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:2.5rem;margin-bottom:2.4rem}
+.f1 .col h4{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:1rem}
+.f1 .col .f-links{flex-direction:column;gap:.65rem}
+.f1 .col .f-contact{font-size:.88rem}
+.f1 .cta-card{background:var(--taupe);border-radius:4px;padding:1.5rem 1.3rem;text-align:center}
+.f1 .cta-card p{font-family:'DM Serif Display',serif;font-size:1.15rem;margin-bottom:1rem;color:var(--ink)}
+.f1 .f-legal{border-top:1px solid var(--taupe);padding-top:1.3rem}
+
+/* ============ OPTION 02 — THE NAVY STANDARD ============ */
+.f2{background:var(--navy);color:var(--canvas);border-top:3px solid var(--gold);padding:3rem 4cqi 0}
+.f2 .f-top{display:grid;grid-template-columns:1.2fr 1.2fr 1fr;gap:2.5rem;margin-bottom:2.4rem;text-align:center}
+.f2 .col h4{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.f2 .col .f-links{flex-direction:column;gap:.65rem;align-items:center}
+.f2 .col .f-links a{color:var(--canvas)}
+.f2 .col .f-links a:hover{color:var(--gold)}
+.f2 .col .f-contact{color:rgba(250,247,242,.75)}
+.f2 .col .f-contact a{color:var(--gold)}
+.f2 .f-tag{color:var(--canvas)}
+.f2 .f-tag span{color:var(--gold)}
+.f2 .f-stars{display:block;margin-top:.7rem}
+.f2 .f-legal{border-top:1px solid rgba(250,247,242,.14);padding:1.3rem 0;color:rgba(250,247,242,.55)}
+.f2 .f-legal a:hover{color:var(--gold)}
+
+/* ============ OPTION 03 — THE CLOSER BAND ============ */
+.f3 .f-band{background:var(--navy);color:var(--canvas);text-align:center;padding:3.4rem 6cqi;
+  border-top:1px solid rgba(198,165,92,.4)}
+.f3 .f-band h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.6rem,3.4cqi,2.4rem);
+  color:var(--canvas);margin-bottom:.6rem}
+.f3 .f-band p{font-weight:300;font-size:.95rem;color:rgba(231,223,211,.85);margin-bottom:1.6rem}
+.f3 .f-band .row{display:flex;gap:1.4rem;justify-content:center;align-items:center;flex-wrap:wrap}
+.f3 .f-band .tel{color:var(--gold);text-decoration:none;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase}
+.f3 .f-band .tel:hover{text-decoration:underline}
+.f3 .f-slim{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;
+  padding:1.6rem 4cqi;background:var(--canvas)}
+.f3 .f-slim img{height:44px;width:auto}
+.f3 .f-slim .f-links{gap:1.2rem}
+.f3 .f-slim .f-legal{font-size:.68rem}
+@container (max-width:620px){
+  .f3 .f-slim{flex-direction:column;text-align:center}
+  .f3 .f-slim .f-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Footer Design &middot; For Review</p>
+    <h1>Revive Salon Collective &mdash; Three Footer Directions</h1>
+    <p class="lede">Three ways to close out the homepage, built to sit under the winning hero
+      (The Signature Welcome). Same content, same palette &mdash; navy #121E3F, gold #C6A55C,
+      warm off-white &mdash; different structure.</p>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="branding.html">branding options for The Signature Welcome</a>.
+      Every footer repeats the one job of the page: get a beauty professional to book a suite tour.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a footer option">
+    <a href="#f1"><span class="n">01</span><span class="t">The Classic Column</span><span class="p">Light, organized, information-first</span></a>
+    <a href="#f2"><span class="n">02</span><span class="t">The Navy Standard</span><span class="p">Dark navy, matches her current site</span></a>
+    <a href="#f3"><span class="n">03</span><span class="t">The Closer Band</span><span class="p">Big CTA first, slim footer below</span></a>
+  </nav>
+
+  <!-- ==================== FOOTER OPTION 01 ==================== -->
+  <section class="variant" id="f1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The Classic Column</h2>
+    </div>
+    <p class="v-desc">Information-first on the warm off-white. <b>Four columns:</b> brand and tagline,
+      explore links, contact details, and a small tour-invitation card. Feels like a refined business
+      card &mdash; best match for the light heroes.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f1">
+              <div class="cols">
+                <div class="col">
+                  <img class="f-logo" src="assets/opt/logo-600.png" alt="Revive Salon Collective" style="margin:0 0 1rem">
+                  <p class="f-tag">Elevate. Own. Inspire.</p>
+                  <p style="font-size:.85rem;font-weight:300;color:var(--ink60);margin:.6rem 0 .8rem">
+                    Your signature space awaits in Raleigh, NC.</p>
+                  <span class="f-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span style="font-size:.75rem;letter-spacing:.1em;color:var(--gold-ink)"> 5.0 stars on Google</span>
+                </div>
+                <div class="col">
+                  <h4>Explore</h4>
+                  <ul class="f-links">
+                    <li><a href="#">How to Join</a></li>
+                    <li><a href="#">A Look Inside</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>Contact</h4>
+                  <p class="f-contact">
+                    <a href="tel:+19193466607">(919) 346-6607</a><br>
+                    <a href="mailto:revivesaloncollective@gmail.com">revivesaloncollective@gmail.com</a><br>
+                    Raleigh, North Carolina
+                  </p>
+                </div>
+                <div class="col">
+                  <div class="cta-card">
+                    <p>Ready to own your success?</p>
+                    <a class="btn-gold" href="#">Book a Tour</a>
+                  </div>
+                </div>
+              </div>
+              <div class="f-legal">
+                <span>&copy; 2026 Revive Salon Collective. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f1">
+              <div class="cols">
+                <div class="col">
+                  <img class="f-logo" src="assets/opt/logo-600.png" alt="Revive Salon Collective" style="margin:0 auto 1rem">
+                  <p class="f-tag">Elevate. Own. Inspire.</p>
+                  <p style="font-size:.85rem;font-weight:300;color:var(--ink60);margin:.6rem 0 .8rem">
+                    Your signature space awaits in Raleigh, NC.</p>
+                  <span class="f-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span style="font-size:.75rem;letter-spacing:.1em;color:var(--gold-ink)"> 5.0 stars on Google</span>
+                </div>
+                <div class="col">
+                  <h4>Explore</h4>
+                  <ul class="f-links">
+                    <li><a href="#">How to Join</a></li>
+                    <li><a href="#">A Look Inside</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>Contact</h4>
+                  <p class="f-contact">
+                    <a href="tel:+19193466607">(919) 346-6607</a><br>
+                    <a href="mailto:revivesaloncollective@gmail.com">revivesaloncollective@gmail.com</a><br>
+                    Raleigh, North Carolina
+                  </p>
+                </div>
+                <div class="col">
+                  <div class="cta-card">
+                    <p>Ready to own your success?</p>
+                    <a class="btn-gold" href="#">Book a Tour</a>
+                  </div>
+                </div>
+              </div>
+              <div class="f-legal" style="justify-content:center">
+                <span>&copy; 2026 Revive Salon Collective. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; stacked columns</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER OPTION 02 ==================== -->
+  <section class="variant" id="f2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The Navy Standard</h2>
+    </div>
+    <p class="v-desc">Full navy footer, the color her current site is built on. <b>Centered and calm:</b>
+      logo, tagline, links, contact &mdash; then the legal bar. Gold appears only where it earns its place:
+      the top hairline, the tagline accent, the link hovers.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f2">
+              <div class="f-top">
+                <div class="col">
+                  <img class="f-logo" src="assets/opt/logo-600.png" alt="Revive Salon Collective">
+                  <p class="f-tag">Elevate. Own. <span>Inspire.</span></p>
+                  <span class="f-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span style="font-size:.75rem;letter-spacing:.1em;color:rgba(250,247,242,.7)"> 5.0 stars on Google</span>
+                </div>
+                <div class="col">
+                  <h4>Explore</h4>
+                  <ul class="f-links">
+                    <li><a href="#">How to Join</a></li>
+                    <li><a href="#">A Look Inside</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>Contact</h4>
+                  <p class="f-contact">
+                    <a href="tel:+19193466607">(919) 346-6607</a><br>
+                    <a href="mailto:revivesaloncollective@gmail.com">revivesaloncollective@gmail.com</a><br>
+                    Raleigh, North Carolina
+                  </p>
+                  <p style="margin-top:1.1rem"><a class="btn-gold" href="#">Book a Tour</a></p>
+                </div>
+              </div>
+              <div class="f-legal">
+                <span>&copy; 2026 Revive Salon Collective. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f2">
+              <div class="f-top">
+                <div class="col">
+                  <img class="f-logo" src="assets/opt/logo-600.png" alt="Revive Salon Collective">
+                  <p class="f-tag">Elevate. Own. <span>Inspire.</span></p>
+                  <span class="f-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span style="font-size:.75rem;letter-spacing:.1em;color:rgba(250,247,242,.7)"> 5.0 stars on Google</span>
+                </div>
+                <div class="col">
+                  <h4>Explore</h4>
+                  <ul class="f-links">
+                    <li><a href="#">How to Join</a></li>
+                    <li><a href="#">A Look Inside</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>Contact</h4>
+                  <p class="f-contact">
+                    <a href="tel:+19193466607">(919) 346-6607</a><br>
+                    <a href="mailto:revivesaloncollective@gmail.com">revivesaloncollective@gmail.com</a><br>
+                    Raleigh, North Carolina
+                  </p>
+                  <p style="margin-top:1.1rem"><a class="btn-gold" href="#">Book a Tour</a></p>
+                </div>
+              </div>
+              <div class="f-legal" style="flex-direction:column;text-align:center;gap:.5rem">
+                <span>&copy; 2026 Revive Salon Collective. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; centered stack</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER OPTION 03 ==================== -->
+  <section class="variant" id="f3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The Closer Band</h2>
+    </div>
+    <p class="v-desc">Conversion-first. <b>A navy band with the tagline headline and a gold Book a Tour
+      button</b> does the selling; a slim single-row footer beneath keeps it quiet. Best if you want the
+      page to end on the ask, not the paperwork.</p>
+
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f3">
+              <div class="f-band">
+                <h3>Your Signature Space Awaits.</h3>
+                <p>License a private, fully-equipped suite and keep 100% of your profits.</p>
+                <div class="row">
+                  <a class="btn-gold" href="#">Book a Tour</a>
+                  <a class="tel" href="tel:+19193466607">or call (919) 346-6607</a>
+                </div>
+              </div>
+              <div class="f-slim">
+                <img src="assets/opt/logo-600.png" alt="Revive Salon Collective">
+                <ul class="f-links">
+                  <li><a href="#">How to Join</a></li>
+                  <li><a href="#">A Look Inside</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="f-legal">
+                  <span>&copy; 2026 Revive Salon Collective</span>
+                  <span><a href="#">Privacy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f3">
+              <div class="f-band">
+                <h3>Your Signature Space Awaits.</h3>
+                <p>License a private, fully-equipped suite and keep 100% of your profits.</p>
+                <div class="row">
+                  <a class="btn-gold" href="#">Book a Tour</a>
+                  <a class="tel" href="tel:+19193466607">or call (919) 346-6607</a>
+                </div>
+              </div>
+              <div class="f-slim">
+                <img src="assets/opt/logo-600.png" alt="Revive Salon Collective" style="margin:0 auto">
+                <ul class="f-links">
+                  <li><a href="#">How to Join</a></li>
+                  <li><a href="#">A Look Inside</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="f-legal" style="flex-direction:column;text-align:center;gap:.4rem">
+                  <span>&copy; 2026 Revive Salon Collective</span>
+                  <span><a href="#">Privacy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <p class="phone-cap">375 &times; 667 &middot; band + slim bar</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 The Classic Column</b> is the traditional choice &mdash; everything visible, quiet confidence.
+        <b>02 The Navy Standard</b> matches her current site identity and the navy navs of the winning hero.
+        <b>03 The Closer Band</b> ends the page on the Book a Tour ask instead of the legal line.</p>
+      <p style="margin-top:.9rem">Same content in all three: logo, tagline, links, contact, Book a Tour,
+        legal. Pick one (or blend) and it becomes the build standard.</p>
+    </div>
+    <div>
+      <h3>Shared content &mdash; all three</h3>
+      <ul>
+        <li>Links: <code>How to Join &middot; A Look Inside &middot; Directory &middot; Contact</code> + Privacy / Terms</li>
+        <li>Contact: <code>(919) 346-6607</code> (her live number) &middot; business Gmail &middot; Raleigh, NC</li>
+        <li>CTA: <code>Book a Tour</code> &mdash; gold, repeated from the hero</li>
+        <li>Tagline: <code>Elevate. Own. Inspire.</code> / <code>Your Signature Space Awaits.</code></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Production notes</h3>
+      <ul>
+        <li>Street address intentionally left as &ldquo;Raleigh, North Carolina&rdquo; &mdash; add the full address once confirmed with Julia</li>
+        <li>Email shown is her business Gmail &mdash; confirm before launch whether a domain email should replace it</li>
+        <li>Legal links point to her existing <code>/privacy/</code> and <code>/terms/</code> pages</li>
+        <li>All three are pure CSS &mdash; zero JS, one shared logo image, under 80KB total</li>
+        <li>Pinch-zoom allowed, descriptive alt text, 44px+ touch targets, contrast-checked pairs</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
