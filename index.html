@@ -164,7 +164,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .rsc.menu-open .burger i:nth-child(2){opacity:0}
 .rsc.menu-open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 .burger i{transition:transform .25s ease,opacity .2s ease}
-.rsc.menu-open .top{position:relative;z-index:70}
+.top{transition:opacity .25s ease}
+.rsc.menu-open .top{position:relative;z-index:70;opacity:0;pointer-events:none}
 /* V1 brand tagline */
 .v1-tag{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;
   color:var(--gold-ink);margin:1.1rem 0 -.6rem}
