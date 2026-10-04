@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; The Professionals (directory preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+.footer-block code{color:#DB9446}
+
+/* ===== the section itself ===== */
+.dsec{font-family:'Josefin Sans',sans-serif;padding:3.4rem 5cqi 3.6rem;background:var(--bg,#FAF7F2);color:var(--tx,#1C1B1A);container-type:inline-size}
+.d-head{text-align:center;max-width:44rem;margin:0 auto 2.6rem}
+.d-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--ey,#DB9446);margin-bottom:1rem}
+.d-title{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:var(--tx);margin-bottom:.8rem}
+.d-sub{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;color:var(--subc,rgba(72,81,107,.9))}
+.d-grid{display:grid;gap:1.2rem}
+.m1 .d-grid{grid-template-columns:repeat(5,1fr)}
+.m1 .pc{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:1.7rem 1rem;text-align:center;transition:transform .2s,border-color .2s}
+.m1 .pc:hover{transform:translateY(-3px);border-color:#DB9446}
+.m2{--bg:#121E3F;--tx:#FAF7F2;--subc:rgba(178,181,192,.9);--ey:#DB9446}
+.m2 .d-grid{grid-template-columns:repeat(5,1fr)}
+.m2 .pc{background:transparent;border:0;border-left:1px solid rgba(178,181,192,.35);padding:.4rem 0 .4rem 1.1rem;text-align:left}
+.m2 .pc:hover .mono{background:rgba(219,148,70,.2)}
+.m3 .d-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.m3 .d-crest{height:96px;width:auto;display:block;margin:0 auto 1.2rem}
+.m3 .d-pitch{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.85;color:rgba(72,81,107,.9);text-align:center;margin-bottom:1.6rem}
+.m4{--bg:#48516B;--tx:#fff;--subc:rgba(255,255,255,.8);--ey:#DB9446}
+.m4 .d-grid{grid-template-columns:repeat(5,1fr)}
+.m4 .pc{background:rgba(255,255,255,.06);border:1px solid rgba(178,181,192,.35);border-radius:4px;padding:1.7rem 1rem;text-align:center}
+.m5 .d-grid{grid-template-columns:repeat(5,1fr);gap:2rem 1.4rem}
+.m5 .pc{background:transparent;border:0;text-align:center}
+.m5 .pn.serif{font-family:'DM Serif Display',serif;font-size:1.2rem}
+.m5 .rule{width:38px;height:2px;background:#DB9446;margin:.7rem auto}
+.m6 .d-grid{grid-template-columns:repeat(3,1fr);gap:2.2rem 2rem;max-width:900px;margin:0 auto}
+.m6 .wname{text-align:center;padding:1rem 0}
+.m6 .wn{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,3cqi,2.3rem);color:#121E3F;line-height:1.15}
+.m6 .wname:hover .wn{color:#DB9446}
+.mono{width:64px;height:64px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:1.35rem;margin-bottom:.9rem}
+.mono-navy{background:#121E3F;color:#DB9446}
+.mono-ring{background:transparent;border:1.5px solid #DB9446;color:#DB9446}
+.mono-goldfill{background:#DB9446;color:#121E3F}
+.mono-line{background:transparent;border:1.5px solid #B2B5C0;color:#48516B}
+.mono-sm{width:46px;height:46px;font-size:1.05rem;margin:0;flex:none}
+.pc .pn{font-weight:600;font-size:.92rem;letter-spacing:.06em;color:#1C1B1A;margin-bottom:.3rem}
+.m2 .pc .pn{color:#FAF7F2}
+.m4 .pc .pn{color:#fff}
+.pc .pr{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(72,81,107,.7)}
+.m2 .pc .pr{color:rgba(178,181,192,.75)}
+.m4 .pc .pr{color:rgba(255,255,255,.6)}
+.prow{display:flex;align-items:center;gap:1.1rem;padding:.95rem 0;border-bottom:1px solid rgba(178,181,192,.4)}
+.prow:last-child{border-bottom:0}
+.prow .pn{margin:0}
+.prow .pr{margin-top:.15rem}
+.d-cta{text-align:center;margin-top:2.4rem}
+.d-btn{display:inline-block;background:#DB9446;color:#121E3F;text-decoration:none;font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2rem;border-radius:2px;min-height:50px;display:inline-flex;align-items:center;transition:background .2s}
+.d-btn:hover{background:#c07f35}
+.m2 .d-btn,.m4 .d-btn{color:#121E3F}
+.d-foot{font-family:'EB Garamond',Georgia,serif;font-size:.85rem;color:rgba(72,81,107,.7);margin-top:1rem;text-align:center}
+.m2 .d-foot,.m4 .d-foot{color:rgba(250,247,242,.55)}
+.d-m3wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center;max-width:920px;margin:0 auto}
+.m3 .dsec-grid{display:block}
+@container (max-width:620px){
+  .m1 .d-grid,.m2 .d-grid,.m4 .d-grid,.m5 .d-grid{grid-template-columns:1fr 1fr;gap:.9rem}
+  .m6 .d-grid{grid-template-columns:1fr;gap:.6rem}
+  .m3 .d-m3wrap{grid-template-columns:1fr;gap:2rem}
+  .dsec{padding:2.5rem 6cqi 2.8rem}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Section &middot; For Review</p>
+    <h1>The Professionals &mdash; Directory Preview</h1>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="four-pillars.html">pillar section options</a> &middot;
+      <a href="footer-options.html">footer design options</a> &middot;
+      <a href="branding.html">branding options</a>.
+      All six use Julia&rsquo;s official brand kit: gold <b>#DB9446</b>, navy #121E3F, Blue Mirage <b>#48516B</b>, EB Garamond (Arno Pro stand-in).</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a professionals option">
+    <a href="#pr1"><span class="n">01</span><span class="t">The Five Cards</span><span class="p">Light, balanced, current style</span></a>
+    <a href="#pr2"><span class="n">02</span><span class="t">The Navy Roll</span><span class="p">Navy band, gold ring marks</span></a>
+    <a href="#pr3"><span class="n">03</span><span class="t">The Crest Column</span><span class="p">Split: crest pitch + roster</span></a>
+    <a href="#pr4"><span class="n">04</span><span class="t">The Mirage Grid</span><span class="p">Blue Mirage ground</span></a>
+    <a href="#pr5"><span class="n">05</span><span class="t">The Ledger Line</span><span class="p">Minimal typographic columns</span></a>
+    <a href="#pr6"><span class="n">06</span><span class="t">The Wall of Names</span><span class="p">Big serif names, no boxes</span></a>
+  </nav>
+
+  <!-- ==================== PROS OPTION 01 ==================== -->
+  <section class="variant" id="pr1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The Professionals &mdash; The Five Cards</h2>
+    </div>
+    <p class="v-desc"><b>The refined current style.</b> Five cards on the warm canvas: navy monogram marks with gold initials, taupe hairline borders, a gentle lift on hover. The safest read &mdash; it already matches the winning hero and footer family.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m1 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-navy">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m1 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-navy">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-navy">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">stacks at 375</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROS OPTION 02 ==================== -->
+  <section class="variant" id="pr2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The Professionals &mdash; The Navy Roll</h2>
+    </div>
+    <p class="v-desc"><b>Navy roll, editorial left-alignment.</b> Gold ring marks instead of filled circles, hairline dividers, names in off-white. Reads like a credits roll and ties directly to the navy navs of the winning hero. Official gold #DB9446 on the marks and the CTA.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m2 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-ring">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m2 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-ring">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-ring">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">stacks at 375</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROS OPTION 03 ==================== -->
+  <section class="variant" id="pr3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The Professionals &mdash; The Crest Column</h2>
+    </div>
+    <p class="v-desc"><b>The split.</b> Square gold crest and the pitch on the left, the roster stacked with hairline rows on the right. The crest gets real brand weight here &mdash; the most "branded" presentation of the five professionals.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m3">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-m3wrap">
+                <div class="d-pitchcol">
+                  <img class="d-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective crest">
+                  <p class="d-pitch">Five independent suites. Five professionals building their own brands.<br>One collective behind them.</p>
+                  <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+                </div>
+                <div class="d-roster">
+                  <div class="prow"><span class="mono mono-sm mono-navy">TC</span><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">KE</span><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">RQ</span><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">LN</span><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">JM</span><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m3">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-m3wrap">
+                <div class="d-pitchcol">
+                  <img class="d-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective crest">
+                  <p class="d-pitch">Five independent suites. Five professionals building their own brands. One collective behind them.</p>
+                  <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+                </div>
+                <div class="d-roster">
+                  <div class="prow"><span class="mono mono-sm mono-navy">TC</span><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">KE</span><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">RQ</span><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">LN</span><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><span class="mono mono-sm mono-navy">JM</span><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">crest + roster stack</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROS OPTION 04 ==================== -->
+  <section class="variant" id="pr4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>The Professionals &mdash; The Mirage Grid</h2>
+    </div>
+    <p class="v-desc"><b>Blue Mirage leads.</b> Her third palette color as the section ground, white cards at low opacity, gold-filled monograms. The cool-toned companion to the Mirage Band pillars (option 09 on the pillars page).</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m4 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-goldfill">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m4 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-goldfill">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-goldfill">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">stacks at 375</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROS OPTION 05 ==================== -->
+  <section class="variant" id="pr5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>The Professionals &mdash; The Ledger Line</h2>
+    </div>
+    <p class="v-desc"><b>The quiet ledger.</b> Outlined monograms, DM Serif names, official gold rules, no boxes at all. Carries the Pure White ledger language from the pillars page into the directory preview.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m5 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-line">TC</span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">KE</span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">RQ</span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">LN</span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">JM</span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m5 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="mono mono-line">TC</span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">KE</span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">RQ</span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">LN</span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="mono mono-line">JM</span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">stacks at 375</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROS OPTION 06 ==================== -->
+  <section class="variant" id="pr6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>The Professionals &mdash; The Wall of Names</h2>
+    </div>
+    <p class="v-desc"><b>The wall of names.</b> Big serif names on the canvas with Blue Mirage roles &mdash; no cards, no avatars. The boldest, most confident read; treats the tenant roster like a masthead. Hover turns any name gold.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="dsec m6 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="wname"><p class="wn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="dsec m6 ">
+              <div class="d-head">
+                <p class="d-eyebrow">The Professionals</p>
+                <h2 class="d-title">Meet the professionals of Revive.</h2>
+                <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
+              </div>
+              <div class="d-grid">
+<div class="wname"><p class="wn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="wname"><p class="wn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">stacks at 375</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 The Five Cards</b> refines the style already in the build. <b>02 The Navy Roll</b> and
+        <b>04 The Mirage Grid</b> give the section a dark ground. <b>03 The Crest Column</b> puts the
+        brand crest on stage. <b>05 The Ledger Line</b> and <b>06 The Wall of Names</b> go typographic.</p>
+      <p style="margin-top:.9rem">Same five real tenants in all six: Tish Cotton, Kerry Eliza,
+        Rhiannon Quay, Lillian Nelson, Jennifer Miller. Pick one (or blend) and it slots into the
+        homepage right after the pillars.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>Monogram marks stand in for headshots &mdash; swap in real photos from the Revive shoot when they land</li>
+        <li>&ldquo;Suite Professional&rdquo; is the placeholder role line &mdash; replace with each pro&rsquo;s real trade once confirmed</li>
+        <li>Per-pro booking links (Sola playbook) can be added at launch &mdash; each card becomes a client-lead engine</li>
+        <li>All six use the official brand kit: gold #DB9446, navy #121E3F, Blue Mirage #48516B, gray #B2B5C0, EB Garamond (Arno Pro stand-in)</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
