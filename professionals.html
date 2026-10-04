@@ -48,61 +48,77 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .footer-block ul{padding-left:1.1rem}
 .footer-block code{color:#DB9446}
 
-/* ===== the section itself ===== */
+/* ===== the section ===== */
 .dsec{font-family:'Josefin Sans',sans-serif;padding:3.4rem 1.6rem 3.6rem;background:var(--bg,#FAF7F2);color:var(--tx,#1C1B1A);container-type:inline-size}
 .d-head{text-align:center;max-width:44rem;margin:0 auto 2.6rem}
 .d-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--ey,#DB9446);margin-bottom:1rem}
 .d-title{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:var(--tx);margin-bottom:.8rem}
 .d-sub{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;color:var(--subc,rgba(72,81,107,.9))}
 .d-grid{display:grid;gap:1.2rem}
+.pimgwrap{display:block;width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:4px;margin-bottom:1rem}
+.pimgwrap.tall{aspect-ratio:3/4}
+.pimg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.pc:hover .pimg{transform:scale(1.04)}
+.pimg.round{width:52px;height:52px;border-radius:50%;margin:0;flex:none}
+.pimg.sm{width:48px;height:48px}
+.pc .pn{font-weight:600;font-size:.92rem;letter-spacing:.06em;color:#1C1B1A;margin-bottom:.3rem}
+.pc .pn.serif{font-family:'DM Serif Display',serif;font-size:1.2rem}
+.pc .pr{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(72,81,107,.7)}
+.d-cta{text-align:center;margin-top:2.4rem}
+.d-btn{display:inline-flex;align-items:center;justify-content:center;background:#DB9446;color:#121E3F;text-decoration:none;font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;padding:0 1.35rem;min-height:50px;border-radius:2px;transition:background .2s}
+.d-btn:hover{background:#c07f35}
+.d-foot{font-family:'EB Garamond',Georgia,serif;font-size:.85rem;color:rgba(72,81,107,.7);margin-top:1rem}
+
+/* 01 five cards */
 .m1 .d-grid{grid-template-columns:repeat(5,1fr)}
-.m1 .pc{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:1.7rem 1rem;text-align:center;transition:transform .2s,border-color .2s}
+.m1 .pc{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:1rem 1rem 1.4rem;text-align:center;transition:transform .2s,border-color .2s}
 .m1 .pc:hover{transform:translateY(-3px);border-color:#DB9446}
+
+/* 02 navy roll */
 .m2{--bg:#121E3F;--tx:#FAF7F2;--subc:rgba(178,181,192,.9);--ey:#DB9446}
-.m2 .d-grid{grid-template-columns:repeat(5,1fr)}
-.m2 .pc{background:transparent;border:0;border-left:1px solid rgba(178,181,192,.35);padding:.4rem 0 .4rem 1.1rem;text-align:left}
-.m2 .pc:hover .mono{background:rgba(219,148,70,.2)}
-.m3 .d-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center}
+.m2 .d-grid{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+.m2 .pc{background:transparent;border:0;border-bottom:1px solid rgba(178,181,192,.3);padding:.9rem .4rem;display:flex;align-items:center;gap:1.2rem;text-align:left}
+.m2 .pc:last-child{border-bottom:0}
+.m2 .pc .pn{color:#FAF7F2;font-size:1.02rem}
+.m2 .pc .pr{color:rgba(178,181,192,.75)}
+.m2 .d-foot{color:rgba(250,247,242,.55)}
+
+/* 03 crest column */
+.m3 .d-m3wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center;max-width:920px;margin:0 auto}
 .m3 .d-crest{height:96px;width:auto;display:block;margin:0 auto 1.2rem}
 .m3 .d-pitch{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.85;color:rgba(72,81,107,.9);text-align:center;margin-bottom:1.6rem}
+.m3 .d-pitchcol .d-cta{margin-top:0}
+.m3 .prow{display:flex;align-items:center;gap:1.1rem;padding:.8rem 0;border-bottom:1px solid rgba(178,181,192,.4)}
+.m3 .prow:last-child{border-bottom:0}
+.m3 .pc .pn{margin:0}
+.m3 .pc .pr{margin-top:.15rem}
+
+/* 04 mirage grid */
 .m4{--bg:#48516B;--tx:#fff;--subc:rgba(255,255,255,.8);--ey:#DB9446}
 .m4 .d-grid{grid-template-columns:repeat(5,1fr)}
-.m4 .pc{background:rgba(255,255,255,.06);border:1px solid rgba(178,181,192,.35);border-radius:4px;padding:1.7rem 1rem;text-align:center}
+.m4 .pc{background:rgba(255,255,255,.06);border:1px solid rgba(178,181,192,.35);border-radius:4px;padding:.9rem .9rem 1.3rem;text-align:center}
+.m4 .pc .pn{color:#fff}
+.m4 .pc .pr{color:rgba(255,255,255,.6)}
+
+/* 05 ledger line */
 .m5 .d-grid{grid-template-columns:repeat(5,1fr);gap:2rem 1.4rem}
 .m5 .pc{background:transparent;border:0;text-align:center}
-.m5 .pn.serif{font-family:'DM Serif Display',serif;font-size:1.2rem}
+.m5 .pn.serif{font-size:1.2rem}
 .m5 .rule{width:38px;height:2px;background:#DB9446;margin:.7rem auto}
-.m6 .d-grid{grid-template-columns:repeat(3,1fr);gap:2.2rem 2rem;max-width:900px;margin:0 auto}
-.m6 .wname{text-align:center;padding:1rem 0}
-.m6 .wn{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,3cqi,2.3rem);color:#121E3F;line-height:1.15}
-.m6 .wname:hover .wn{color:#DB9446}
-.mono{width:64px;height:64px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:1.35rem;margin-bottom:.9rem}
-.mono-navy{background:#121E3F;color:#DB9446}
-.mono-ring{background:transparent;border:1.5px solid #DB9446;color:#DB9446}
-.mono-goldfill{background:#DB9446;color:#121E3F}
-.mono-line{background:transparent;border:1.5px solid #B2B5C0;color:#48516B}
-.mono-sm{width:46px;height:46px;font-size:1.05rem;margin:0;flex:none}
-.pc .pn{font-weight:600;font-size:.92rem;letter-spacing:.06em;color:#1C1B1A;margin-bottom:.3rem}
-.m2 .pc .pn{color:#FAF7F2}
-.m4 .pc .pn{color:#fff}
-.pc .pr{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(72,81,107,.7)}
-.m2 .pc .pr{color:rgba(178,181,192,.75)}
-.m4 .pc .pr{color:rgba(255,255,255,.6)}
-.prow{display:flex;align-items:center;gap:1.1rem;padding:.95rem 0;border-bottom:1px solid rgba(178,181,192,.4)}
-.prow:last-child{border-bottom:0}
-.prow .pn{margin:0}
-.prow .pr{margin-top:.15rem}
-.d-cta{text-align:center;margin-top:2.4rem}
-.d-btn{display:inline-block;background:#DB9446;color:#121E3F;text-decoration:none;font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2rem;border-radius:2px;min-height:50px;display:inline-flex;align-items:center;transition:background .2s}
-.d-btn:hover{background:#c07f35}
-.m2 .d-btn,.m4 .d-btn{color:#121E3F}
-.d-foot{font-family:'EB Garamond',Georgia,serif;font-size:.85rem;color:rgba(72,81,107,.7);margin-top:1rem;text-align:center}
-.m2 .d-foot,.m4 .d-foot{color:rgba(250,247,242,.55)}
-.d-m3wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center;max-width:920px;margin:0 auto}
-.m3 .dsec-grid{display:block}
+
+/* 06 wall of names -> portrait wall */
+.m6 .d-grid{grid-template-columns:repeat(5,1fr);gap:1.2rem}
+.m6 .pc{background:transparent;border:0;text-align:center;cursor:pointer}
+.m6 .pimgwrap{border-radius:4px;position:relative}
+.m6 .pimgwrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,30,63,.55),transparent 55%)}
+.m6 .wn{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.15rem;color:#121E3F;line-height:1.2;margin:.8rem 0 .25rem}
+.m6 .pc:hover .wn{color:#DB9446}
+.m6 .pc:hover .pimg{transform:scale(1.05)}
+.m6 .logotile .pimg{object-fit:contain;background:#0d1730;padding:2.4rem 1rem}
+
 @container (max-width:620px){
-  .m1 .d-grid,.m2 .d-grid,.m4 .d-grid,.m5 .d-grid{grid-template-columns:1fr 1fr;gap:.9rem}
-  .m6 .d-grid{grid-template-columns:1fr;gap:.6rem}
+  .m1 .d-grid,.m4 .d-grid,.m5 .d-grid,.m6 .d-grid{grid-template-columns:1fr 1fr;gap:.9rem}
+  .m2 .d-grid{gap:0}
   .m3 .d-m3wrap{grid-template-columns:1fr;gap:2rem}
   .dsec{padding:2.5rem 1.3rem 2.8rem}
 }
@@ -118,16 +134,16 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <a href="four-pillars.html">pillar section options</a> &middot;
       <a href="footer-options.html">footer design options</a> &middot;
       <a href="branding.html">branding options</a>.
-      All six use Julia&rsquo;s official brand kit: gold <b>#DB9446</b>, navy #121E3F, Blue Mirage <b>#48516B</b>, EB Garamond (Arno Pro stand-in).</p>
+      All six use Julia&rsquo;s official brand kit and the <b>real photos and names from her current directory page</b>.</p>
   </header>
 
   <nav class="pickbar" aria-label="Jump to a professionals option">
     <a href="#pr1"><span class="n">01</span><span class="t">The Five Cards</span><span class="p">Light, balanced, current style</span></a>
-    <a href="#pr2"><span class="n">02</span><span class="t">The Navy Roll</span><span class="p">Navy band, gold ring marks</span></a>
+    <a href="#pr2"><span class="n">02</span><span class="t">The Navy Roll</span><span class="p">Navy list, photo chips</span></a>
     <a href="#pr3"><span class="n">03</span><span class="t">The Crest Column</span><span class="p">Split: crest pitch + roster</span></a>
     <a href="#pr4"><span class="n">04</span><span class="t">The Mirage Grid</span><span class="p">Blue Mirage ground</span></a>
     <a href="#pr5"><span class="n">05</span><span class="t">The Ledger Line</span><span class="p">Minimal typographic columns</span></a>
-    <a href="#pr6"><span class="n">06</span><span class="t">The Wall of Names</span><span class="p">Big serif names, no boxes</span></a>
+    <a href="#pr6"><span class="n">06</span><span class="t">The Portrait Wall</span><span class="p">Photo-forward, name below</span></a>
   </nav>
 
   <!-- ==================== PROS OPTION 01 ==================== -->
@@ -136,53 +152,54 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <span class="num">01</span>
       <h2>The Professionals &mdash; The Five Cards</h2>
     </div>
-    <p class="v-desc"><b>The refined current style.</b> Five cards on the warm canvas: navy monogram marks with gold initials, taupe hairline borders, a gentle lift on hover. The safest read &mdash; it already matches the winning hero and footer family.</p>
+    <p class="v-desc"><b>The refined current style.</b> Real photos in clean square frames, taupe hairline borders, gentle lift on hover. The closest match to the winning hero and footer family.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
           <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
           <div class="frame">
-            <section class="dsec m1 ">
+            <section class="dsec m1">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-navy">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            <section class="dsec m1 ">
+            <section class="dsec m1">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-navy">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-navy">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
-        <p class="phone-cap">stacks at 375</p>
+        <p class="phone-cap">2 &times; 2 + 1, then 5-across</p>
       </div>
     </div>
   </section>
@@ -193,53 +210,54 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <span class="num">02</span>
       <h2>The Professionals &mdash; The Navy Roll</h2>
     </div>
-    <p class="v-desc"><b>Navy roll, editorial left-alignment.</b> Gold ring marks instead of filled circles, hairline dividers, names in off-white. Reads like a credits roll and ties directly to the navy navs of the winning hero. Official gold #DB9446 on the marks and the CTA.</p>
+    <p class="v-desc"><b>Navy list, photo chips.</b> Round photo thumbnails with names beside them on the deep navy, hairline separators &mdash; reads like a credits list and ties straight into the navy navs of the winning hero.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
           <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
           <div class="frame">
-            <section class="dsec m2 ">
+            <section class="dsec m2">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-ring">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton"><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza"><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay"><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson"><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller"><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            <section class="dsec m2 ">
+            <section class="dsec m2">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-ring">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-ring">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton"><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza"><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay"><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson"><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="pc pched"><img class="pimg round" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller"><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
-        <p class="phone-cap">stacks at 375</p>
+        <p class="phone-cap">single-column list</p>
       </div>
     </div>
   </section>
@@ -250,7 +268,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <span class="num">03</span>
       <h2>The Professionals &mdash; The Crest Column</h2>
     </div>
-    <p class="v-desc"><b>The split.</b> Square gold crest and the pitch on the left, the roster stacked with hairline rows on the right. The crest gets real brand weight here &mdash; the most "branded" presentation of the five professionals.</p>
+    <p class="v-desc"><b>The split.</b> Square gold crest and the pitch on the left, the photo roster stacked on the right with hairline rows. The crest gets real brand weight &mdash; the most "branded" presentation of the professionals.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -263,23 +281,18 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
-              <div class="d-m3wrap">
-                <div class="d-pitchcol">
-                  <img class="d-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective crest">
-                  <p class="d-pitch">Five independent suites. Five professionals building their own brands.<br>One collective behind them.</p>
-                  <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
-                </div>
-                <div class="d-roster">
-                  <div class="prow"><span class="mono mono-sm mono-navy">TC</span><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">KE</span><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">RQ</span><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">LN</span><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">JM</span><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
-                </div>
+              <div class="d-grid">
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton"><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza"><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay"><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson"><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller"><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
               </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
@@ -291,20 +304,14 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
-              <div class="d-m3wrap">
-                <div class="d-pitchcol">
-                  <img class="d-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective crest">
-                  <p class="d-pitch">Five independent suites. Five professionals building their own brands. One collective behind them.</p>
-                  <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
-                </div>
-                <div class="d-roster">
-                  <div class="prow"><span class="mono mono-sm mono-navy">TC</span><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">KE</span><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">RQ</span><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">LN</span><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
-<div class="prow"><span class="mono mono-sm mono-navy">JM</span><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
-                </div>
+              <div class="d-grid">
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton"><div class="ptx"><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza"><div class="ptx"><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay"><div class="ptx"><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson"><div class="ptx"><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div></div>
+<div class="prow"><img class="pimg round sm" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller"><div class="ptx"><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div></div>
               </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
@@ -319,53 +326,54 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <span class="num">04</span>
       <h2>The Professionals &mdash; The Mirage Grid</h2>
     </div>
-    <p class="v-desc"><b>Blue Mirage leads.</b> Her third palette color as the section ground, white cards at low opacity, gold-filled monograms. The cool-toned companion to the Mirage Band pillars (option 09 on the pillars page).</p>
+    <p class="v-desc"><b>Blue Mirage leads.</b> Her third palette color as the section ground, photos in bordered tiles, names in white. The cool-toned companion to the Mirage Band pillars (option 09 on the pillars page).</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
           <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
           <div class="frame">
-            <section class="dsec m4 ">
+            <section class="dsec m4">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-goldfill">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            <section class="dsec m4 ">
+            <section class="dsec m4">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-goldfill">TC</span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">KE</span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">RQ</span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">LN</span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-goldfill">JM</span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
-        <p class="phone-cap">stacks at 375</p>
+        <p class="phone-cap">2 &times; 2 + 1, then 5-across</p>
       </div>
     </div>
   </section>
@@ -376,53 +384,54 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <span class="num">05</span>
       <h2>The Professionals &mdash; The Ledger Line</h2>
     </div>
-    <p class="v-desc"><b>The quiet ledger.</b> Outlined monograms, DM Serif names, official gold rules, no boxes at all. Carries the Pure White ledger language from the pillars page into the directory preview.</p>
+    <p class="v-desc"><b>The quiet ledger.</b> Square photos, DM Serif names, official gold rules, no boxes. Carries the Pure White ledger language from the pillars page into the directory preview.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
           <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
           <div class="frame">
-            <section class="dsec m5 ">
+            <section class="dsec m5">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-line">TC</span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">KE</span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">RQ</span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">LN</span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">JM</span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            <section class="dsec m5 ">
+            <section class="dsec m5">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="pc"><span class="mono mono-line">TC</span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">KE</span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">RQ</span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">LN</span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
-<div class="pc"><span class="mono mono-line">JM</span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-tish.jpg" alt="Tish Cotton, suite professional at Revive Salon Collective"></span><p class="pn serif">Tish Cotton</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-kerry.jpg" alt="Kerry Eliza, suite professional at Revive Salon Collective"></span><p class="pn serif">Kerry Eliza</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-rhiannon.jpg" alt="Rhiannon Quay, suite professional at Revive Salon Collective"></span><p class="pn serif">Rhiannon Quay</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-lillian.jpg" alt="Lillian Nelson, suite professional at Revive Salon Collective"></span><p class="pn serif">Lillian Nelson</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/tenant-jennifer.jpg" alt="Jennifer Miller, suite professional at Revive Salon Collective"></span><p class="pn serif">Jennifer Miller</p><div class="rule"></div><p class="pr">Suite Professional</p></div>
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
-        <p class="phone-cap">stacks at 375</p>
+        <p class="phone-cap">2 &times; 2 + 1, then 5-across</p>
       </div>
     </div>
   </section>
@@ -431,55 +440,48 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="pr6">
     <div class="v-head">
       <span class="num">06</span>
-      <h2>The Professionals &mdash; The Wall of Names</h2>
+      <h2>The Professionals &mdash; The Portrait Wall</h2>
     </div>
-    <p class="v-desc"><b>The wall of names.</b> Big serif names on the canvas with Blue Mirage roles &mdash; no cards, no avatars. The boldest, most confident read; treats the tenant roster like a masthead. Hover turns any name gold.</p>
+    <p class="v-desc"><b>Portrait wall &mdash; redesigned.</b> Photo-forward tiles with a navy gradient fade and the name under each portrait. Photos are the hero of this section now; the old type-only treatment is retired. Kerry Eliza and Jennifer Miller carry their brand tiles until headshots arrive.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
           <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
           <div class="frame">
-            <section class="dsec m6 ">
+            <section class="dsec m6">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="wname"><p class="wn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
+        <p class="stage-note" style="margin:.8rem 0 0;font-size:.8rem;color:#DB9446">&#9432; Real photos pulled from the current directory page. Kerry Eliza and Jennifer Miller have brand-logo tiles for now &mdash; headshots land after the Revive photo shoot. Photos link to their directory pages at launch.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            <section class="dsec m6 ">
+            <section class="dsec m6">
               <div class="d-head">
                 <p class="d-eyebrow">The Professionals</p>
                 <h2 class="d-title">Meet the professionals of Revive.</h2>
                 <p class="d-sub">Independent beauty professionals who already call Revive home.</p>
               </div>
               <div class="d-grid">
-<div class="wname"><p class="wn">Tish Cotton</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Kerry Eliza</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Rhiannon Quay</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Lillian Nelson</p><p class="pr">Suite Professional</p></div>
-<div class="wname"><p class="wn">Jennifer Miller</p><p class="pr">Suite Professional</p></div>
+
               </div>
-              <div class="d-cta"><a class="d-btn" href="#">Book a Tour &mdash; meet them in person</a></div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">Meet them in person &mdash; tours by appointment.</p></div>
             </section>
           </div>
         </div>
-        <p class="phone-cap">stacks at 375</p>
+        <p class="phone-cap">2 &times; 2 + 1, then 5-across</p>
       </div>
     </div>
   </section>
@@ -488,18 +490,20 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
       <h3>Summary</h3>
       <p><b>01 The Five Cards</b> refines the style already in the build. <b>02 The Navy Roll</b> and
         <b>04 The Mirage Grid</b> give the section a dark ground. <b>03 The Crest Column</b> puts the
-        brand crest on stage. <b>05 The Ledger Line</b> and <b>06 The Wall of Names</b> go typographic.</p>
-      <p style="margin-top:.9rem">Same five real tenants in all six: Tish Cotton, Kerry Eliza,
-        Rhiannon Quay, Lillian Nelson, Jennifer Miller. Pick one (or blend) and it slots into the
-        homepage right after the pillars.</p>
+        brand crest on stage. <b>05 The Ledger Line</b> keeps it minimal. <b>06 The Portrait Wall</b>
+        is the photo-forward close.</p>
+      <p style="margin-top:.9rem">Same five real tenants in all six, with the same real photos pulled
+        from her current directory page. Pick one (or blend) and it slots into the homepage right
+        after the pillars.</p>
     </div>
     <div>
       <h3>Notes</h3>
       <ul>
-        <li>Monogram marks stand in for headshots &mdash; swap in real photos from the Revive shoot when they land</li>
+        <li>Real photos: Tish Cotton, Rhiannon Quay, Lillian Nelson. Kerry Eliza and Jennifer Miller currently show brand tiles on the live directory &mdash; swap in headshots after the Revive photo shoot</li>
         <li>&ldquo;Suite Professional&rdquo; is the placeholder role line &mdash; replace with each pro&rsquo;s real trade once confirmed</li>
-        <li>Per-pro booking links (Sola playbook) can be added at launch &mdash; each card becomes a client-lead engine</li>
+        <li>Photos will link to their directory pages at launch; per-pro booking links (Sola playbook) optional add-on</li>
         <li>All six use the official brand kit: gold #DB9446, navy #121E3F, Blue Mirage #48516B, gray #B2B5C0, EB Garamond (Arno Pro stand-in)</li>
+        <li>Primary button kept simple &mdash; &ldquo;Book a Tour&rdquo; only, matching the homepage Julia picked</li>
       </ul>
     </div>
   </footer>
