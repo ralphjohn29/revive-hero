@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; The Revive Experience (section preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+.footer-block code{color:#DB9446}
+
+/* ===== the section ===== */
+.esec{font-family:'Josefin Sans',sans-serif;padding:3.4rem 1.6rem 3.6rem;background:#FAF7F2;color:#1C1B1A;container-type:inline-size}
+.d-head{text-align:center;max-width:44rem;margin:0 auto 2.6rem}
+.d-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin-bottom:1rem}
+.d-title{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:#121E3F;margin-bottom:.8rem}
+.d-sub{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;color:rgba(72,81,107,.9)}
+.d-grid{display:grid;gap:1.2rem}
+.pimgwrap{display:block;width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:4px;position:relative;margin-bottom:1rem}
+.pimg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.pc:hover .pimg{transform:scale(1.04)}
+.pc .pn{font-weight:600;font-size:.95rem;letter-spacing:.06em;color:#121E3F;margin-bottom:.3rem}
+.pc .pd{font-family:'EB Garamond',Georgia,serif;font-size:.98rem;line-height:1.6;color:rgba(72,81,107,.85)}
+.d-cta{text-align:center;margin-top:2.4rem}
+.d-btn{display:inline-flex;align-items:center;justify-content:center;background:#DB9446;color:#121E3F;text-decoration:none;font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;padding:0 1.35rem;min-height:50px;border-radius:2px;transition:background .2s}
+.d-btn:hover{background:#c07f35}
+.d-foot{font-family:'EB Garamond',Georgia,serif;font-size:.85rem;color:rgba(72,81,107,.7);margin-top:1rem}
+
+/* 01 classic grid */
+.m1 .d-grid{grid-template-columns:repeat(3,1fr)}
+.m1 .pc{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:.9rem .9rem 1.3rem;text-align:center;transition:transform .2s,border-color .2s}
+.m1 .pc:hover{transform:translateY(-3px);border-color:#DB9446}
+
+/* 02 navy numbered */
+.m2{--bg:#121E3F;--tx:#FAF7F2}
+.m2 .d-title{color:#FAF7F2}
+.m2 .d-sub{color:rgba(178,181,192,.9)}
+.m2 .d-grid{grid-template-columns:repeat(3,1fr)}
+.m2 .pc{background:transparent;border:0;padding:0}
+.m2 .pimg{border-radius:4px}
+.m2 .pimg::after{content:"";position:absolute;inset:0;background:rgba(18,30,63,.28)}
+.m2 .pnum{position:absolute;left:10px;bottom:8px;font-family:'DM Serif Display',serif;font-size:1.5rem;color:#DB9446;line-height:1}
+.m2 .pn{color:#FAF7F2;margin-top:.9rem}
+.m2 .pd{color:rgba(178,181,192,.9)}
+.m2 .d-btn{color:#121E3F}
+.m2 .d-foot{color:rgba(250,247,242,.55)}
+
+/* 03 gold frames */
+.m3 .d-grid{grid-template-columns:repeat(3,1fr)}
+.m3 .pc{background:transparent;border:0;text-align:center}
+.m3 .pimgwrap.framed{border:1px solid #DB9446;padding:6px;border-radius:0}
+.m3 .pimgwrap.framed .pimg{border-radius:0}
+.m3 .pn.serif{font-size:1.2rem}
+.m3 .rule{width:38px;height:2px;background:#DB9446;margin:.7rem auto}
+.m3 .pd{max-width:30rem;margin:0 auto}
+
+/* 04 leaderboard rows */
+.m4 .d-grid{grid-template-columns:1fr;max-width:760px;margin:0 auto}
+.m4 .prow{display:flex;align-items:center;gap:1.3rem;background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:.9rem 1.2rem;transition:border-color .2s}
+.m4 .prow:hover{border-color:#DB9446}
+.m4 .pimg.round{width:96px;height:96px;border-radius:4px;flex:none}
+.m4 .ptx{flex:1}
+.m4 .pn{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.15rem}
+.m4 .parrow{font-size:1.6rem;color:#DB9446;line-height:1}
+
+/* 05 overlay nine */
+.m5{--bg:#121E3F;--tx:#FAF7F2}
+.m5 .d-title{color:#FAF7F2}
+.m5 .d-sub{color:rgba(178,181,192,.9)}
+.m5 .d-grid{grid-template-columns:repeat(3,1fr);gap:1rem}
+.m5 .pc{background:transparent;border:0;padding:0}
+.m5 .pimgwrap{aspect-ratio:3/4;border-radius:4px}
+.m5 .pimgwrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,23,48,.85),rgba(13,23,48,.05) 60%)}
+.m5 .pov{position:absolute;inset:auto 0 0 0;padding:1rem 1.1rem;text-align:left;z-index:2}
+.m5 .ovname{display:block;font-weight:600;font-size:.95rem;color:#FAF7F2;letter-spacing:.06em}
+.m5 .ovd{display:block;font-family:'EB Garamond',Georgia,serif;font-size:.9rem;color:rgba(250,247,242,.75);margin-top:.2rem}
+.m5 .d-foot{color:rgba(250,247,242,.55)}
+
+/* 06 split feature */
+.m6 .d-grid{grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.m6 .pc{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:.8rem .8rem 1.2rem;text-align:center}
+.m6 .pc.feature{grid-column:1/3;grid-row:1/3;display:flex;flex-direction:column;justify-content:flex-end;padding:0;border:0;overflow:hidden;border-radius:4px}
+.m6 .pc.feature .pimgwrap{flex:1;margin:0;aspect-ratio:auto;border-radius:0}
+.m6 .pc.feature .pimgwrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,30,63,.72),transparent 55%)}
+.m6 .pc.feature .pn{position:absolute;left:1.4rem;bottom:1.4rem;z-index:2;color:#FAF7F2;font-family:'DM Serif Display',serif;font-weight:400;font-size:1.5rem;margin:0}
+.m6 .pc.feature .pd{position:absolute;left:1.4rem;bottom:.7rem;z-index:2;color:rgba(250,247,242,.8);margin:2.2rem 0 0;font-family:'EB Garamond',Georgia,serif;font-size:1rem}
+.m6 .ptag{position:absolute;top:10px;left:10px;font-family:'DM Serif Display',serif;font-size:1.1rem;color:#DB9446;line-height:1}
+
+@container (max-width:620px){
+  .esec{padding:2.5rem 1.3rem 2.8rem}
+  .m1 .d-grid,.m2 .d-grid,.m3 .d-grid,.m5 .d-grid{grid-template-columns:1fr 1fr;gap:.9rem}
+  .m6 .d-grid{grid-template-columns:1fr 1fr}
+  .m6 .pc.feature{grid-column:1/3;grid-row:auto}
+  .m4 .pimg.round{width:72px;height:72px}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Section &middot; For Review</p>
+    <h1>The Revive Experience &mdash; Section Preview</h1>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="four-pillars.html">pillar section options</a> &middot;
+      <a href="professionals.html">professionals section options</a> &middot;
+      <a href="vision-mission.html">vision &amp; mission options</a> &middot;
+      <a href="footer-options.html">footer design options</a>.
+      Same nine crafts and photos as her current section, rebuilt in the official brand kit: gold <b>#DB9446</b>, navy #121E3F, Blue Mirage <b>#48516B</b>, EB Garamond.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a Revive Experience option">
+    <a href="#x1"><span class="n">01</span><span class="t">The Classic Grid</span><span class="p">Light 3&times;3, closest to current</span></a>
+    <a href="#x2"><span class="n">02</span><span class="t">The Navy Nine</span><span class="p">Navy ground, numbered photos</span></a>
+    <a href="#x3"><span class="n">03</span><span class="t">The Gold Frames</span><span class="p">Framed tiles, centered</span></a>
+    <a href="#x4"><span class="n">04</span><span class="t">The Leaderboard Rows</span><span class="p">Photo-left list rows</span></a>
+    <a href="#x5"><span class="n">05</span><span class="t">The Overlay Nine</span><span class="p">Tall photos, name on image</span></a>
+    <a href="#x6"><span class="n">06</span><span class="t">The Split Feature</span><span class="p">Featured large + 8 grid</span></a>
+  </nav>
+
+  <!-- ==================== EXPERIENCE OPTION 01 ==================== -->
+  <section class="variant" id="x1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The Revive Experience &mdash; The Classic Grid</h2>
+    </div>
+    <p class="v-desc"><b>The current section, refined.</b> Same 3&times;3 photo grid, rebuilt in the official kit: white cards, taupe hairlines, official gold hover accents, EB Garamond service lines. The direct upgrade path &mdash; no surprises.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m1">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians at Revive Salon Collective"></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers at Revive Salon Collective"></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians at Revive Salon Collective"></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists at Revive Salon Collective"></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians at Revive Salon Collective"></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist at Revive Salon Collective"></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist at Revive Salon Collective"></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist at Revive Salon Collective"></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals at Revive Salon Collective"></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m1">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians at Revive Salon Collective"></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers at Revive Salon Collective"></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians at Revive Salon Collective"></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists at Revive Salon Collective"></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians at Revive Salon Collective"></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist at Revive Salon Collective"></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist at Revive Salon Collective"></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist at Revive Salon Collective"></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals at Revive Salon Collective"></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">3 per row, then 2 &times; 2 + 1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE OPTION 02 ==================== -->
+  <section class="variant" id="x2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The Revive Experience &mdash; The Navy Nine</h2>
+    </div>
+    <p class="v-desc"><b>Navy ground, numbered crafts.</b> The nine photos sit on her official navy with a subtle navy wash on each, numbered 01&ndash;09 in gold serif. Reads like a menu of crafts &mdash; strong next to a Navy Stage hero.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m2">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="pnum">01</span></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="pnum">02</span></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="pnum">03</span></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="pnum">04</span></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="pnum">05</span></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="pnum">06</span></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="pnum">07</span></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="pnum">08</span></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="pnum">09</span></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m2">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="pnum">01</span></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="pnum">02</span></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="pnum">03</span></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="pnum">04</span></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="pnum">05</span></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="pnum">06</span></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="pnum">07</span></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="pnum">08</span></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="pnum">09</span></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">3 per row, then 2 &times; 2 + 1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE OPTION 03 ==================== -->
+  <section class="variant" id="x3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The Revive Experience &mdash; The Gold Frames</h2>
+    </div>
+    <p class="v-desc"><b>Framed luxury.</b> Every photo inside a thin official-gold frame on the warm canvas, DM Serif names, gold rules. The most decorative, print-ad treatment of the nine.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m3">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"></span><p class="pn serif">Lash Technicians</p><div class="rule"></div><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"></span><p class="pn serif">Barbers</p><div class="rule"></div><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"></span><p class="pn serif">Estheticians</p><div class="rule"></div><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"></span><p class="pn serif">Hair Stylists</p><div class="rule"></div><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"></span><p class="pn serif">Nail Technicians</p><div class="rule"></div><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"></span><p class="pn serif">Permanent Makeup Artist</p><div class="rule"></div><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"></span><p class="pn serif">Tattoo Artist</p><div class="rule"></div><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"></span><p class="pn serif">Facial Aesthetics Specialist</p><div class="rule"></div><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"></span><p class="pn serif">Other Beauty Professionals</p><div class="rule"></div><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m3">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"></span><p class="pn serif">Lash Technicians</p><div class="rule"></div><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"></span><p class="pn serif">Barbers</p><div class="rule"></div><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"></span><p class="pn serif">Estheticians</p><div class="rule"></div><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"></span><p class="pn serif">Hair Stylists</p><div class="rule"></div><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"></span><p class="pn serif">Nail Technicians</p><div class="rule"></div><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"></span><p class="pn serif">Permanent Makeup Artist</p><div class="rule"></div><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"></span><p class="pn serif">Tattoo Artist</p><div class="rule"></div><p class="pd">Tattoo design & application</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"></span><p class="pn serif">Facial Aesthetics Specialist</p><div class="rule"></div><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc"><span class="pimgwrap framed"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"></span><p class="pn serif">Other Beauty Professionals</p><div class="rule"></div><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">3 per row, then 2 &times; 2 + 1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE OPTION 04 ==================== -->
+  <section class="variant" id="x4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>The Revive Experience &mdash; The Leaderboard Rows</h2>
+    </div>
+    <p class="v-desc"><b>A completely different structure.</b> No grid &mdash; nine leaderboard rows, photo chip left, craft and description right, gold arrow. Scans fastest and fits the most information; the odd-one-out on purpose.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m4">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="prow"><img class="pimg round" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><div class="ptx"><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-barber.jpg" alt="Barbers"><div class="ptx"><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><div class="ptx"><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><div class="ptx"><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><div class="ptx"><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><div class="ptx"><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><div class="ptx"><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><div class="ptx"><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><div class="ptx"><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div><span class="parrow">&rsaquo;</span></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m4">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="prow"><img class="pimg round" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><div class="ptx"><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-barber.jpg" alt="Barbers"><div class="ptx"><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><div class="ptx"><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><div class="ptx"><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><div class="ptx"><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><div class="ptx"><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><div class="ptx"><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><div class="ptx"><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div><span class="parrow">&rsaquo;</span></div>
+<div class="prow"><img class="pimg round" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><div class="ptx"><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div><span class="parrow">&rsaquo;</span></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">single-column rows</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE OPTION 05 ==================== -->
+  <section class="variant" id="x5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>The Revive Experience &mdash; The Overlay Nine</h2>
+    </div>
+    <p class="v-desc"><b>Tall photos, names on image.</b> 3:4 portraits with a navy gradient fade and the craft name set on the photo itself. Magazine-style; the most modern read of the nine.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m5">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="pov"><span class="ovname">Lash Technicians</span><span class="ovd">Expert lash extensions & lifts</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="pov"><span class="ovname">Barbers</span><span class="ovd">Men's haircuts & grooming</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="pov"><span class="ovname">Estheticians</span><span class="ovd">Skincare, facials & skin health</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="pov"><span class="ovname">Hair Stylists</span><span class="ovd">Creative cuts, color & styling</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="pov"><span class="ovname">Nail Technicians</span><span class="ovd">Manicures, pedicures & nail art</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="pov"><span class="ovname">Permanent Makeup Artist</span><span class="ovd">Microblading & cosmetic tattooing</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="pov"><span class="ovname">Tattoo Artist</span><span class="ovd">Tattoo design & application</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="pov"><span class="ovname">Facial Aesthetics Specialist</span><span class="ovd">Advanced skin rejuvenation & treatments</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="pov"><span class="ovname">Other Beauty Professionals</span><span class="ovd">Comprehensive beauty services</span></span></span></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m5">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="pov"><span class="ovname">Lash Technicians</span><span class="ovd">Expert lash extensions & lifts</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="pov"><span class="ovname">Barbers</span><span class="ovd">Men's haircuts & grooming</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="pov"><span class="ovname">Estheticians</span><span class="ovd">Skincare, facials & skin health</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="pov"><span class="ovname">Hair Stylists</span><span class="ovd">Creative cuts, color & styling</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="pov"><span class="ovname">Nail Technicians</span><span class="ovd">Manicures, pedicures & nail art</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="pov"><span class="ovname">Permanent Makeup Artist</span><span class="ovd">Microblading & cosmetic tattooing</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="pov"><span class="ovname">Tattoo Artist</span><span class="ovd">Tattoo design & application</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="pov"><span class="ovname">Facial Aesthetics Specialist</span><span class="ovd">Advanced skin rejuvenation & treatments</span></span></span></div>
+<div class="pc"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="pov"><span class="ovname">Other Beauty Professionals</span><span class="ovd">Comprehensive beauty services</span></span></span></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 per row, then 1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE OPTION 06 ==================== -->
+  <section class="variant" id="x6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>The Revive Experience &mdash; The Split Feature</h2>
+    </div>
+    <p class="v-desc"><b>Split feature.</b> Hair Stylists featured large on the left, the other eight crafts in a tight grid beside it. Creates hierarchy &mdash; one hero craft, eight supporting. Featured craft is swappable.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <section class="esec m6">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="ptag">01</span></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="ptag">02</span></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="ptag">03</span></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc feature"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="ptag">04</span></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="ptag">05</span></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="ptag">06</span></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="ptag">07</span></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="ptag">08</span></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="ptag">09</span></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="esec m6">
+              <div class="d-head">
+                <p class="d-eyebrow">The Revive Experience</p>
+                <h2 class="d-title">Whatever your craft, there is a suite for it.</h2>
+                <p class="d-sub">Nine kinds of beauty professionals &mdash; one refined collective.</p>
+              </div>
+              <div class="d-grid">
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-lash.jpg" alt="Lash Technicians"><span class="ptag">01</span></span><p class="pn">Lash Technicians</p><p class="pd">Expert lash extensions & lifts</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-barber.jpg" alt="Barbers"><span class="ptag">02</span></span><p class="pn">Barbers</p><p class="pd">Men's haircuts & grooming</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-esthetician.jpg" alt="Estheticians"><span class="ptag">03</span></span><p class="pn">Estheticians</p><p class="pd">Skincare, facials & skin health</p></div>
+<div class="pc feature"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-hair.jpg" alt="Hair Stylists"><span class="ptag">04</span></span><p class="pn">Hair Stylists</p><p class="pd">Creative cuts, color & styling</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-nails.jpg" alt="Nail Technicians"><span class="ptag">05</span></span><p class="pn">Nail Technicians</p><p class="pd">Manicures, pedicures & nail art</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-pmu.jpg" alt="Permanent Makeup Artist"><span class="ptag">06</span></span><p class="pn">Permanent Makeup Artist</p><p class="pd">Microblading & cosmetic tattooing</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-tattoo.jpg" alt="Tattoo Artist"><span class="ptag">07</span></span><p class="pn">Tattoo Artist</p><p class="pd">Tattoo design & application</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-facial.jpg" alt="Facial Aesthetics Specialist"><span class="ptag">08</span></span><p class="pn">Facial Aesthetics Specialist</p><p class="pd">Advanced skin rejuvenation & treatments</p></div>
+<div class="pc std"><span class="pimgwrap"><img class="pimg" src="assets/opt/exp-other.jpg" alt="Other Beauty Professionals"><span class="ptag">09</span></span><p class="pn">Other Beauty Professionals</p><p class="pd">Comprehensive beauty services</p></div>
+              </div>
+              <div class="d-cta"><a class="d-btn" href="#">Book a Tour</a><p class="d-foot">See the suites your craft belongs in.</p></div>
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">feature full-width + pairs</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 The Classic Grid</b> is the direct upgrade of her current section. <b>02 The Navy Nine</b>
+        and <b>05 The Overlay Nine</b> put the section on dark grounds. <b>03 The Gold Frames</b> is the
+        most decorative. <b>04 The Leaderboard Rows</b> changes the structure entirely. <b>06 The Split
+        Feature</b> creates hierarchy with a featured craft.</p>
+      <p style="margin-top:.9rem">Same nine crafts, same photos, same descriptions in all six &mdash;
+        only the presentation changes. Pick one and it slots into the homepage after the pillars.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>Photos are the current ones from her live homepage &mdash; swap for Revive shoot photos when they land</li>
+        <li>Craft list is locked to the live site: Lash, Barbers, Estheticians, Hair, Nails, Permanent Makeup, Tattoo, Facial Aesthetics, Other Professionals</li>
+        <li>Descriptions are her live one-liners, kept verbatim</li>
+        <li>All six use the official brand kit: gold #DB9446 (Pantone 722C), navy #121E3F, Blue Mirage #48516B, EB Garamond (Arno Pro stand-in)</li>
+        <li>Primary button kept simple &mdash; &ldquo;Book a Tour&rdquo; only</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
