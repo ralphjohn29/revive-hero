@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; Suite Carousel (section preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden}
+.phone-cap{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{font-size:.72rem;color:#DB9446;margin-top:.8rem;text-align:center}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+.footer-block code{color:#DB9446}
+
+/* ===== carousel section base ===== */
+.csec{font-family:'Josefin Sans',sans-serif;padding:3.2rem 1.6rem 3.4rem;background:#FAF7F2;color:#1C1B1A}
+.cs-head{text-align:center;max-width:44rem;margin:0 auto 2.4rem}
+.cs-eye{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin:0 0 1rem}
+.cs-h{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:#121E3F;margin:0}
+.cs-arw{width:46px;height:46px;border-radius:50%;border:1px solid #DB9446;background:#FAF7F2;color:#121E3F;font-size:1.1rem;cursor:pointer;transition:all .2s}
+.cs-arw:hover{background:#DB9446}
+
+/* 01 scroll-snap strip */
+.s1 .cs-strip{position:relative}
+.s1 .cs-track{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.s1 .cs-track::-webkit-scrollbar{display:none}
+.s1 .cs-slide{flex:0 0 32%;scroll-snap-align:start}
+.s1 .cs-slide img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:4px}
+.s1 .cs-cap{font-family:'EB Garamond',Georgia,serif;font-size:.95rem;color:rgba(72,81,107,.85);margin:.6rem 0 0}
+.s1 .cs-arw{position:absolute;top:38%;transform:translateY(-50%)}
+.s1 .prev{left:-8px}.s1 .next{right:-8px}
+
+/* 02 navy framed strip */
+.s2{background:#121E3F;color:#FAF7F2}
+.s2 .cs-h{color:#FAF7F2}
+.s2 .cs-strip{position:relative}
+.s2 .cs-track{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:.4rem}
+.s2 .cs-track::-webkit-scrollbar{display:none}
+.s2 .cs-slide{flex:0 0 42%;scroll-snap-align:center}
+.s2 .cs-frame{border:1px solid rgba(219,148,70,.5);padding:6px;background:rgba(255,255,255,.03)}
+.s2 .cs-frame img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.s2 .cs-arw{position:absolute;top:45%;transform:translateY(-50%)}
+.s2 .prev{left:-6px}.s2 .next{right:-6px}
+.s2 .cs-arw{background:#121E3F;color:#DB9446}
+.s2 .cs-arw:hover{background:#DB9446;color:#121E3F}
+
+/* 03 fade + counter */
+.s3 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
+.cs-fstack{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px}
+.cs-fslide{position:absolute;inset:0;opacity:0;transition:opacity .5s}
+.cs-fslide.on{opacity:1}
+.cs-fslide img{width:100%;height:100%;object-fit:cover;display:block}
+.s3 .cs-ctr{position:absolute;right:1rem;bottom:.9rem;z-index:3;font-family:'DM Serif Display',serif;color:#FAF7F2;font-size:1rem;letter-spacing:.1em;text-shadow:0 1px 6px rgba(13,23,48,.6)}
+.s3 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);z-index:3}
+.s3 .prev{left:1rem}.s3 .next{right:1rem}
+
+/* 04 cards + dots */
+.s4 .cs-strip{position:relative}
+.s4 .cs-track{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.s4 .cs-track::-webkit-scrollbar{display:none}
+.s4 .cs-slide{flex:0 0 31%;scroll-snap-align:start}
+.s4 .cs-card{background:#fff;border:1px solid #E7DFD3;border-radius:4px;padding:.8rem .8rem 1rem;box-shadow:0 8px 24px rgba(28,27,26,.08)}
+.s4 .cs-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:3px}
+.s4 .cs-cardcap{font-family:'EB Garamond',Georgia,serif;font-size:.92rem;color:rgba(72,81,107,.9);margin:.7rem 0 0;text-align:center}
+.s4 .cs-arw{position:absolute;top:38%;transform:translateY(-50%)}
+.s4 .prev{left:-8px}.s4 .next{right:-8px}
+.cs-dots{display:flex;gap:.5rem;justify-content:center;margin-top:1.3rem}
+.cs-dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(219,148,70,.35);cursor:pointer;padding:0}
+.cs-dots button.on{background:#DB9446}
+
+/* 05 overlay nine navy */
+.s5{background:#121E3F;color:#FAF7F2}
+.s5 .cs-h{color:#FAF7F2}
+.s5 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
+.s5 .cs-tag{position:absolute;left:1.2rem;bottom:1rem;z-index:3;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#FAF7F2;background:rgba(219,148,70,.85);padding:.4rem .8rem;border-radius:2px}
+.s5 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);z-index:3;background:#121E3F;color:#DB9446;border-color:#DB9446}
+.s5 .cs-arw:hover{background:#DB9446;color:#121E3F}
+.s5 .prev{left:1rem}.s5 .next{right:1rem}
+
+/* 06 thumbs gallery */
+.s6 .cs-thumbgal{max-width:44rem;margin:0 auto}
+.s6 .cs-thumbs{display:grid;grid-template-columns:repeat(8,1fr);gap:.6rem;margin-top:.9rem}
+.cs-thumb{padding:0;border:2px solid transparent;background:none;cursor:pointer;border-radius:3px;overflow:hidden;opacity:.55;transition:all .2s}
+.cs-thumb img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.cs-thumb:hover{opacity:1}
+.cs-thumb.on{border-color:#DB9446;opacity:1}
+
+@container (max-width:620px){
+  .csec{padding:2.5rem 1.3rem 2.7rem}
+  .m1 .cs-slide,.m2 .cs-slide,.m4 .cs-slide{flex-basis:78%}
+  .m1 .cs-arw,.m2 .cs-arw,.m4 .cs-arw{display:none}
+  .s6 .cs-thumbs{grid-template-columns:repeat(4,1fr)}
+}
+<section class="csec s1">
+              <div class="cs-head"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-strip" data-strip>
+                <div class="cs-track"><div class="cs-slide"><img src="assets/opt/suite-1.jpg" alt="Window Suite"><p class="cs-cap">Window Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"><p class="cs-cap">Suite with Chair</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-3.jpg" alt="Studio Render"><p class="cs-cap">Studio Render</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"><p class="cs-cap">Studio Render II</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-5.jpg" alt="Lobby"><p class="cs-cap">Lobby</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-6.jpg" alt="Entry"><p class="cs-cap">Entry</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"><p class="cs-cap">Premium Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"><p class="cs-cap">Premium Suite, Large Window</p></div></div>
+                <button class="cs-arw prev" aria-label="Previous">&larr;</button>
+                <button class="cs-arw next" aria-label="Next">&rarr;</button>
+              </div>
+              <p class="cs-hint">Drag, swipe, or use the arrows.</p>
+            </section><section class="csec s2">
+              <div class="cs-head"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-strip" data-strip>
+                <div class="cs-track"><div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-1.jpg" alt="Window Suite"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-3.jpg" alt="Studio Render"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-5.jpg" alt="Lobby"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-6.jpg" alt="Entry"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"></div></div></div>
+                <button class="cs-arw prev" aria-label="Previous">&larr;</button>
+                <button class="cs-arw next" aria-label="Next">&rarr;</button>
+              </div>
+            </section><section class="csec s3">
+              <div class="cs-head"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-fade" data-fade>
+                <div class="cs-fstack"><div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Render"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Entry"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"></div></div>
+                <div class="cs-ctr"><span class="cur">01</span> / <span class="tot">08</span></div>
+                <button class="cs-arw prev" aria-label="Previous">&larr;</button>
+                <button class="cs-arw next" aria-label="Next">&rarr;</button>
+              </div>
+            </section><section class="csec s4">
+              <div class="cs-head"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-strip" data-strip>
+                <div class="cs-track"><div class="cs-card"><img src="assets/opt/suite-1.jpg" alt="Window Suite"><p class="cs-cardcap">Window Suite</p></div>
+<div class="cs-card"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"><p class="cs-cardcap">Suite with Chair</p></div>
+<div class="cs-card"><img src="assets/opt/suite-3.jpg" alt="Studio Render"><p class="cs-cardcap">Studio Render</p></div>
+<div class="cs-card"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"><p class="cs-cardcap">Studio Render II</p></div>
+<div class="cs-card"><img src="assets/opt/suite-5.jpg" alt="Lobby"><p class="cs-cardcap">Lobby</p></div>
+<div class="cs-card"><img src="assets/opt/suite-6.jpg" alt="Entry"><p class="cs-cardcap">Entry</p></div>
+<div class="cs-card"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"><p class="cs-cardcap">Premium Suite</p></div>
+<div class="cs-card"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"><p class="cs-cardcap">Premium Suite, Large Window</p></div></div>
+                <button class="cs-arw prev" aria-label="Previous">&larr;</button>
+                <button class="cs-arw next" aria-label="Next">&rarr;</button>
+              </div>
+              <div class="cs-dots" data-dots></div>
+            </section><section class="csec s5">
+              <div class="cs-head cs-head-dark"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-fade" data-fade>
+                <div class="cs-fstack"><div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite"><span class="cs-tag">Window Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"><span class="cs-tag">Suite with Chair</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Render"><span class="cs-tag">Studio Render</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"><span class="cs-tag">Studio Render II</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby"><span class="cs-tag">Lobby</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Entry"><span class="cs-tag">Entry</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"><span class="cs-tag">Premium Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"><span class="cs-tag">Premium Suite, Large Window</span></div></div>
+                <button class="cs-arw prev" aria-label="Previous">&larr;</button>
+                <button class="cs-arw next" aria-label="Next">&rarr;</button>
+              </div>
+            </section><section class="csec s6">
+              <div class="cs-head"><p class="cs-eye">Now Open &middot; Limited Suites Remaining</p><h2 class="cs-h">Take a look inside the suites.</h2></div>
+              <div class="cs-thumbgal" data-thumbs>
+                <div class="cs-fstack"><div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Chair"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Render"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Render II"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Entry"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window"></div></div>
+                <div class="cs-thumbs"><button class="cs-thumb on" data-i="0"><img src="assets/opt/suite-1.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="1"><img src="assets/opt/suite-2.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="2"><img src="assets/opt/suite-3.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="3"><img src="assets/opt/suite-4.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="4"><img src="assets/opt/suite-5.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="5"><img src="assets/opt/suite-6.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="6"><img src="assets/opt/suite-7.jpg" alt=""></button>
+<button class="cs-thumb on" data-i="7"><img src="assets/opt/suite-8.jpg" alt=""></button></div>
+              </div>
+            </section>
+<script>
+(function(){
+  document.querySelectorAll("[data-strip]").forEach(function(strip){
+    var track=strip.querySelector(".cs-track");
+    var step=function(){var s=track.querySelector(".cs-slide");return s?s.getBoundingClientRect().width+17:300;};
+    strip.querySelector(".next").addEventListener("click",function(){track.scrollBy({left:step(),behavior:"smooth"});});
+    strip.querySelector(".prev").addEventListener("click",function(){track.scrollBy({left:-step(),behavior:"smooth"});});
+  });
+  document.querySelectorAll("[data-fade]").forEach(function(f){
+    var slides=f.querySelectorAll(".cs-fslide");
+    var i=0;
+    var show=function(n){i=(n+slides.length)%slides.length;slides.forEach(function(s,k){s.classList.toggle("on",k===i);});};
+    f.querySelector(".next").addEventListener("click",function(){show(i+1);});
+    f.querySelector(".prev").addEventListener("click",function(){show(i-1);});
+  });
+  var gal=document.querySelector("[data-thumbs]");
+  if(gal){
+    var slides=gal.querySelectorAll(".cs-fslide");
+    var th=gal.querySelectorAll(".cs-thumb");
+    th.forEach(function(t){t.addEventListener("click",function(){
+      var n=parseInt(t.dataset.i,10);
+      slides.forEach(function(s,k){s.classList.toggle("on",k===n);});
+      th.forEach(function(x,k){x.classList.toggle("on",k===n);});
+    });});
+  }
+  var dotsWrap=document.querySelector("[data-dots]");
+  if(dotsWrap){
+    var strip=dotsWrap.parentElement.querySelector("[data-strip]")||document.querySelector(".s4 [data-strip]");
+    var track=strip.querySelector(".cs-track");
+    var n=track.querySelectorAll(".cs-slide").length;
+    for(var k=0;k<n;k++){var b=document.createElement("button");b.dataset.i=k;if(k===0)b.classList.add("on");dotsWrap.appendChild(b);
+      b.addEventListener("click",function(ev){var idx=parseInt(ev.target.dataset.i,10);track.scrollTo({left:idx*track.querySelector(".cs-slide").getBoundingClientRect().width,behavior:"smooth"});});}
+    track.addEventListener("scroll",function(){clearTimeout(track._t);track._t=setTimeout(function(){
+      var idx=Math.round(track.scrollLeft/track.querySelector(".cs-slide").getBoundingClientRect().width);
+      dotsWrap.querySelectorAll("button").forEach(function(bt,j){bt.classList.toggle("on",j===idx);});
+    },120);});
+  }
+})();
+</script>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p>Six carousel treatments for the &ldquo;Now Open &mdash; Limited Suites Remaining&rdquo; section,
+        all running the real suite photos from her current carousel. <b>01</b> and <b>04</b> are
+        swipe-first strips (native mobile swiping). <b>02</b> and <b>05</b> sit on the navy ground.
+        <b>03</b> is the classic one-at-a-time fade with a counter. <b>06</b> adds a thumbnail rail.</p>
+      <p style="margin-top:.9rem">Every option is fully interactive on this page &mdash; click around.</p>
+    </div>
+    <div>
+      <h3>Divi compatibility</h3>
+      <ul>
+        <li>Each option ships as <b>one copy-paste block for a Divi Code module</b> &mdash; CSS + markup + a few lines of vanilla JS, no external libraries, no iframes</li>
+        <li>Scroll-snap options (01, 02, 04) even work with <b>zero JavaScript</b> on mobile &mdash; native swipe</li>
+        <li>Replaces the current third-party carousel on the live A Look Inside page</li>
+        <li>Photos are the real suite shots from her media library &mdash; swap for Revive shoot photos at launch</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
