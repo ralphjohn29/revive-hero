@@ -65,6 +65,20 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .ph-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.8rem,3.6cqi,2.6rem);line-height:1.2;margin:0 0 .9rem}
 .ph-intro{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;margin:0;max-width:42rem}
 .ph-after{height:110px;background:#FAF7F2}
+
+/* burger + slide-in menu (mobile mocks) */
+.rnav-burger{display:none;width:42px;height:40px;background:none;border:0;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.rnav-burger span{display:block;width:22px;height:2px;background:#DB9446}
+.rnav-menu{position:fixed;inset:0;background:#121E3F;z-index:9999;transform:translateX(100%);transition:transform .38s cubic-bezier(.22,.61,.36,1),visibility 0s linear .38s;display:flex;flex-direction:column;padding:3.4rem 1.6rem;visibility:hidden}
+.rnav-menu.open{transform:none;visibility:visible;transition:transform .38s cubic-bezier(.22,.61,.36,1),visibility 0s}
+.rnav-menu .mlink{color:#FAF7F2;text-decoration:none;font-size:1.15rem;letter-spacing:.16em;text-transform:uppercase;padding:1rem 0;border-bottom:1px solid rgba(219,148,70,.3)}
+.rnav-menu .mx{position:absolute;top:1.2rem;right:1.2rem;width:46px;height:46px;border-radius:50%;border:1px solid #DB9446;background:none;color:#DB9446;font-size:1.5rem;cursor:pointer}
+.rnav-menu .mbook{margin-top:1.8rem;background:#DB9446;color:#121E3F;text-align:center;text-decoration:none;font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;padding:1rem;border-radius:2px}
+.rnav-menu .mcall{margin-top:1rem;color:#DB9446;text-align:center;text-decoration:none;font-size:.9rem;letter-spacing:.12em}
+@container (max-width:620px){
+  .rnav-links,.rnav-phone,.rnav-btn{display:none!important}
+  .rnav-burger{display:inline-flex!important}
+}
 .phafter-light{background:#fff}
 
 /* 01 storefront + navy dim, centered */
@@ -157,6 +171,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph1"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -177,6 +192,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph1"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -210,6 +226,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph2"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -230,6 +247,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph2"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -263,6 +281,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph3"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -283,6 +302,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph3"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -316,6 +336,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph4"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -336,6 +357,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph4"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
@@ -369,6 +391,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph5"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -389,6 +412,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph5"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -422,6 +446,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph6"><div class="ph-txt"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div><div class="ph-photo"><img src="assets/opt/exp-hair.jpg" alt="Stylist working in a Revive suite"></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -442,6 +467,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
+            <button class="rnav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
           </nav><header class="ph ph6"><div class="ph-txt"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div><div class="ph-photo"><img src="assets/opt/exp-hair.jpg" alt="Stylist working in a Revive suite"></div></header><div class="ph-after"></div>
           </div>
         </div>
@@ -471,5 +497,29 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   </footer>
 
 </div>
+
+<script>
+(function(){
+  function ensure(){
+    var m=document.getElementById("rvnmenu");
+    if(m) return m;
+    m=document.createElement("div");
+    m.id="rvnmenu";m.className="rnav-menu";
+    m.innerHTML='<button class="mx" aria-label="Close menu">&times;</button>'+
+      '<a class="mlink" href="#">How to Join</a><a class="mlink" href="#">A Look Inside</a>'+
+      '<a class="mlink" href="#">Directory</a><a class="mlink" href="#">Contact</a>'+
+      '<a class="mbook" href="#">Book a Tour</a><a class="mcall" href="tel:+1919346607">or call (919) 346-6607</a>';
+    document.body.appendChild(m);
+    return m;
+  }
+  function openMenu(){var m=ensure();m.classList.add("open");document.documentElement.style.overflow="hidden";}
+  function closeMenu(){var m=document.getElementById("rvnmenu");if(m&&m.classList.contains("open")){m.classList.remove("open");document.documentElement.style.overflow="";}}
+  document.addEventListener("click",function(e){
+    if(e.target.closest(".rnav-burger")){openMenu();return;}
+    if(e.target.closest(".rnav-menu .mx")||(e.target.closest(".rnav-menu")&&e.target.closest("a"))){closeMenu();return;}
+  });
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeMenu();}});
+})();
+</script>
 </body>
 </html>
