@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; Benefits section (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden;container-type:inline-size}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden;container-type:inline-size}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+
+/* ===== the benefits section ===== */
+.bsec{font-family:'Josefin Sans',sans-serif;padding:3.2rem 1.6rem 3.4rem;background:#FAF7F2;color:#1C1B1A;container-type:inline-size}
+.bhead{text-align:center;max-width:44rem;margin:0 auto 2.6rem}
+.beye{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin:0 0 1rem}
+.bh2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:#121E3F;margin:0}
+.bgrid{display:grid;gap:2.2rem 2.6rem}
+.bit h3,.bcard h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:1.25rem;color:#121E3F;margin:0 0 .6rem}
+.bit p,.bcard p{font-family:'EB Garamond',Georgia,serif;font-size:1.02rem;line-height:1.7;color:rgba(72,81,107,.9)}
+
+/* 01 ledger (prod refined) */
+.b1 .bgrid{grid-template-columns:1fr 1fr;max-width:52rem;margin:0 auto}
+.b1 .bit{border-bottom:1px solid rgba(219,148,70,.45);padding-bottom:1.6rem;text-align:left}
+.b1 .bit h3{color:#121E3F}
+
+/* 02 gold checklist */
+.b2 .bgrid{grid-template-columns:repeat(2,1fr);max-width:56rem;margin:0 auto}
+.b2 .bit{position:relative;padding-left:2.2rem;text-align:left}
+.b2 .bcheck{position:absolute;left:0;top:.15rem;width:26px;height:26px;border-radius:50%;background:#DB9446;color:#121E3F;display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+
+/* 03 navy grid */
+.b3{background:#121E3F}
+.b3 .beye{color:#DB9446}
+.b3 .bh2{color:#FAF7F2}
+.b3 .bgrid{grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.b3 .bcard{background:rgba(255,255,255,.05);border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:1.5rem 1.2rem}
+.b3 .bcard h3{color:#FAF7F2;font-size:1.1rem}
+.b3 .bcard p{color:rgba(178,181,192,.95);font-size:.95rem}
+
+/* 04 gold-top cards */
+.b4{background:#fff}
+.b4 .beye{color:#48516B}
+.b4 .bgrid{grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.b4 .bcard{background:#FAF7F2;border:1px solid #E7DFD3;border-top:3px solid #DB9446;border-radius:0 0 4px 4px;padding:1.5rem 1.2rem;text-align:left}
+.b4 .bcard h3{font-size:1.1rem}
+.b4 .bcard p{font-size:.95rem}
+
+/* 05 mirage */
+.b5{background:#48516B}
+.b5 .beye{color:#B2B5C0}
+.b5 .bh2{color:#fff}
+.b5 .bgrid{grid-template-columns:repeat(2,1fr);max-width:52rem;margin:0 auto}
+.b5 .bit{border-bottom:1px solid rgba(178,181,192,.4);padding-bottom:1.6rem;text-align:left}
+.b5 .bit h3{color:#fff}
+.b5 .bit p{color:rgba(255,255,255,.85)}
+
+/* 06 split frame */
+.b6{background:#FAF7F2}
+.b6 .bsplit{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;max-width:62rem;margin:0 auto;align-items:start}
+.b6 .bleft{border:1px solid #DB9446;padding:2.6rem 2rem;text-align:center}
+.b6 .bleft .beye{margin-bottom:.9rem}
+.b6 .bleft h2{font-size:clamp(1.5rem,3cqi,2.1rem)}
+.b6 .bleft p{font-family:'EB Garamond',Georgia,serif;font-size:1.02rem;line-height:1.75;color:rgba(72,81,107,.9);margin:0}
+.b6 .bgrid{grid-template-columns:1fr 1fr;gap:1.8rem 2rem;text-align:left}
+
+@container (max-width:620px){
+  .bsec{padding:2.5rem 1.3rem 2.7rem}
+  .b1 .bgrid,.b2 .bgrid,.b5 .bgrid{grid-template-columns:1fr}
+  .b3 .bgrid,.b4 .bgrid{grid-template-columns:1fr}
+  .b6 .bsplit{grid-template-columns:1fr;gap:2rem}
+}
+
+  <!-- ==================== BENEFITS OPTION 01 ==================== -->
+  <section class="variant" id="bf1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>Benefits — The Ledger (Prod Refined)</h2>
+    </div>
+    <p class="v-desc"><b>Her current Benefits layout, refined.</b> Same two-column ledger with hairlines under each benefit, rebuilt in the official kit: gold hairlines, navy serif headings, EB Garamond body. Copy corrected (110&ndash;180, Wi-Fi) but otherwise hers, verbatim.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b1">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b1">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS OPTION 02 ==================== -->
+  <section class="variant" id="bf2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>Benefits — The Gold Checklist</h2>
+    </div>
+    <p class="v-desc"><b>The gold checklist.</b> Each benefit gets an official-gold check mark, bold serif titles, no boxes. The cleanest scan of the eight.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b2">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><span class="bcheck">&#10003;</span><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b2">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><span class="bcheck">&#10003;</span><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><span class="bcheck">&#10003;</span><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS OPTION 03 ==================== -->
+  <section class="variant" id="bf3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>Benefits — The Navy Grid</h2>
+    </div>
+    <p class="v-desc"><b>Navy grid.</b> The eight benefits as cool white-bordered cards on her official navy &mdash; the Navy Stage treatment for this section.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b3">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bcard"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bcard"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bcard"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bcard"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bcard"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bcard"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bcard"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bcard"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              cards stack single column
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b3">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bcard"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bcard"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bcard"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bcard"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bcard"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bcard"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bcard"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bcard"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              cards stack single column
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS OPTION 04 ==================== -->
+  <section class="variant" id="bf4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>Benefits — The Gold-Top Cards</h2>
+    </div>
+    <p class="v-desc"><b>Gold-top cards.</b> Warm white cards each wearing a 3px official-gold top bar on the white ground. Structured and tidy &mdash; the middle path between 01 and 03.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b4">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bcard btop"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bcard btop"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bcard btop"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bcard btop"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bcard btop"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bcard btop"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bcard btop"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bcard btop"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              cards stack single column
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b4">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bcard btop"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bcard btop"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bcard btop"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bcard btop"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bcard btop"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bcard btop"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bcard btop"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bcard btop"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              cards stack single column
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS OPTION 05 ==================== -->
+  <section class="variant" id="bf5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>Benefits — The Mirage Ledger</h2>
+    </div>
+    <p class="v-desc"><b>Blue Mirage ledger.</b> The ledger structure on her third palette color #48516B &mdash; white serif titles, soft white body, gray-blue hairlines.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b5">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b5">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              stacks single column
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS OPTION 06 ==================== -->
+  <section class="variant" id="bf6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>Benefits — The Split Frame</h2>
+    </div>
+    <p class="v-desc"><b>The split frame.</b> The Benefits title and intro live in a thin gold frame on the left; the eight benefits run as a two-column checklist on the right. Asymmetric and editorial.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <section class="bsec b6">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><span class="bdot"></span><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><span class="bdot"></span><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              frame above, checklist below
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <section class="bsec b6">
+              <div class="bhead"><h2 class="bh2">Benefits</h2></div>
+              <div class="bgrid">
+<div class="bit"><span class="bdot"></span><h3>110&ndash;180 Sq. Ft. Private Studio</h3><p>Enjoy your own fully dedicated space sized for comfort, creativity, and success.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Wi-Fi Equipped</h3><p>Stay connected and run your business seamlessly with fast, reliable Wi-Fi in every suite.</p></div>
+<div class="bit"><span class="bdot"></span><h3>All Utilities</h3><p>Focus on your clients, not extra bills. Electricity, water, and climate control are all included.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Studio Key Door Lock</h3><p>Keep your space secure and private with individual locking doors for peace of mind and professional control.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Move-In Ready</h3><p>Get started fast&mdash;each suite comes prepped and ready so you can begin servicing clients right away.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Complimentary Washer &amp; Dryer</h3><p>On-site washers and dryers are available for use at no extra cost.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Customizable Suites</h3><p>Make it yours. Personalize your space to match your brand, style, and client experience.</p></div>
+<div class="bit"><span class="bdot"></span><h3>Exclusive Directory Placement</h3><p>Be featured in our directory, allowing clients to access your profile and book appointments directly.</p></div>
+              </div>
+              frame above, checklist below
+            </section>
+          </div>
+        </div>
+        <p class="phone-cap">2 &times; 2 + 1, then 4-across</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p>The eight benefits from her live How to Join page, copy kept verbatim with two corrections
+        (110&ndash;180, Wi-Fi). <b>01 The Ledger</b> is the direct upgrade of her current layout.
+        <b>02</b>&ndash;<b>05</b> explore checklist, navy, gold-top, and Mirage treatments.
+        <b>06 The Split Frame</b> turns the section title into its own framed panel.</p>
+      <p style="margin-top:.9rem">Slots into the How to Join v2 page right after the steps section.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>Copy is her live page verbatim except the two corrections: &ldquo;110&ndash;180 Sq. Ft.&rdquo; and &ldquo;Wi-Fi&rdquo; (live page reads &ldquo;110 180&rdquo; and &ldquo;Wi Fi&rdquo;)</li>
+        <li>All six use the official brand kit: gold #DB9446 (Pantone 722C), navy #121E3F, Blue Mirage #48516B, EB Garamond (Arno Pro stand-in)</li>
+        <li>Pairing: 01 pairs with the Gold Ledger steps (04 on joining-steps), 03 pairs with the Navy options</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
