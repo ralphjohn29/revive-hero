@@ -13,7 +13,7 @@
 body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
 .deck{max-width:1460px;margin:0 auto}
 .deck-head{text-align:center;margin-bottom:1rem}
-.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
 .deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
 .deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7;max-width:56rem;margin-left:auto;margin-right:auto}
 .deck-note a{color:#DB9446;text-decoration:none}
@@ -122,6 +122,14 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .cs-thumb:hover{opacity:1}
 .cs-thumb.on{border-color:#DB9446;opacity:1}
 
+/* 07 dark fade + counter */
+.s7{background:#121E3F;color:#FAF7F2}
+.s7 .cs-h{color:#FAF7F2}
+.s7 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
+.s7 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);z-index:3;background:#121E3F;color:#DB9446}
+.s7 .cs-arw:hover{background:#DB9446;color:#121E3F}
+.s7 .prev{left:1rem}.s7 .next{right:1rem}
+
 @container (max-width:620px){
   .csec{padding:2.5rem 1.3rem 2.7rem}
   .m1 .cs-slide,.m2 .cs-slide,.m4 .cs-slide{flex-basis:78%}
@@ -153,6 +161,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
     <a href="#x4"><span class="n">04</span><span class="t">The Photo Cards</span><span class="p">White cards + dot pager</span></a>
     <a href="#x5"><span class="n">05</span><span class="t">The Overlay Nine</span><span class="p">Navy ground, label tags</span></a>
     <a href="#x6"><span class="n">06</span><span class="t">The Thumb Gallery</span><span class="p">Main photo + thumbnail rail</span></a>
+    <a href="#x7"><span class="n">07</span><span class="t">The Dark Fade</span><span class="p">Fade + counter on navy</span></a>
   </nav>
 
   <section class="variant" id="x1">
@@ -559,13 +568,73 @@ if(dotsWrap){
   },120);});
 }
 </script>
+  <section class="variant" id="x7">
+    <div class="v-head"><span class="num">07</span><h2>The Dark Fade + Counter</h2></div>
+    <p class="v-desc"><b>The Fade + Counter on the navy ground.</b> Same one-at-a-time fade and 01 / 08 counter, but on her brand navy with the serif headline in off-white. Matches the Navy Stage hero and the current dark homepage v2 section.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
+          <div class="frame">
+<div class="csec s7 m7">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Suite photo 1" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite photo 2" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Suite photo 3" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Suite photo 4" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Suite photo 5" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite photo 6" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Suite photo 7" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Suite photo 8" loading="lazy"></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+    <p class="cs-ctr"><span class="cur">01</span> / 08</p>
+  </div>
+</div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows. Divi-compatible: one Code-module block, zero external libraries.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+<div class="csec s7 m7">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Suite photo 1" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite photo 2" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Suite photo 3" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Suite photo 4" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Suite photo 5" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite photo 6" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Suite photo 7" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Suite photo 8" loading="lazy"></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+    <p class="cs-ctr"><span class="cur">01</span> / 08</p>
+  </div>
+</div>
+          </div>
+        </div>
+        <p class="phone-cap">full-bleed slide on navy</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer-block">
     <div>
       <h3>Summary</h3>
       <p>Six carousel treatments for the &ldquo;Now Open &mdash; Limited Suites Remaining&rdquo; section,
         all running the real suite photos from her current carousel. <b>01</b> and <b>04</b> are
         swipe-first strips (native mobile swiping). <b>02</b> and <b>05</b> sit on the navy ground.
-        <b>03</b> is the classic one-at-a-time fade with a counter. <b>06</b> adds a thumbnail rail.</p>
+        <b>03</b> is the classic one-at-a-time fade with a counter. <b>06</b> adds a thumbnail rail. <b>07</b> is that same fade + counter on the navy ground (the dark version now on the homepage draft).</p>
       <p style="margin-top:.9rem">Every option is fully interactive on this page &mdash; click around.</p>
     </div>
     <div>
