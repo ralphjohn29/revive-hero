@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; Slim Page Header Band (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden;container-type:inline-size}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden;container-type:inline-size}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+
+/* ===== slim page header band ===== */
+.ph{font-family:'Josefin Sans',sans-serif;padding:3.2rem 1.6rem 3rem;background:#FAF7F2;container-type:inline-size}
+.ph-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin:0 0 1rem}
+.ph-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.9rem,3.8cqi,2.8rem);line-height:1.2;color:#121E3F;margin:0 0 .9rem}
+.ph-intro{font-family:'EB Garamond',Georgia,serif;font-size:1.08rem;line-height:1.8;color:rgba(72,81,107,.9);margin:0;max-width:44rem}
+.ph1{text-align:center}
+.ph1 .ph-intro{margin:0 auto}
+.ph2{background:#121E3F;text-align:center;padding:3rem 1.6rem 2.9rem;border-bottom:1px solid rgba(219,148,70,.4)}
+.ph2 .ph-eyebrow{color:#DB9446}
+.ph2 .ph-h1{color:#FAF7F2}
+.ph2 .ph-intro{color:rgba(178,181,192,.95);margin:0 auto}
+.ph3{text-align:left;max-width:56rem;margin:0 auto}
+.ph3 .ph-rule{width:64px;height:2px;background:#DB9446;margin:0 0 1.1rem}
+.ph4{background:#48516B;text-align:center}
+.ph4 .ph-eyebrow{color:#B2B5C0}
+.ph4 .ph-h1{color:#fff}
+.ph4 .ph-intro{color:rgba(255,255,255,.85);margin:0 auto}
+.ph5{background:#121E3F}
+.ph5cols{display:grid;grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:end;max-width:62rem;margin:0 auto;text-align:left}
+.ph5 .ph-eyebrow{color:#DB9446}
+.ph5 .ph-h1{color:#FAF7F2;margin-bottom:0}
+.ph5 .ph-intro{color:rgba(178,181,192,.95);text-align:left;margin:0}
+.ph6{background:#FAF7F2;border-bottom:1px solid #E7DFD3}
+.ph-crest{height:64px;width:auto;margin:0 auto 1rem;display:block}
+.ph-after{height:90px;background:#fff}
+@container (max-width:620px){
+  .ph{padding:2.4rem 1.3rem 2.3rem}
+  .ph5cols{grid-template-columns:1fr;gap:1.1rem;text-align:left}
+  .ph-crest{height:52px}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Page Draft &middot; For Review</p>
+    <h1>Slim Page Header Band &mdash; For All Inner Pages</h1>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="four-pillars.html">pillar section options</a> &middot;
+      <a href="professionals.html">professionals section options</a> &middot;
+      <a href="vision-mission.html">vision &amp; mission options</a> &middot;
+      <a href="revive-experience.html">Revive Experience options</a> &middot;
+      <a href="footer-options.html">footer design options</a>.
+      One slim header band reused on every inner page (How to Join, A Look Inside, Contact, FAQ): it carries the page H1 and sits directly under the global nav. Sample copy shown is the How to Join page.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a header band option">
+    <a href="#ph1"><span class="n">01</span><span class="t">The Centered Canvas</span><span class="p">Quiet default, matches build</span></a>
+    <a href="#ph2"><span class="n">02</span><span class="t">The Navy Band</span><span class="p">Dark break at top</span></a>
+    <a href="#ph3"><span class="n">03</span><span class="t">The Gold Rule</span><span class="p">Left-aligned editorial</span></a>
+    <a href="#ph4"><span class="n">04</span><span class="t">The Mirage Band</span><span class="p">Blue Mirage ground</span></a>
+    <a href="#ph5"><span class="n">05</span><span class="t">The Split Columns</span><span class="p">Title left, intro right</span></a>
+    <a href="#ph6"><span class="n">06</span><span class="t">The Crest Mark</span><span class="p">Gold crest above title</span></a>
+  </nav>
+
+  <!-- ==================== PAGE HEADER OPTION 01 ==================== -->
+  <section class="variant" id="ph1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>Slim Header — The Centered Canvas</h2>
+    </div>
+    <p class="v-desc"><b>The quiet default.</b> Centered on the warm canvas: gold eyebrow, navy serif H1, EB Garamond intro. This is the pattern already used in the How to Join v2 draft &mdash; picking it keeps that page as-is and extends it to every inner page.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph1"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph1"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">title scales down, padding tightens</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE HEADER OPTION 02 ==================== -->
+  <section class="variant" id="ph2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>Slim Header — The Navy Band</h2>
+    </div>
+    <p class="v-desc"><b>A dark break at the top.</b> Slim navy band, white H1, gold eyebrow, light intro, gold hairline closing the band. Gives inner pages the Navy Stage feel without a full hero.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph2"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph2"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">centered, band tightens</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE HEADER OPTION 03 ==================== -->
+  <section class="variant" id="ph3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>Slim Header — The Gold Rule</h2>
+    </div>
+    <p class="v-desc"><b>Left-aligned, editorial.</b> Eyebrow, H1, a short official-gold rule, then the intro &mdash; left-aligned on the canvas. The most print-like.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph3"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><div class="ph-rule"></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph3"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><div class="ph-rule"></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">left-aligned, rule scales</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE HEADER OPTION 04 ==================== -->
+  <section class="variant" id="ph4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>Slim Header — The Mirage Band</h2>
+    </div>
+    <p class="v-desc"><b>Blue Mirage band.</b> Her third palette color #48516B as the header ground, white H1, gray-gold eyebrow. For pages that need to feel distinct from the homepage flow.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph4"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph4"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">centered, band tightens</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE HEADER OPTION 05 ==================== -->
+  <section class="variant" id="ph5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>Slim Header — The Split Columns</h2>
+    </div>
+    <p class="v-desc"><b>Two-column header.</b> Eyebrow and H1 left, intro right, on navy. Dense and modern &mdash; keeps tall pages compact.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph5"><div class="ph5cols"><div class="ph5l"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph5"><div class="ph5cols"><div class="ph5l"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">columns stack left-aligned</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE HEADER OPTION 06 ==================== -->
+  <section class="variant" id="ph6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>Slim Header — The Crest Mark</h2>
+    </div>
+    <p class="v-desc"><b>Brand-first.</b> Small gold crest centered above the eyebrow on the canvas. For top-level pages where the brand moment matters more than density.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/how-to-join</span></div>
+          <div class="frame">
+            <header class="ph ph6"><img class="ph-crest" src="assets/opt/gold_icon_logo_large.png" alt="Revive Salon Collective"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <header class="ph ph6"><img class="ph-crest" src="assets/opt/gold_icon_logo_large.png" alt="Revive Salon Collective"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header>
+            <div class="ph-after"></div>
+          </div>
+        </div>
+        <p class="phone-cap">crest shrinks, copy centers</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p>One slim header band, reused on every inner page &mdash; only the eyebrow, H1, and intro change.
+        It carries the page H1 (each page needs exactly one) and sits directly under the global nav.
+        No hero imagery, no tall band &mdash; content starts immediately after.</p>
+      <p style="margin-top:.9rem">Ready-made H1s for the first three pages: <b>How to Join</b> &rarr;
+        &ldquo;How to Join a Salon Suite in Raleigh, NC&rdquo; &middot; <b>A Look Inside</b> &rarr;
+        &ldquo;Explore Our Luxury Salon Suites in Raleigh, NC&rdquo; &middot; <b>Contact</b> &rarr;
+        &ldquo;Contact Revive Salon Collective&rdquo;.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>Exactly one H1 per page, inside the band &mdash; fixes the current pages that are missing H1s or doubling them</li>
+        <li>Eyebrow, H1, and intro swap per page; the band itself is identical site-wide</li>
+        <li>All six use the official brand kit: gold #DB9446 (Pantone 722C), navy #121E3F, Blue Mirage #48516B, EB Garamond (Arno Pro stand-in)</li>
+        <li>Option 01 is the pattern already used in the How to Join v2 draft &mdash; picking another option restyles all inner-page headers in one pass</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
