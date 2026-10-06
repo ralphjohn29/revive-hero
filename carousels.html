@@ -15,7 +15,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .deck-head{text-align:center;margin-bottom:1rem}
 .eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
 .deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
-.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7;max-width:56rem;margin-left:auto;margin-right:auto}
 .deck-note a{color:#DB9446;text-decoration:none}
 .pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
 .pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
@@ -38,7 +38,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
 .chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
 .frame{overflow:hidden}
-.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px;flex-shrink:0}
 .screen{background:#fff;border-radius:16px;overflow:hidden}
 .phone-cap{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
 .stage-note{font-size:.72rem;color:#DB9446;margin-top:.8rem;text-align:center}
@@ -46,14 +46,14 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
 .footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
 .footer-block ul{padding-left:1.1rem}
-.footer-block code{color:#DB9446}
 
 /* ===== carousel section base ===== */
 .csec{font-family:'Josefin Sans',sans-serif;padding:3.2rem 1.6rem 3.4rem;background:#FAF7F2;color:#1C1B1A}
 .cs-head{text-align:center;max-width:44rem;margin:0 auto 2.4rem}
 .cs-eye{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin:0 0 1rem}
 .cs-h{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4cqi,2.5rem);line-height:1.2;color:#121E3F;margin:0}
-.cs-arw{width:46px;height:46px;border-radius:50%;border:1px solid #DB9446;background:#FAF7F2;color:#121E3F;font-size:1.1rem;cursor:pointer;transition:all .2s}
+.cs-hint{font-family:'EB Garamond',Georgia,serif;font-size:.9rem;color:rgba(72,81,107,.7);margin:.9rem 0 0;text-align:center}
+.cs-arw{width:46px;height:46px;border-radius:50%;border:1px solid #DB9446;background:#FAF7F2;color:#121E3F;font-size:1.1rem;cursor:pointer;transition:all .2s;z-index:3}
 .cs-arw:hover{background:#DB9446}
 
 /* 01 scroll-snap strip */
@@ -63,7 +63,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .s1 .cs-slide{flex:0 0 32%;scroll-snap-align:start}
 .s1 .cs-slide img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:4px}
 .s1 .cs-cap{font-family:'EB Garamond',Georgia,serif;font-size:.95rem;color:rgba(72,81,107,.85);margin:.6rem 0 0}
-.s1 .cs-arw{position:absolute;top:38%;transform:translateY(-50%)}
+.s1 .cs-arw{position:absolute;top:36%;transform:translateY(-50%)}
 .s1 .prev{left:-8px}.s1 .next{right:-8px}
 
 /* 02 navy framed strip */
@@ -75,19 +75,20 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .s2 .cs-slide{flex:0 0 42%;scroll-snap-align:center}
 .s2 .cs-frame{border:1px solid rgba(219,148,70,.5);padding:6px;background:rgba(255,255,255,.03)}
 .s2 .cs-frame img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.s2 .cs-arw{position:absolute;top:45%;transform:translateY(-50%)}
-.s2 .prev{left:-6px}.s2 .next{right:-6px}
-.s2 .cs-arw{background:#121E3F;color:#DB9446}
+.s2 .cs-arw{position:absolute;top:45%;transform:translateY(-50%);background:#121E3F;color:#DB9446}
 .s2 .cs-arw:hover{background:#DB9446;color:#121E3F}
+.s2 .prev{left:-6px}.s2 .next{right:-6px}
 
-/* 03 fade + counter */
-.s3 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
+/* fade engine (03 05 06) */
 .cs-fstack{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px}
 .cs-fslide{position:absolute;inset:0;opacity:0;transition:opacity .5s}
 .cs-fslide.on{opacity:1}
 .cs-fslide img{width:100%;height:100%;object-fit:cover;display:block}
-.s3 .cs-ctr{position:absolute;right:1rem;bottom:.9rem;z-index:3;font-family:'DM Serif Display',serif;color:#FAF7F2;font-size:1rem;letter-spacing:.1em;text-shadow:0 1px 6px rgba(13,23,48,.6)}
-.s3 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);z-index:3}
+
+/* 03 fade + counter */
+.s3 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
+.s3 .cs-ctr{position:absolute;right:1rem;bottom:.9rem;z-index:3;font-family:'DM Serif Display',serif;color:#FAF7F2;font-size:1rem;letter-spacing:.1em;text-shadow:0 1px 6px rgba(13,23,48,.6);margin:0}
+.s3 .cs-arw{position:absolute;top:50%;transform:translateY(-50%)}
 .s3 .prev{left:1rem}.s3 .next{right:1rem}
 
 /* 04 cards + dots */
@@ -109,7 +110,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .s5 .cs-h{color:#FAF7F2}
 .s5 .cs-fade{position:relative;max-width:44rem;margin:0 auto}
 .s5 .cs-tag{position:absolute;left:1.2rem;bottom:1rem;z-index:3;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:#FAF7F2;background:rgba(219,148,70,.85);padding:.4rem .8rem;border-radius:2px}
-.s5 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);z-index:3;background:#121E3F;color:#DB9446;border-color:#DB9446}
+.s5 .cs-arw{position:absolute;top:50%;transform:translateY(-50%);background:#121E3F;color:#DB9446}
 .s5 .cs-arw:hover{background:#DB9446;color:#121E3F}
 .s5 .prev{left:1rem}.s5 .next{right:1rem}
 
@@ -138,12 +139,11 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
     <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
       <a href="four-pillars.html">pillar section options</a> &middot;
       <a href="professionals.html">professionals section options</a> &middot;
-      <a href="vision-mission.html">vision &amp; mission options</a> &middot;
       <a href="revive-experience.html">Revive Experience options</a> &middot;
+      <a href="signature-space.html">Signature Space options</a> &middot;
       <a href="footer-options.html">footer design options</a>.
       Six carousel treatments for the &ldquo;Now Open &mdash; Limited Suites Remaining&rdquo; section,
-      running the real suite photos from her current carousel. Fully interactive &mdash; click around.
-      Divi-compatible: each option ships as one Code-module block, no external libraries.</p>
+      running the real suite photos from her current carousel. Fully interactive &mdash; click around.</p>
   </header>
 
   <nav class="pickbar" aria-label="Jump to a carousel option">
@@ -155,190 +155,372 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
     <a href="#x6"><span class="n">06</span><span class="t">The Thumb Gallery</span><span class="p">Main photo + thumbnail rail</span></a>
   </nav>
 
-  <!-- ==================== CAROUSEL OPTION 01 ==================== -->
   <section class="variant" id="x1">
-    <div class="v-head">
-      <span class="num">01</span>
-      <h2>The Suite Carousel — The Snap Strip</h2>
-    </div>
-    <p class="v-desc"><b>Swipe-first.</b> Horizontal scroll-snap strip: three photos visible, partial peek of the next, gold arrows, captions in EB Garamond. On mobile it swipes natively &mdash; no JS needed for touch.</p>
+    <div class="v-head"><span class="num">01</span><h2>The Snap Strip</h2></div>
+    <p class="v-desc"><b>Swipe-first.</b> Horizontal scroll-snap strip: three photos visible with a partial peek of the next, gold arrows, EB Garamond captions. On mobile it swipes natively &mdash; touch works with zero JavaScript.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s1
+<div class="csec s1 m1">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><p class="cs-cap">Window Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><p class="cs-cap">Suite with Styling Chair</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><p class="cs-cap">Studio Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><p class="cs-cap">Studio Suite, Rear Window</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><p class="cs-cap">Lobby View</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><p class="cs-cap">Suite Entry</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><p class="cs-cap">Premium Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><p class="cs-cap">Premium Suite, Large Window</p></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s1
+<div class="csec s1 m1">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><p class="cs-cap">Window Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><p class="cs-cap">Suite with Styling Chair</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><p class="cs-cap">Studio Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><p class="cs-cap">Studio Suite, Rear Window</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><p class="cs-cap">Lobby View</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><p class="cs-cap">Suite Entry</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><p class="cs-cap">Premium Suite</p></div>
+<div class="cs-slide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><p class="cs-cap">Premium Suite, Large Window</p></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
-        <p class="phone-cap">2.5 slides visible</p>
+        <p class="phone-cap">swipes natively, arrows hidden</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== CAROUSEL OPTION 02 ==================== -->
   <section class="variant" id="x2">
-    <div class="v-head">
-      <span class="num">02</span>
-      <h2>The Suite Carousel — The Navy Roll</h2>
-    </div>
-    <p class="v-desc"><b>Navy ground, gold-framed photos.</b> Larger slides with thin gold frames on her navy, centered snap. Pairs directly with the Navy Stage hero.</p>
+    <div class="v-head"><span class="num">02</span><h2>The Navy Roll</h2></div>
+    <p class="v-desc"><b>Navy ground, gold-framed photos.</b> Larger centered slides inside thin gold frames on her navy. Pairs directly with the Navy Stage hero &mdash; the section reads as one continuous navy story.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s2
+<div class="csec s2 m2">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s2
+<div class="csec s2 m2">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div></div>
+<div class="cs-slide"><div class="cs-frame"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
         <p class="phone-cap">large framed slide</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== CAROUSEL OPTION 03 ==================== -->
   <section class="variant" id="x3">
-    <div class="v-head">
-      <span class="num">03</span>
-      <h2>The Suite Carousel — The Fade + Counter</h2>
-    </div>
-    <p class="v-desc"><b>One slide at a time with a 01 / 08 gold counter.</b> Classic fade carousel with overlaid arrows &mdash; the most traditional presentation.</p>
+    <div class="v-head"><span class="num">03</span><h2>The Fade + Counter</h2></div>
+    <p class="v-desc"><b>One slide at a time with a 01 / 08 gold counter.</b> The classic fade carousel with overlaid arrows &mdash; the most traditional presentation, closest to what her live site does now.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s3
+<div class="csec s3 m3">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+    <p class="cs-ctr"><span class="cur">01</span> / 08</p>
+  </div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s3
+<div class="csec s3 m3">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+    <p class="cs-ctr"><span class="cur">01</span> / 08</p>
+  </div>
+</div>
           </div>
         </div>
         <p class="phone-cap">full-bleed slide</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== CAROUSEL OPTION 04 ==================== -->
   <section class="variant" id="x4">
-    <div class="v-head">
-      <span class="num">04</span>
-      <h2>The Suite Carousel — The Photo Cards</h2>
-    </div>
-    <p class="v-desc"><b>White cards with a dot pager.</b> Each photo in a shadowed card with an EB Garamond caption, gold dots showing position. The friendliest read.</p>
+    <div class="v-head"><span class="num">04</span><h2>The Photo Cards</h2></div>
+    <p class="v-desc"><b>White cards with a dot pager.</b> Each photo sits in a shadowed card with an EB Garamond caption, and gold dots show position. The friendliest, most polished read of the six.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s4
+<div class="csec s4 m4">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><p class="cs-cardcap">Window Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><p class="cs-cardcap">Suite with Styling Chair</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><p class="cs-cardcap">Studio Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><p class="cs-cardcap">Studio Suite, Rear Window</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><p class="cs-cardcap">Lobby View</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><p class="cs-cardcap">Suite Entry</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><p class="cs-cardcap">Premium Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><p class="cs-cardcap">Premium Suite, Large Window</p></div></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+  <div class="cs-dots" data-dots></div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s4
+<div class="csec s4 m4">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-strip" data-strip>
+    <div class="cs-track">
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><p class="cs-cardcap">Window Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><p class="cs-cardcap">Suite with Styling Chair</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><p class="cs-cardcap">Studio Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><p class="cs-cardcap">Studio Suite, Rear Window</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><p class="cs-cardcap">Lobby View</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><p class="cs-cardcap">Suite Entry</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><p class="cs-cardcap">Premium Suite</p></div></div>
+<div class="cs-slide"><div class="cs-card"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><p class="cs-cardcap">Premium Suite, Large Window</p></div></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photos">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photos">&rarr;</button>
+  </div>
+  <div class="cs-dots" data-dots></div>
+</div>
           </div>
         </div>
         <p class="phone-cap">cards + dot pager</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== CAROUSEL OPTION 05 ==================== -->
   <section class="variant" id="x5">
-    <div class="v-head">
-      <span class="num">05</span>
-      <h2>The Suite Carousel — The Overlay Nine</h2>
-    </div>
-    <p class="v-desc"><b>Navy ground, photo cards with gold label tags.</b> One-at-a-time fade with the suite name tagged on the photo in gold. Matches the Navy Stage hero.</p>
+    <div class="v-head"><span class="num">05</span><h2>The Overlay Nine</h2></div>
+    <p class="v-desc"><b>Navy ground, tagged slides.</b> One-at-a-time fade with the suite name on the photo in a gold label. Matches the Navy Stage hero; the label doubles as a caption without extra text below.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s5
+<div class="csec s5 m5">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><span class="cs-tag">Window Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><span class="cs-tag">Suite with Styling Chair</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><span class="cs-tag">Studio Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><span class="cs-tag">Studio Suite, Rear Window</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><span class="cs-tag">Lobby View</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><span class="cs-tag">Suite Entry</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><span class="cs-tag">Premium Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><span class="cs-tag">Premium Suite, Large Window</span></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s5
+<div class="csec s5 m5">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-fade" data-fade>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"><span class="cs-tag">Window Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"><span class="cs-tag">Suite with Styling Chair</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"><span class="cs-tag">Studio Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"><span class="cs-tag">Studio Suite, Rear Window</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"><span class="cs-tag">Lobby View</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"><span class="cs-tag">Suite Entry</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"><span class="cs-tag">Premium Suite</span></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"><span class="cs-tag">Premium Suite, Large Window</span></div>
+    </div>
+    <button class="cs-arw prev" aria-label="Previous photo">&larr;</button>
+    <button class="cs-arw next" aria-label="Next photo">&rarr;</button>
+  </div>
+</div>
           </div>
         </div>
         <p class="phone-cap">tagged slides</p>
       </div>
     </div>
   </section>
-
-  <!-- ==================== CAROUSEL OPTION 06 ==================== -->
   <section class="variant" id="x6">
-    <div class="v-head">
-      <span class="num">06</span>
-      <h2>The Suite Carousel — The Thumb Gallery</h2>
-    </div>
-    <p class="v-desc"><b>Main photo + thumbnail rail.</b> Classic gallery pattern: click any thumbnail to swap the main photo. The most hands-on for visitors browsing suites.</p>
+    <div class="v-head"><span class="num">06</span><h2>The Thumb Gallery</h2></div>
+    <p class="v-desc"><b>Main photo + thumbnail rail.</b> The classic gallery pattern: click any thumbnail to swap the main photo. The most hands-on option for visitors who want to browse every suite at their own pace.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
         <div class="browser">
-          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com/a-look-inside</span></div>
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com &middot; A Look Inside</span></div>
           <div class="frame">
-            s6
+<div class="csec s6 m6">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-thumbgal" data-thumbs>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div>
+    </div>
+    <div class="cs-thumbs">
+<button class="cs-thumb on" data-i="0" aria-label="Window Suite"><img src="assets/opt/suite-1.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="1" aria-label="Suite with Styling Chair"><img src="assets/opt/suite-2.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="2" aria-label="Studio Suite"><img src="assets/opt/suite-3.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="3" aria-label="Studio Suite, Rear Window"><img src="assets/opt/suite-4.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="4" aria-label="Lobby View"><img src="assets/opt/suite-5.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="5" aria-label="Suite Entry"><img src="assets/opt/suite-6.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="6" aria-label="Premium Suite"><img src="assets/opt/suite-7.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="7" aria-label="Premium Suite, Large Window"><img src="assets/opt/suite-8.jpg" alt="" loading="lazy"></button>
+    </div>
+  </div>
+</div>
           </div>
         </div>
-        <p class="stage-note">&#9432; Fully interactive &mdash; click the arrows and thumbs. Divi-compatible: ships as one Code-module block, zero external libraries.</p>
+        <p class="stage-note">&#9432; Interactive &mdash; try the arrows and thumbs. Divi-compatible: one Code-module block, zero external libraries.</p>
       </div>
       <div>
         <p class="stage-cap">Mobile &middot; 375px</p>
         <div class="phone">
           <div class="screen">
-            s6
+<div class="csec s6 m6">
+  <div class="cs-head"><p class="cs-eye">Now Open &mdash; Limited Suites Remaining</p><h2 class="cs-h">A Look Inside Revive</h2></div>
+  <div class="cs-thumbgal" data-thumbs>
+    <div class="cs-fstack">
+<div class="cs-fslide on"><img src="assets/opt/suite-1.jpg" alt="Window Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-2.jpg" alt="Suite with Styling Chair" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-3.jpg" alt="Studio Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-4.jpg" alt="Studio Suite, Rear Window" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-5.jpg" alt="Lobby View" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-6.jpg" alt="Suite Entry" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-7.jpg" alt="Premium Suite" loading="lazy"></div>
+<div class="cs-fslide"><img src="assets/opt/suite-8.jpg" alt="Premium Suite, Large Window" loading="lazy"></div>
+    </div>
+    <div class="cs-thumbs">
+<button class="cs-thumb on" data-i="0" aria-label="Window Suite"><img src="assets/opt/suite-1.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="1" aria-label="Suite with Styling Chair"><img src="assets/opt/suite-2.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="2" aria-label="Studio Suite"><img src="assets/opt/suite-3.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="3" aria-label="Studio Suite, Rear Window"><img src="assets/opt/suite-4.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="4" aria-label="Lobby View"><img src="assets/opt/suite-5.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="5" aria-label="Suite Entry"><img src="assets/opt/suite-6.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="6" aria-label="Premium Suite"><img src="assets/opt/suite-7.jpg" alt="" loading="lazy"></button>
+<button class="cs-thumb" data-i="7" aria-label="Premium Suite, Large Window"><img src="assets/opt/suite-8.jpg" alt="" loading="lazy"></button>
+    </div>
+  </div>
+</div>
           </div>
         </div>
-        <p class="phone-cap">thumb rail wraps</p>
+        <p class="phone-cap">thumb rail wraps to 4 columns</p>
       </div>
     </div>
   </section>
-
 <script>
 document.querySelectorAll("[data-strip]").forEach(function(strip){
   var track=strip.querySelector(".cs-track");
-  var step=function(){var s=track.querySelector(".cs-slide");return s?s.getBoundingClientRect().width+17:300;};
+  var step=function(){var s=track.querySelector(".cs-slide");return s?s.getBoundingClientRect().width+18:300;};
   var nx=strip.querySelector(".next"),pv=strip.querySelector(".prev");
   if(nx)nx.addEventListener("click",function(){track.scrollBy({left:step(),behavior:"smooth"});});
   if(pv)pv.addEventListener("click",function(){track.scrollBy({left:-step(),behavior:"smooth"});});
@@ -364,20 +546,20 @@ if(gal){
 }
 var dotsWrap=document.querySelector("[data-dots]");
 if(dotsWrap){
-  var strip=dotsWrap.parentElement.querySelector("[data-strip]")||document.querySelector(".s4 [data-strip]");
+  var strip=dotsWrap.parentElement.querySelector("[data-strip]");
   var track=strip.querySelector(".cs-track");
   var count=track.querySelectorAll(".cs-slide").length;
   for(var k=0;k<count;k++){(function(k){
-    var b=document.createElement("button");b.dataset.i=k;if(k===0)b.classList.add("on");dotsWrap.appendChild(b);
-    b.addEventListener("click",function(){track.scrollTo({left:k*track.querySelector(".cs-slide").getBoundingClientRect().width,behavior:"smooth"});});
+    var b=document.createElement("button");if(k===0)b.classList.add("on");dotsWrap.appendChild(b);
+    b.addEventListener("click",function(){track.scrollTo({left:k*(track.querySelector(".cs-slide").getBoundingClientRect().width+18),behavior:"smooth"});});
   })(k);}
   track.addEventListener("scroll",function(){clearTimeout(track._t);track._t=setTimeout(function(){
-    var idx=Math.round(track.scrollLeft/track.querySelector(".cs-slide").getBoundingClientRect().width);
+    var idx=Math.round(track.scrollLeft/(track.querySelector(".cs-slide").getBoundingClientRect().width+18));
     dotsWrap.querySelectorAll("button").forEach(function(bt,j){bt.classList.toggle("on",j===idx);});
   },120);});
 }
 </script>
-<footer class="footer-block">
+  <footer class="footer-block">
     <div>
       <h3>Summary</h3>
       <p>Six carousel treatments for the &ldquo;Now Open &mdash; Limited Suites Remaining&rdquo; section,
