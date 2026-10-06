@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; The CTA Banner (section preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+
+/* ===== the banner ===== */
+.cb{font-family:'Josefin Sans',sans-serif;position:relative;text-align:center;color:#FAF7F2;padding:4rem 1.6rem;overflow:hidden}
+.cb-in{position:relative;z-index:2;max-width:38rem;margin:0 auto}
+.cb-h{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.6rem,3.4cqi,2.4rem);line-height:1.25;margin:0 0 .8rem}
+.cb-h em{font-style:italic}
+.cb-s{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.85);margin:0 0 1.6rem}
+.cb-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;padding:1rem 2.2rem;border-radius:2px;min-height:50px;transition:all .2s}
+.cb-btn-navy{background:#1a1a3e;color:#FAF7F2;border:1px solid rgba(250,247,242,.15)}
+.cb-btn-navy:hover{background:#DB9446;color:#121E3F}
+.cb-btn-gold{background:#DB9446;color:#121E3F}
+.cb-btn-gold:hover{background:#c07f35}
+
+/* 01 prod faithful: real salon photo + navy gradient */
+.c1{background:linear-gradient(rgba(26,24,52,.78),rgba(58,50,40,.55)),url('assets/opt/banner-6756.jpg') center 30%/cover}
+.c1 .cb-s{letter-spacing:.22em}
+
+/* 02 photo scrim + mini form */
+.c2{background:linear-gradient(rgba(13,23,48,.86),rgba(13,23,48,.86)),url('assets/opt/exp-hair.jpg') center/cover}
+.cb-form{display:flex;gap:.7rem;flex-wrap:wrap;justify-content:center;max-width:34rem;margin:0 auto}
+.cb-form input{flex:1 1 160px;border:1px solid rgba(219,148,70,.45);background:rgba(13,23,48,.6);color:#FAF7F2;padding:.85rem 1rem;font-family:inherit;font-size:.9rem}
+.cb-form input::placeholder{color:rgba(250,247,242,.5)}
+.cb-form .cb-btn-gold{flex:none}
+
+/* 03 gold horizon */
+.c3{background:linear-gradient(180deg,#121E3F 0%,#121E3F 70%,#2c2a3e 85%,#8a6a3a 100%)}
+.c3::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,transparent,#DB9446,transparent)}
+
+/* 04 mirage dim */
+.c4{background:linear-gradient(rgba(72,81,107,.88),rgba(58,69,89,.88)),url('assets/opt/banner-6756.jpg') center 30%/cover}
+.c4 .cb-btn-gold{color:#121E3F}
+
+/* 05 flat navy + crest */
+.c5{background:var(--navy,#121E3F)}
+.c5 .cb-crest{height:84px;width:auto;margin:0 auto 1.2rem;display:block}
+
+/* 06 split */
+.c6{display:grid;grid-template-columns:1fr 1.2fr;padding:0;text-align:left}
+.c6 .cb-photo{position:relative;min-height:320px}
+.c6 .cb-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.c6 .cb-panel{background:#121E3F;padding:3.4rem 2.6rem;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.c6 .cb-in{margin:0}
+
+@container (max-width:620px){
+  .cb{padding:2.8rem 1.3rem}
+  .c6{grid-template-columns:1fr}
+  .c6 .cb-photo{min-height:220px}
+  .c6 .cb-panel{padding:2.4rem 1.3rem}
+  .cb-form input{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Section &middot; For Review</p>
+    <h1>The CTA Banner &mdash; Section Preview</h1>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="four-pillars.html">pillar section options</a> &middot;
+      <a href="professionals.html">professionals section options</a> &middot;
+      <a href="vision-mission.html">vision &amp; mission options</a> &middot;
+      <a href="revive-experience.html">Revive Experience options</a> &middot;
+      <a href="footer-options.html">footer design options</a>.
+      The fullwidth photo banner before the footer &mdash; her current site&rsquo;s &ldquo;Ready to Become an Entrepreneur?&rdquo; band, rebuilt six ways in the official brand kit. Whichever wins restyles the pre-footer CTA band on Homepage v2 (flat navy today).</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a CTA banner option">
+    <a href="#c1"><span class="n">01</span><span class="t">The Original</span><span class="p">Her live banner, rebuilt</span></a>
+    <a href="#c2"><span class="n">02</span><span class="t">The Scrim + Form</span><span class="p">Photo, tour form on band</span></a>
+    <a href="#c3"><span class="n">03</span><span class="t">The Gold Horizon</span><span class="p">Navy fading to gold base</span></a>
+    <a href="#c4"><span class="n">04</span><span class="t">The Mirage Dim</span><span class="p">Blue Mirage over photo</span></a>
+    <a href="#c5"><span class="n">05</span><span class="t">The Crest Center</span><span class="p">Flat navy, crest on top</span></a>
+    <a href="#c6"><span class="n">06</span><span class="t">The Split Banner</span><span class="p">Photo left, panel right</span></a>
+  </nav>
+
+  <!-- ==================== CTA BANNER OPTION 01 ==================== -->
+  <section class="variant" id="c1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The CTA Banner &mdash; The Original</h2>
+    </div>
+    <p class="v-desc"><b>Her live banner, rebuilt.</b> Her real salon photo under the navy-to-warm gradient, the verbatim headline with the italic accent, the letterspaced discovery line, navy Partner With Us button. Everything from today, just sharper.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c1">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c1">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">photo scales, copy centers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER OPTION 02 ==================== -->
+  <section class="variant" id="c2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The CTA Banner &mdash; The Scrim + Form</h2>
+    </div>
+    <p class="v-desc"><b>The conversion version.</b> Suite photo under a deep navy scrim, but the band carries the <b>tour-request form</b> (name + phone) instead of a button &mdash; the lowest-friction close on the page. Sample wording shown.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c2">
+              <div class="cb-in">
+                <h2 class="cb-h">Your Signature Space Awaits.</h2>
+                <p class="cb-s">Book a private tour and see the suite before you commit to anything.</p>
+                <form class="cb-form" onsubmit="return false"><input type="text" placeholder="Full name" aria-label="Full name"><input type="tel" placeholder="Phone" aria-label="Phone"><button class="cb-btn cb-btn-gold" type="submit">Request My Tour</button></form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c2">
+              <div class="cb-in">
+                <h2 class="cb-h">Your Signature Space Awaits.</h2>
+                <p class="cb-s">Book a private tour and see the suite before you commit to anything.</p>
+                <form class="cb-form" onsubmit="return false"><input type="text" placeholder="Full name" aria-label="Full name"><input type="tel" placeholder="Phone" aria-label="Phone"><button class="cb-btn cb-btn-gold" type="submit">Request My Tour</button></form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">form stacks full-width</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER OPTION 03 ==================== -->
+  <section class="variant" id="c3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The CTA Banner &mdash; The Gold Horizon</h2>
+    </div>
+    <p class="v-desc"><b>The Gold Horizon.</b> Deep navy band that fades into an official-gold glow at the base, gold Book a Tour. No photo &mdash; pure color drama, the most luxurious flat treatment.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c3">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c3">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">single column</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER OPTION 04 ==================== -->
+  <section class="variant" id="c4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>The CTA Banner &mdash; The Mirage Dim</h2>
+    </div>
+    <p class="v-desc"><b>The Mirage Dim.</b> Her real photo under a Blue Mirage gradient &mdash; the third palette color finally on a fullwidth band, with the gold button popping against the cool ground.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c4">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c4">
+              <div class="cb-in">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">single column</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER OPTION 05 ==================== -->
+  <section class="variant" id="c5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>The CTA Banner &mdash; The Crest Center</h2>
+    </div>
+    <p class="v-desc"><b>The Crest Center.</b> Flat official navy, small gold crest centered above the serif headline, gold button. The quietest option &mdash; brand-first, zero imagery.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c5">
+              <div class="cb-in">
+                <img class="cb-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c5">
+              <div class="cb-in">
+                <img class="cb-crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">single column</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER OPTION 06 ==================== -->
+  <section class="variant" id="c6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>The CTA Banner &mdash; The Split Banner</h2>
+    </div>
+    <p class="v-desc"><b>The Split Banner.</b> Photo left, navy panel right with the headline and CTA. Asymmetric and modern &mdash; the closest cousin of the approved split hero.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="cb c6">
+              <div class="cb-photo"><img src="assets/opt/exp-hair.jpg" alt="Stylist working in a Revive suite"></div>
+              <div class="cb-panel">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Headline on 01 is her live copy, verbatim. Other options are sample wording.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="cb c6">
+              <div class="cb-photo"><img src="assets/opt/exp-hair.jpg" alt="Stylist working in a Revive suite"></div>
+              <div class="cb-panel">
+                <h2 class="cb-h">Ready to Become an <em>Entrepreneur</em>?</h2>
+                <p class="cb-s">Start with a quick discovery call, and we can dive into all the details.</p>
+                <a class="cb-btn cb-btn-gold" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">photo above panel</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 The Original</b> is her live banner rebuilt. <b>02 The Scrim + Form</b> turns the band
+        into the tour-request moment. <b>03 The Gold Horizon</b> and <b>04 The Mirage Dim</b> are the
+        color plays. <b>05 The Crest Center</b> is the quiet flat option. <b>06 The Split Banner</b>
+        goes asymmetric.</p>
+      <p style="margin-top:.9rem">Whichever wins restyles the pre-footer CTA band on Homepage v2
+        (flat navy today). If she wants the form kept, options 02 is the fit; if she prefers the
+        button-only style of her current site, 01, 03, 04, 05, or 06.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>Headline on 01 is her live copy, verbatim &mdash; the italic accent on &ldquo;Entrepreneur&rdquo; is hers too</li>
+        <li>Photos: her real salon photo (IMG_6756 from her media library) on 01/04; current suite photo on 02/06 &mdash; swap for Revive shoot photos at launch</li>
+        <li>CTA label is sample content &mdash; live site says &ldquo;Partner With Us&rdquo;; keep hers or use &ldquo;Book a Tour&rdquo;</li>
+        <li>All six use the official brand kit: gold #DB9446 (Pantone 722C), navy #121E3F, Blue Mirage #48516B</li>
+        <li>Form version stores nothing yet &mdash; wires to Fluent Forms at launch like the other forms</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
