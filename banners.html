@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective &mdash; Fullwidth Banner (section preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padding:3rem 1.2rem 5rem}
+.deck{max-width:1460px;margin:0 auto}
+.deck-head{text-align:center;margin-bottom:1rem}
+.eyebrow{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#DB9446;margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.7rem,3.4vw,2.6rem);color:#FAF7F2}
+.deck-note{text-align:center;font-size:.8rem;color:rgba(250,247,242,.55);margin-top:1rem;line-height:1.7}
+.deck-note a{color:#DB9446;text-decoration:none}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.2rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(219,148,70,.35);border-radius:4px;padding:.9rem 1.1rem;min-width:150px}
+.pickbar a:hover{border-color:#DB9446;background:rgba(219,148,70,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.68rem;letter-spacing:.26em;color:#DB9446;text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.12rem;margin-top:.25rem;color:#FAF7F2}
+.pickbar .p{font-size:.72rem;color:rgba(250,247,242,.55);margin-top:.3rem;letter-spacing:.04em}
+.variant{margin-bottom:110px}
+.v-head{text-align:center;margin-bottom:.7rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#DB9446;display:block;margin-bottom:.3rem}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);color:#FAF7F2}
+.v-desc{text-align:center;max-width:52rem;margin:.8rem auto 2rem;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.stage{display:flex;gap:2.2rem;align-items:flex-start;justify-content:center;flex-wrap:wrap}
+.stage-cap{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(250,247,242,.45);margin-bottom:.8rem}
+.browser{background:#202020;border-radius:8px;padding:10px;max-width:1120px}
+.chrome{display:flex;align-items:center;gap:.6rem;background:#2c2c2c;border-radius:5px 5px 0 0;padding:.5rem .8rem}
+.chrome .dots{display:flex;gap:5px}
+.chrome .dots i{width:9px;height:9px;border-radius:50%;display:block}
+.chrome .dots i:nth-child(1){background:#ff5f57}.chrome .dots i:nth-child(2){background:#febc2e}.chrome .dots i:nth-child(3){background:#28c840}
+.chrome .url{flex:1;text-align:center;background:#1d1d1d;border-radius:3px;font-size:.66rem;color:rgba(255,255,255,.5);padding:.28rem}
+.frame{overflow:hidden}
+.phone{width:399px;background:#202020;border-radius:26px;padding:12px}
+.screen{background:#fff;border-radius:16px;overflow:hidden}
+.phone-cap,.stage-note{font-size:.72rem;color:rgba(250,247,242,.5);margin-top:.8rem;text-align:center}
+.stage-note{color:#DB9446}
+.footer-block{border-top:1px solid rgba(219,148,70,.3);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.footer-block h3{font-family:'DM Serif Display',serif;font-weight:400;color:#FAF7F2;margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
+.footer-block ul{padding-left:1.1rem}
+.footer-block code{color:#DB9446}
+
+/* ===== the banner ===== */
+.bn{font-family:'Josefin Sans',sans-serif;background:linear-gradient(180deg,#1b2a52 0%,#121E3F 55%,#0d1730 100%);padding:3.2rem 1.6rem 3rem;text-align:center}
+.bcrest{height:150px;width:auto;margin:0 auto 1rem;display:block}
+.bwm{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3.6cqi,2.4rem);letter-spacing:.12em;color:#DB9446;margin:0 0 1.6rem}
+.bcopy{max-width:38rem;margin:0 auto;text-align:left}
+.bh1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,3cqi,2.2rem);line-height:1.25;color:#FAF7F2;margin:0 0 .6rem}
+.bsub{font-family:'EB Garamond',Georgia,serif;font-size:1rem;line-height:1.7;color:rgba(231,223,211,.85);margin:0 0 1.3rem}
+.bbtn{display:inline-flex;align-items:center;background:#121E3F;color:#FAF7F2;text-decoration:none;font-weight:600;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;padding:.85rem 1.6rem;border-radius:2px;transition:background .2s}
+.bbtn:hover{background:#DB9446;color:#121E3F}
+.bbtn-navy{background:var(--navy,#121E3F);color:#FAF7F2}
+
+/* 02 gold gradient */
+.b2{background:linear-gradient(160deg,#E3A558 0%,#DB9446 45%,#c07f35 100%)}
+.b2 .bwm-navy,.b2 .bh1-navy{color:#121E3F}
+.b2 .bsub-navy{color:rgba(18,30,63,.8)}
+.b2 .bbtn-navy{background:#121E3F;color:#FAF7F2}
+.b2 .bbtn-navy:hover{background:#0d1730}
+
+/* 03 mirage fade */
+.b3{background:linear-gradient(160deg,#5a6478 0%,#48516B 55%,#3a4559 100%)}
+.b3 .bwm-white{color:#FAF7F2}
+
+/* 04 photo dim */
+.b4{background:linear-gradient(rgba(13,23,48,.72),rgba(13,23,48,.72)),url('assets/opt/exp-hair.jpg') center/cover;padding:2.8rem 1.6rem}
+.b4 .bcrest-sm{height:90px}
+
+/* 05 slim crest bar */
+.b5{padding:2rem 1.6rem}
+.b5 .bcrest-sm{height:64px;margin-bottom:.7rem}
+.bwm-sm{font-size:clamp(1.1rem,2.4cqi,1.5rem);margin:0 0 0}
+
+/* 06 split stage */
+.b6 .bsplit{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center;max-width:56rem;margin:0 auto}
+.b6 .bcrest-sm{height:84px}
+.bwm-sm{letter-spacing:.1em}
+.b6 .bcopy{text-align:left}
+
+@container (max-width:620px){
+  .bn{padding:2.4rem 1.3rem 2.4rem}
+  .bcrest{height:100px}
+  .b6 .bsplit{grid-template-columns:1fr;gap:1.6rem}
+  .b6 .bright{text-align:center}
+  .b6 .bcopy{text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Section &middot; For Review</p>
+    <h1>The Fullwidth Banner &mdash; Section Preview</h1>
+    <p class="deck-note">Part of the same preview set: <a href="index.html">hero layout options</a> &middot;
+      <a href="four-pillars.html">pillar section options</a> &middot;
+      <a href="professionals.html">professionals section options</a> &middot;
+      <a href="vision-mission.html">vision &amp; mission options</a> &middot;
+      <a href="revive-experience.html">Revive Experience options</a> &middot;
+      <a href="footer-options.html">footer design options</a>.
+      The compact full-bleed banner her current site leads with, rebuilt six ways in the official brand kit. This is <b>not</b> the tall split hero &mdash; it can sit above it as a brand banner, or replace it as a compact hero if she prefers.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a banner option">
+    <a href="#bn1"><span class="n">01</span><span class="t">The Crest Banner</span><span class="p">Faithful redesign of her current</span></a>
+    <a href="#bn2"><span class="n">02</span><span class="t">The Gold Gradient</span><span class="p">Official gold ground</span></a>
+    <a href="#bn3"><span class="n">03</span><span class="t">The Mirage Fade</span><span class="p">Blue Mirage gradient</span></a>
+    <a href="#bn4"><span class="n">04</span><span class="t">The Photo Dim</span><span class="p">Suite photo under navy scrim</span></a>
+    <a href="#bn5"><span class="n">05</span><span class="t">The Slim Crest Bar</span><span class="p">Compact brand-only strip</span></a>
+    <a href="#bn6"><span class="n">06</span><span class="t">The Split Stage</span><span class="p">Crest left, headline right</span></a>
+  </nav>
+
+  <!-- ==================== BANNER OPTION 01 ==================== -->
+  <section class="variant" id="bn1">
+    <div class="v-head">
+      <span class="num">01</span>
+      <h2>The Fullwidth Banner &mdash; The Crest Banner</h2>
+    </div>
+    <p class="v-desc"><b>Faithful redesign of her current banner.</b> Deep navy gradient, giant gold crest, gold serif wordmark, then the H1, license line and CTA left-aligned below. Everything she has today, rebuilt in the new design system with the official crest file.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b1">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn bbtn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b1">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn bbtn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">crest scales down, copy centers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER OPTION 02 ==================== -->
+  <section class="variant" id="bn2">
+    <div class="v-head">
+      <span class="num">02</span>
+      <h2>The Fullwidth Banner &mdash; The Gold Gradient</h2>
+    </div>
+    <p class="v-desc"><b>Official gold leads the page.</b> A warm gold gradient ground (Pantone 722C family) with the crest and headline in navy. The boldest, brightest open &mdash; gold is the first and last thing a visitor sees.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b2">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-navy">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1 bh1-navy">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub bsub-navy">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn bbtn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b2">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-navy">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1 bh1-navy">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub bsub-navy">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn bbtn-navy" href="#">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">crest scales down, copy centers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER OPTION 03 ==================== -->
+  <section class="variant" id="bn3">
+    <div class="v-head">
+      <span class="num">03</span>
+      <h2>The Fullwidth Banner &mdash; The Mirage Fade</h2>
+    </div>
+    <p class="v-desc"><b>Blue Mirage gradient.</b> Her slate-blue Pantone as the banner ground, gold wordmark, off-white headline, gold Book a Tour. The cool-toned cousin of option 01.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b3">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-white">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b3">
+              <img class="bcrest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-white">REVIVE SALON COLLECTIVE</p>
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">crest scales down, copy centers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER OPTION 04 ==================== -->
+  <section class="variant" id="bn4">
+    <div class="v-head">
+      <span class="num">04</span>
+      <h2>The Fullwidth Banner &mdash; The Photo Dim</h2>
+    </div>
+    <p class="v-desc"><b>Suite photo under a navy scrim.</b> The brand crest smaller, over a dimmed suite photograph &mdash; adds warmth and real space to the banner without losing the crest-first identity.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b4">
+              <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b4">
+              <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <div class="bcopy">
+                <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                <a class="bbtn" href="#">Book a Tour</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">crest scales down, copy centers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER OPTION 05 ==================== -->
+  <section class="variant" id="bn5">
+    <div class="v-head">
+      <span class="num">05</span>
+      <h2>The Fullwidth Banner &mdash; The Slim Crest Bar</h2>
+    </div>
+    <p class="v-desc"><b>The slim brand bar.</b> No headline at all &mdash; just the crest and wordmark in a compact strip. The H1 lives in the hero below; this banner is purely the brand moment at the top of the page.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b5">
+              <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-sm">REVIVE SALON COLLECTIVE</p>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b5">
+              <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+              <p class="bwm bwm-sm">REVIVE SALON COLLECTIVE</p>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">brand strip only, H1 stays in hero</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER OPTION 06 ==================== -->
+  <section class="variant" id="bn6">
+    <div class="v-head">
+      <span class="num">06</span>
+      <h2>The Fullwidth Banner &mdash; The Split Stage</h2>
+    </div>
+    <p class="v-desc"><b>The split stage.</b> Crest and wordmark left, headline and CTA right. Compact like the original but with the copy off the center line &mdash; the closest fullwidth cousin of the split hero she approved.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="bn b6">
+              <div class="bsplit">
+                <div class="bleft">
+                  <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+                  <p class="bwm bwm-sm">REVIVE SALON COLLECTIVE</p>
+                </div>
+                <div class="bright">
+                  <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                  <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                  <a class="bbtn" href="#">Book a Tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-note">&#9432; Sample CTA labels &mdash; the live site says &ldquo;Partner With Us&rdquo;; our build would use &ldquo;Book a Tour&rdquo;.</p>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <div class="bn b6">
+              <div class="bsplit">
+                <div class="bleft">
+                  <img class="bcrest bcrest-sm" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+                  <p class="bwm bwm-sm">REVIVE SALON COLLECTIVE</p>
+                </div>
+                <div class="bright">
+                  <h1 class="bh1">Private Salon Suites for Rent in Raleigh, NC</h1>
+                  <p class="bsub">License a private salon suite designed for beauty professionals ready to take control of their career.</p>
+                  <a class="bbtn" href="#">Book a Tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="phone-cap">stacks, crest above copy</p>
+      </div>
+    </div>
+  </section>
+<footer class="footer-block">
+    <div>
+      <h3>Summary</h3>
+      <p><b>01 The Crest Banner</b> is her current banner rebuilt in the new system. <b>02 The Gold
+        Gradient</b> and <b>03 The Mirage Fade</b> swap the ground color. <b>04 The Photo Dim</b> adds a
+        real suite photo. <b>05 The Slim Crest Bar</b> drops the headline so the hero below carries it.
+        <b>06 The Split Stage</b> is the compact cousin of the approved split hero.</p>
+      <p style="margin-top:.9rem">Placement options: as a brand banner <b>above the split hero</b>,
+        or as a <b>compact replacement hero</b> if she wants the shorter page. Either way the H1 stays
+        on the page exactly once for SEO.</p>
+    </div>
+    <div>
+      <h3>Notes</h3>
+      <ul>
+        <li>All six use her official crest and wordmark files, gold #DB9446, navy #121E3F, Blue Mirage #48516B</li>
+        <li>Sample CTA labels &mdash; live site says &ldquo;Partner With Us&rdquo;; our build uses &ldquo;Book a Tour&rdquo; or keeps hers, her call</li>
+        <li>If used as a compact hero, the split hero is retired &mdash; the two are alternatives, not stackables (except 05, designed to stack)</li>
+        <li>H1 rule: exactly one H1 per page &mdash; whichever banner carries it, the split hero drops it</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
