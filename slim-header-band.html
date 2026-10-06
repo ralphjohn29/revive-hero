@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Revive Salon Collective &mdash; Slim Header Band v2 (with nav)</title>
+<title>Revive Salon Collective &mdash; Slim Header Band v2 (photo backgrounds)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -47,8 +47,8 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .footer-block p,.footer-block li{font-size:.8rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.65)}
 .footer-block ul{padding-left:1.1rem}
 
-/* ===== global nav (matches the approved homepage build) ===== */
-.rnav{display:flex;align-items:center;justify-content:space-between;background:#0F1B33;padding:.9rem 1.6rem}
+/* ===== global nav ===== */
+.rnav{display:flex;align-items:center;justify-content:space-between;background:#0F1B33;padding:.9rem 1.6rem;position:relative;z-index:5}
 .rnav-brand img{height:46px;width:auto;display:block}
 .rnav-links{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0}
 .rnav-links a{color:rgba(250,247,242,.85);text-decoration:none;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
@@ -58,45 +58,57 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 .rnav-btn{display:inline-flex;align-items:center;background:#DB9446;color:#121E3F;text-decoration:none;font-weight:600;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;padding:.6rem 1rem;border-radius:2px;min-height:40px}
 .rnav-btn:hover{background:#c07f35}
 
-/* ===== slim header band variants ===== */
-.ph{font-family:'Josefin Sans',sans-serif;padding:3rem 1.6rem 2.8rem;background:#FAF7F2;container-type:inline-size}
+/* ===== photo header bands ===== */
+.ph{font-family:'Josefin Sans',sans-serif;position:relative;container-type:inline-size}
+.ph-in{position:relative;z-index:2;max-width:56rem;margin:0 auto;padding:3.4rem 1.6rem}
 .ph-eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:#DB9446;margin:0 0 1rem}
-.ph-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.8rem,3.6cqi,2.6rem);line-height:1.2;color:#121E3F;margin:0 0 .9rem}
-.ph-intro{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;color:rgba(72,81,107,.9);margin:0;max-width:44rem}
+.ph-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.8rem,3.6cqi,2.6rem);line-height:1.2;margin:0 0 .9rem}
+.ph-intro{font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:1.8;margin:0;max-width:42rem}
 .ph-after{height:110px;background:#FAF7F2}
 .phafter-light{background:#fff}
 
-.ph1{text-align:center}
-.ph1 .ph-intro{margin:0 auto}
+/* 01 storefront + navy dim, centered */
+.ph1{background:linear-gradient(rgba(13,23,48,.78),rgba(18,30,63,.82)),url('assets/opt/banner-6756.jpg') center 30%/cover;text-align:center}
+.ph1 .ph-h1{color:#FAF7F2}
+.ph1 .ph-intro{color:rgba(250,247,242,.88);margin:0 auto}
+.ph1 .ph-after{background:#FAF7F2}
 
-.ph2{background:#121E3F;text-align:center;border-bottom:1px solid rgba(219,148,70,.4)}
-.ph2 .ph-eyebrow{color:#DB9446}
+/* 02 craft photo + left navy gradient, left text */
+.ph2{background:linear-gradient(90deg,rgba(13,23,48,.92) 0%,rgba(13,23,48,.78) 45%,rgba(13,23,48,.25) 100%),url('assets/opt/exp-hair.jpg') center/cover}
+.ph2 .ph-in{text-align:left;margin:0;max-width:none}
 .ph2 .ph-h1{color:#FAF7F2}
-.ph2 .ph-intro{color:rgba(178,181,192,.95);margin:0 auto}
+.ph2 .ph-intro{color:rgba(231,223,211,.9);max-width:34rem}
 
-.ph3{text-align:left;max-width:56rem;margin:0 auto}
-.ph3 .ph-rule{width:64px;height:2px;background:#DB9446;margin:0 0 1.1rem}
+/* 03 esthetician + mirage wash, centered */
+.ph3{background:linear-gradient(rgba(72,81,107,.82),rgba(58,69,89,.86)),url('assets/opt/exp-esthetician.jpg') center 25%/cover;text-align:center}
+.ph3 .ph-h1{color:#fff}
+.ph3 .ph-intro{color:rgba(255,255,255,.88);margin:0 auto}
 
-.ph4{background:#48516B;text-align:center}
-.ph4 .ph-eyebrow{color:#B2B5C0}
-.ph4 .ph-h1{color:#fff}
-.ph4 .ph-intro{color:rgba(255,255,255,.85);margin:0 auto}
+/* 04 storefront + gold-edge navy, left text */
+.ph4{background:linear-gradient(rgba(13,23,48,.8),rgba(18,30,63,.86)),url('assets/opt/banner-6756.jpg') center 45%/cover;border-bottom:3px solid #DB9446}
+.ph4 .ph-in{text-align:left;margin:0;max-width:none}
+.ph4 .ph-h1{color:#FAF7F2}
+.ph4 .ph-intro{color:rgba(231,223,211,.9);max-width:34rem}
 
-.ph5{background:#121E3F}
-.ph5 .ph5cols{display:grid;grid-template-columns:1.1fr .9fr;gap:2.6rem;align-items:end;max-width:62rem;margin:0 auto;text-align:left}
+/* 05 tall craft fade to canvas, navy text on light fade */
+.ph5{padding:0}
+.ph5 .ph-in{padding:5rem 1.6rem 6.5rem;text-align:center;background:linear-gradient(180deg,rgba(13,23,48,.88) 0%,rgba(13,23,48,.45) 55%,rgba(250,247,242,.92) 100%),url('assets/opt/exp-lash.jpg') center/cover}
 .ph5 .ph-eyebrow{color:#DB9446}
-.ph5 .ph-h1{color:#FAF7F2;margin-bottom:0}
-.ph5 .ph-intro{color:rgba(178,181,192,.95);text-align:left;margin:0}
+.ph5 .ph-h1{color:#FAF7F2}
+.ph5 .ph-intro{color:#3a4559;margin:0 auto;font-weight:600}
 
-.ph6{background:#FAF7F2;border-bottom:1px solid #48516B;text-align:center}
-.ph6 .ph-eyebrow{margin-top:1rem}
+/* 06 split: canvas text left, photo right */
+.ph6{display:grid;grid-template-columns:1.15fr .85fr;background:#FAF7F2;padding:0}
+.ph6 .ph-txt{padding:3.4rem 1.6rem 3.4rem clamp(1.5rem,5cqi,4rem);text-align:left;align-self:center}
+.ph6 .ph-h1{color:#121E3F}
+.ph6 .ph-photo{position:relative;min-height:300px}
+.ph6 .ph-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 @container (max-width:620px){
-  .ph{padding:2.3rem 1.3rem 2.2rem}
-  .rnav{padding:.8rem 1.1rem;flex-wrap:wrap;row-gap:.7rem}
-  .rnav-links{order:3;width:100%;justify-content:center;gap:1rem}
-  .rnav-brand img{height:38px}
-  .ph5cols{grid-template-columns:1fr;gap:1.1rem;text-align:left}
+  .ph-in{padding:2.4rem 1.3rem}
+  .ph6{grid-template-columns:1fr}
+  .ph6 .ph-photo{min-height:220px;order:-1}
+  .ph6 .ph-txt{padding:2.2rem 1.3rem}
 }
 </style>
 </head>
@@ -105,27 +117,28 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
 
   <header class="deck-head">
     <p class="eyebrow">Inner Pages &middot; For Review</p>
-    <h1>Slim Header Band &mdash; Six Options (with nav)</h1>
-    <p class="deck-note">The slim header band for every inner page, shown <b>in context with the global nav</b> above it.
-      Same H1 sample on all six (How to Join); eyebrow and intro swap per page. Content would start immediately after each band.</p>
+    <h1>Slim Header Band &mdash; Six Photo Options (with nav)</h1>
+    <p class="deck-note">The slim header band rebuilt with <b>real photo backgrounds</b> &mdash; her storefront and the
+      craft photos from the site. Global nav stays on top; H1 carries inside the band; content starts after.
+      Dummy photos shown &mdash; final art from the Revive photo shoot.</p>
   </header>
 
-  <nav class="pickbar" aria-label="Jump to a slim header option">
-    <a href="#s1"><span class="n">01</span><span class="t">The Centered Canvas</span><span class="p">Quiet default, matches build</span></a>
-    <a href="#s2"><span class="n">02</span><span class="t">The Navy Band</span><span class="p">Seamless with the nav</span></a>
-    <a href="#s3"><span class="n">03</span><span class="t">The Gold Rule</span><span class="p">Left-aligned editorial</span></a>
-    <a href="#s4"><span class="n">04</span><span class="t">The Mirage Band</span><span class="p">Blue Mirage ground</span></a>
-    <a href="#s5"><span class="n">05</span><span class="t">The Split Columns</span><span class="p">Title left, intro right</span></a>
-    <a href="#s6"><span class="n">06</span><span class="t">The Canvas Rule</span><span class="p">Centered, hairline close</span></a>
+  <nav class="pickbar" aria-label="Jump to a header option">
+    <a href="#s1"><span class="n">01</span><span class="t">The Storefront Dim</span><span class="p">Centered, navy scrim</span></a>
+    <a href="#s2"><span class="n">02</span><span class="t">The Craft Left</span><span class="p">Left gradient, left text</span></a>
+    <a href="#s3"><span class="n">03</span><span class="t">The Mirage Wash</span><span class="p">Blue Mirage over photo</span></a>
+    <a href="#s4"><span class="n">04</span><span class="t">The Gold Edge</span><span class="p">Navy scrim + gold base line</span></a>
+    <a href="#s5"><span class="n">05</span><span class="t">The Fade to Canvas</span><span class="p">Photo fades into the page</span></a>
+    <a href="#s6"><span class="n">06</span><span class="t">The Half Photo</span><span class="p">Canvas text, photo right</span></a>
   </nav>
 
   <!-- ==================== SLIM HEADER OPTION 01 ==================== -->
   <section class="variant" id="s1">
     <div class="v-head">
       <span class="num">01</span>
-      <h2>Slim Header — The Centered Canvas</h2>
+      <h2>Slim Header — The Storefront Dim</h2>
     </div>
-    <p class="v-desc"><b>The quiet default.</b> Centered on the warm canvas, sitting just below the navy nav: gold eyebrow, navy serif H1, EB Garamond intro. The pattern already used in the How to Join draft.</p>
+    <p class="v-desc"><b>Her storefront, dimmed.</b> The real Revive storefront under a deep navy scrim, headline and intro centered in white. The classic inner-page hero band &mdash; calm and formal.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -144,7 +157,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph1"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph1"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
       </div>
@@ -164,10 +177,10 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph1"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph1"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
-        <p class="phone-cap">title scales down, nav wraps links under</p>
+        <p class="phone-cap">photo scales, copy centers</p>
       </div>
     </div>
   </section>
@@ -176,9 +189,9 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="s2">
     <div class="v-head">
       <span class="num">02</span>
-      <h2>Slim Header — The Navy Band</h2>
+      <h2>Slim Header — The Craft Left</h2>
     </div>
-    <p class="v-desc"><b>Seamless navy.</b> The band shares the nav&rsquo;s ground so the top of the page reads as one continuous navy act &mdash; eyebrow, H1, and intro in off-white and gray-blue, closed by the gold hairline.</p>
+    <p class="v-desc"><b>Craft photo, left-weighted.</b> A working stylist photo with the navy gradient sweeping from the left, so the H1 and intro sit on the dark side and the craft shows on the right. The most dynamic of the six.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -197,7 +210,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph2"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph2"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
       </div>
@@ -217,10 +230,10 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph2"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph2"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
-        <p class="phone-cap">nav and band share the navy</p>
+        <p class="phone-cap">gradient deepens, text stays left</p>
       </div>
     </div>
   </section>
@@ -229,9 +242,9 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="s3">
     <div class="v-head">
       <span class="num">03</span>
-      <h2>Slim Header — The Gold Rule</h2>
+      <h2>Slim Header — The Mirage Wash</h2>
     </div>
-    <p class="v-desc"><b>Left-aligned editorial.</b> Eyebrow, H1, short official-gold rule, then the intro &mdash; left-aligned on the canvas below the nav. The most print-like.</p>
+    <p class="v-desc"><b>Blue Mirage wash.</b> An esthetician photo under a Blue Mirage gradient &mdash; her third palette color as the band treatment, centered white text. The coolest tone.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -250,7 +263,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph3"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><div class="ph-rule"></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph3"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
       </div>
@@ -270,10 +283,10 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph3"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><div class="ph-rule"></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph3"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
-        <p class="phone-cap">left-aligned, rule scales</p>
+        <p class="phone-cap">wash scales, copy centers</p>
       </div>
     </div>
   </section>
@@ -282,9 +295,9 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="s4">
     <div class="v-head">
       <span class="num">04</span>
-      <h2>Slim Header — The Mirage Band</h2>
+      <h2>Slim Header — The Gold Edge</h2>
     </div>
-    <p class="v-desc"><b>Blue Mirage band.</b> The band ground in her third palette color #48516B with the navy nav above it &mdash; a distinct but on-brand open for inner pages.</p>
+    <p class="v-desc"><b>Storefront with the gold edge.</b> Same navy-dimmed storefront but left-aligned text and a 3px official-gold line closing the band &mdash; the gold hairline carries the brand straight into the content below.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -303,7 +316,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph4"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph4"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
       </div>
@@ -323,10 +336,10 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph4"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph4"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
           </div>
         </div>
-        <p class="phone-cap">centered, band tightens</p>
+        <p class="phone-cap">photo scales, text stays left</p>
       </div>
     </div>
   </section>
@@ -335,9 +348,9 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="s5">
     <div class="v-head">
       <span class="num">05</span>
-      <h2>Slim Header — The Split Columns</h2>
+      <h2>Slim Header — The Fade to Canvas</h2>
     </div>
-    <p class="v-desc"><b>Split columns on navy.</b> Eyebrow and H1 left, intro right-aligned to the same baseline. Dense and modern; keeps tall pages compact.</p>
+    <p class="v-desc"><b>Fade to canvas.</b> A tall craft photo that fades from navy at the top into the warm canvas at the bottom &mdash; the H1 starts on the photo in white and the intro lands on the light ground. A soft handoff instead of a hard line.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -356,7 +369,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph5"><div class="ph5cols"><div class="ph5l"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph5"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
       </div>
@@ -376,10 +389,10 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph5"><div class="ph5cols"><div class="ph5l"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1></div><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after phafter-light"></div>
+          </nav><header class="ph ph5"><div class="ph-in"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
-        <p class="phone-cap">columns stack left-aligned</p>
+        <p class="phone-cap">fade keeps text readable</p>
       </div>
     </div>
   </section>
@@ -388,9 +401,9 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
   <section class="variant" id="s6">
     <div class="v-head">
       <span class="num">06</span>
-      <h2>Slim Header — The Canvas Rule</h2>
+      <h2>Slim Header — The Half Photo</h2>
     </div>
-    <p class="v-desc"><b>Centered with a hairline close.</b> Warm canvas like option 01, finished with a thin Blue Mirage hairline that hands off cleanly to the page content below.</p>
+    <p class="v-desc"><b>Half photo.</b> Text on the canvas left, a real craft photo filling the right column. No scrim at all &mdash; the cleanest, brightest take, and the photo stays true-color.</p>
     <div class="stage">
       <div style="flex:1;min-width:0">
         <p class="stage-cap">Desktop</p>
@@ -409,7 +422,7 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph6"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph6"><div class="ph-txt"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
       </div>
@@ -429,31 +442,30 @@ body{background:#171614;color:#EDEBE6;font-family:'Josefin Sans',sans-serif;padd
               <a class="rnav-phone" href="tel:+1919346607">(919) 346-6607</a>
               <a class="rnav-btn" href="#">Book a Tour</a>
             </div>
-          </nav><header class="ph ph6"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></header><div class="ph-after"></div>
+          </nav><header class="ph ph6"><div class="ph-txt"><p class="ph-eyebrow">Join Revive Salon Collective</p><h1 class="ph-h1">How to Join a Salon Suite in Raleigh, NC</h1><p class="ph-intro">This is your career, evolved. Whether you&rsquo;re a stylist, barber, esthetician, or tattoo artist, embrace independence &mdash; without the financial strain or complexity of salon ownership.</p></div></header><div class="ph-after"></div>
           </div>
         </div>
-        <p class="phone-cap">centered, hairline close</p>
+        <p class="phone-cap">photo column stacks above text</p>
       </div>
     </div>
   </section>
 <footer class="footer-block">
     <div>
       <h3>Summary</h3>
-      <p>One slim header band reused on every inner page &mdash; the global nav stays, the band carries
-        the page H1 (exactly one per page), and content starts immediately after. Eyebrow, H1, and intro
-        swap per page; the band itself is identical site-wide.</p>
-      <p style="margin-top:.9rem">Ready-made H1s for the first three pages: <b>How to Join</b> &rarr;
-        &ldquo;How to Join a Salon Suite in Raleigh, NC&rdquo; &middot; <b>A Look Inside</b> &rarr;
-        &ldquo;Explore Our Luxury Salon Suites in Raleigh, NC&rdquo; &middot; <b>Contact</b> &rarr;
-        &ldquo;Contact Revive Salon Collective&rdquo;.</p>
+      <p>Six photo-background header bands for every inner page &mdash; the global nav sits on top, the
+        page H1 lives inside the band, and content starts right after. Same H1 sample on all six;
+        eyebrow and intro swap per page.</p>
+      <p style="margin-top:.9rem">01, 02, and 04 use her real storefront photo; 02 uses a craft photo;
+        03 and 05 use craft/aesthetician imagery. All are stand-ins &mdash; final photos come from the
+        Revive shoot.</p>
     </div>
     <div>
       <h3>Notes</h3>
       <ul>
-        <li>The nav shown is the approved homepage nav (crest, links, phone, gold Book a Tour)</li>
-        <li>02 makes the nav and band read as one continuous navy block; 01, 03, and 06 keep a hard light band under the navy nav</li>
         <li>All six use the official brand kit: gold #DB9446 (Pantone 722C), navy #121E3F, Blue Mirage #48516B, EB Garamond (Arno Pro stand-in)</li>
-        <li>Picking one applies to How to Join, A Look Inside, Contact, and any future inner page in a single pass</li>
+        <li>Exactly one H1 per page, carried inside the band</li>
+        <li>Scrims and gradients keep text at AA contrast over any photo &mdash; swap photos freely without breaking readability</li>
+        <li>Option 06 needs no scrim &mdash; text never touches the photo</li>
       </ul>
     </div>
   </footer>
