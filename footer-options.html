@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Revive Salon Collective — Footer Design (3 Options)</title>
+<title>Revive Salon Collective — Footer Design (10 Options)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -249,6 +249,63 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   .f5 .f-crest{height:80px}
 }
 
+/* ============ 07–10 — CLOSER BAND FAMILY (Julia picked 03 on Oct 5) — official kit ============ */
+.ftr .f-soc{display:flex;gap:.6rem}
+.ftr .f-soc a{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid rgba(183,121,46,.55);color:#B7792E;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.ftr .f-soc a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.ftr .f-slim2{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;padding:1.8rem 4cqi 1.4rem}
+.ftr .f-slim2 img{height:44px;width:auto}
+.ftr .f-slim2 .f-links{gap:1.3rem;justify-content:center}
+.ftr .f-slim2 .f-links a.on{color:var(--ogold);opacity:1;border-bottom:1px solid var(--ogold);padding-bottom:2px}
+.ftr .f-legal2{border-top:1px solid var(--taupe);margin:0 4cqi;padding:1.2rem 0 1.6rem}
+.ftr .btn-og{display:inline-block;background:var(--ogold);color:var(--navy);text-decoration:none;font-weight:600;font-size:.8rem;
+  letter-spacing:.16em;text-transform:uppercase;padding:1rem 2rem;border-radius:2px;transition:background .2s}
+.ftr .btn-og:hover{background:var(--canvas)}
+.ftr .tel2{color:var(--ogold);text-decoration:none;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+.ftr .tel2:hover{text-decoration:underline}
+.ftr .f-news.sp{margin:2rem 4cqi 0}
+.ftr .f-news .btn-og2{padding:.85rem 2rem;border:0;border-radius:2px;background:var(--ogold);color:var(--navy);font-weight:600;
+  font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-family:inherit;cursor:pointer}
+
+/* ---- 07 The Closer Band, Refined (what's on the new pages now) ---- */
+.f7 .f-band{background:var(--navy);color:var(--canvas);text-align:center;padding:3.6rem 6cqi;border-top:3px solid var(--ogold)}
+.f7 .f-band h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.6rem,3.4cqi,2.4rem);color:var(--canvas);margin-bottom:.6rem}
+.f7 .f-band p{font-weight:300;font-size:.95rem;color:rgba(231,223,211,.88);margin:0 auto 1.6rem;max-width:34rem}
+.f7 .row,.f8 .row,.f9 .row{display:flex;gap:1.3rem;justify-content:center;align-items:center;flex-wrap:wrap}
+
+/* ---- 08 The Cream Closer ---- */
+.f8 .f-band{background:var(--taupe);color:var(--navy);text-align:center;padding:3.6rem 6cqi;border-top:3px solid var(--ogold)}
+.f8 .f-band h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.6rem,3.4cqi,2.4rem);color:var(--navy);margin-bottom:.6rem}
+.f8 .f-band p{font-weight:300;font-size:.95rem;color:var(--mirage);margin:0 auto 1.6rem;max-width:34rem}
+.f8 .btn-og{background:var(--navy);color:#fff}
+.f8 .btn-og:hover{background:var(--ogold);color:var(--navy)}
+.f8 .tel2{color:#9a5f1f}
+
+/* ---- 09 The Suite Photo Closer ---- */
+.f9 .f-band{position:relative;color:var(--canvas);text-align:center;padding:5rem 6cqi;
+  background:linear-gradient(rgba(18,30,63,.80),rgba(18,30,63,.86)),url('assets/opt/suite-exterior-1200.jpg') center 38%/cover no-repeat}
+.f9 .f-band .kicker{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ogold);margin-bottom:.9rem}
+.f9 .f-band h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.8rem,3.8cqi,2.7rem);color:#fff;margin-bottom:.6rem}
+.f9 .f-band p{font-weight:300;font-size:.98rem;color:rgba(250,247,242,.9);margin:0 auto 1.7rem;max-width:34rem}
+
+/* ---- 10 The Compact Closer ---- */
+.f10 .f-strip{background:var(--navy);color:var(--canvas);display:flex;align-items:center;justify-content:space-between;gap:1.4rem;
+  flex-wrap:wrap;padding:1.7rem 4cqi;border-top:3px solid var(--ogold)}
+.f10 .f-strip h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.3rem,2.4cqi,1.75rem);color:var(--canvas)}
+.f10 .f-strip .row{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+
+.f7 .f-band p,.f8 .f-band p,.f9 .f-band p{text-wrap:balance}
+@container (max-width:620px){
+  .ftr .f-slim2{flex-direction:column;text-align:center}
+  .ftr .f-slim2 .f-links{gap:.7rem 1.1rem}
+  .ftr .f-legal2{flex-direction:column;text-align:center;gap:.45rem}
+  .ftr .f-news.sp{margin:1.6rem 5cqi 0}
+  .f9 .f-band{padding:3.6rem 6cqi}
+  .f10 .f-strip{flex-direction:column;text-align:center}
+  .f10 .f-strip .row{justify-content:center}
+}
+
 </style>
 </head>
 <body>
@@ -256,9 +313,9 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 
   <header class="deck-head">
     <p class="eyebrow">Footer Design &middot; For Review</p>
-    <h1>Revive Salon Collective &mdash; Three Footer Directions</h1>
+    <h1>Revive Salon Collective &mdash; Ten Footer Directions</h1>
     <p class="lede">Three ways to close out the homepage, built to sit under the winning hero
-      (The Signature Welcome). Same content &mdash; six different structures. Options 01&ndash;03 use the original preview palette. Options 04&ndash;06 are built from <b>Julia&rsquo;s official brand kit</b>: gold <b>#DB9446</b> (Pantone 722C), Blue Mirage <b>#48516B</b> (Pantone 2374C), her logo lockups, and EB Garamond as the web stand-in for Arno Pro.</p>
+      (The Signature Welcome). Same content &mdash; ten different structures. Options 01&ndash;03 use the original preview palette. Options 04&ndash;06 are built from <b>Julia&rsquo;s official brand kit</b>: gold <b>#DB9446</b> (Pantone 722C), Blue Mirage <b>#48516B</b> (Pantone 2374C), her logo lockups, and EB Garamond as the web stand-in for Arno Pro. <b>New: options 07&ndash;10</b> build on 03, The Closer Band (Julia&rsquo;s October 5 pick).</p>
     <p class="deck-note">Part of the same preview set: <a href="professionals.html">professionals section options</a> &middot; <a href="index.html">hero layout options</a> &middot;
       <a href="branding.html">branding options for The Signature Welcome</a>.
       Every footer repeats the one job of the page: get a beauty professional to book a suite tour.</p>
@@ -267,10 +324,14 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   <nav class="pickbar" aria-label="Jump to a footer option">
     <a href="#f1"><span class="n">01</span><span class="t">The Classic Column</span><span class="p">Light, organized, information-first</span></a>
     <a href="#f2"><span class="n">02</span><span class="t">The Navy Standard</span><span class="p">Dark navy, matches her current site</span></a>
-    <a href="#f3"><span class="n">03</span><span class="t">The Closer Band</span><span class="p">Big CTA first, slim footer below</span></a>
+    <a href="#f3"><span class="n">03</span><span class="t">The Closer Band</span><span class="p">Big CTA first, slim footer below &middot; Julia&rsquo;s pick</span></a>
     <a href="#f4"><span class="n">04</span><span class="t">The Blue Mirage</span><span class="p">Her third palette color leads</span></a>
     <a href="#f5"><span class="n">05</span><span class="t">The Crest Band</span><span class="p">Crest-first closer, official gold</span></a>
     <a href="#f6"><span class="n">06</span><span class="t">The Two-Tone</span><span class="p">Navy columns, Blue Mirage legal bar</span></a>
+    <a href="#f7"><span class="n">07</span><span class="t">The Closer Band, Refined</span><span class="p">Option 03, exactly as it’s now built on the new pages</span></a>
+    <a href="#f8"><span class="n">08</span><span class="t">The Cream Closer</span><span class="p">Same layout, light band</span></a>
+    <a href="#f9"><span class="n">09</span><span class="t">The Suite Photo Closer</span><span class="p">The real building behind a navy veil</span></a>
+    <a href="#f10"><span class="n">10</span><span class="t">The Compact Closer</span><span class="p">One slim row, shortest page ending</span></a>
   </nav>
 
   <!-- ==================== FOOTER OPTION 01 ==================== -->
@@ -925,18 +986,135 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     </div>
   </section>
 
+  <!-- ==================== FOOTER OPTION 07 ==================== -->
+  <section class="variant" id="f7">
+    <div class="v-head">
+      <span class="num">07</span>
+      <h2>The Closer Band, Refined</h2>
+    </div>
+    <p class="v-desc">Your October 5 pick, finished. <b>Navy band with &ldquo;Ready to see your future suite?&rdquo;, an official-gold Request My Private Tour button and the phone number</b>, then Join the list and a slim bar with the logo, page links (Home included) and Instagram/Facebook icons. This is what you&rsquo;ll see on every new page today.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f7"><div class="f-band"><h3>Ready to see your future suite?</h3><p>Private, fully equipped salon suites in North Raleigh. Book a private tour to see the space.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f7"><div class="f-band"><h3>Ready to see your future suite?</h3><p>Private, fully equipped salon suites in North Raleigh. Book a private tour to see the space.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+        <p class="phone-cap">navy band + slim bar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER OPTION 08 ==================== -->
+  <section class="variant" id="f8">
+    <div class="v-head">
+      <span class="num">08</span>
+      <h2>The Cream Closer</h2>
+    </div>
+    <p class="v-desc">The same structure as 07 with the band in <b>soft cream (#E7DFD3) instead of navy</b>, navy headline and a navy button. Useful because Homepage and How to Join already end with a navy tour form &mdash; a light band avoids navy sitting on navy.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f8"><div class="f-band"><h3>Ready to see your future suite?</h3><p>Private, fully equipped salon suites in North Raleigh. Book a private tour to see the space.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f8"><div class="f-band"><h3>Ready to see your future suite?</h3><p>Private, fully equipped salon suites in North Raleigh. Book a private tour to see the space.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+        <p class="phone-cap">cream band + slim bar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER OPTION 09 ==================== -->
+  <section class="variant" id="f9">
+    <div class="v-head">
+      <span class="num">09</span>
+      <h2>The Suite Photo Closer</h2>
+    </div>
+    <p class="v-desc">The band sits over <b>a photo of the Revive building</b> with a navy overlay, plus a small &ldquo;Now leasing&rdquo; line. Shows the actual space rather than services, in line with your note about competitors. Swap in a photo from the October 23 shoot once it&rsquo;s ready.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f9"><div class="f-band"><p class="kicker">Now leasing &middot; North Raleigh</p><h3>Ready to see your future suite?</h3><p>Step inside Revive and picture your business here.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f9"><div class="f-band"><p class="kicker">Now leasing &middot; North Raleigh</p><h3>Ready to see your future suite?</h3><p>Step inside Revive and picture your business here.</p><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+        <p class="phone-cap">photo band + slim bar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER OPTION 10 ==================== -->
+  <section class="variant" id="f10">
+    <div class="v-head">
+      <span class="num">10</span>
+      <h2>The Compact Closer</h2>
+    </div>
+    <p class="v-desc">The ask squeezed into <b>one slim navy row</b>: headline on the left, Request My Private Tour and the phone number on the right. Keeps the tour ask but takes about half the height of 03, so pages end sooner.</p>
+    <div class="stage">
+      <div style="flex:1;min-width:0">
+        <p class="stage-cap">Desktop</p>
+        <div class="browser">
+          <div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <footer class="ftr f10"><div class="f-strip"><h3>Ready to see your future suite?</h3><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="stage-cap">Mobile &middot; 375px</p>
+        <div class="phone">
+          <div class="screen">
+            <footer class="ftr f10"><div class="f-strip"><h3>Ready to see your future suite?</h3><div class="row"><a class="btn-og" href="#">Request My Private Tour</a><a class="tel2" href="tel:+19193466607">or call (919) 346-6607</a></div></div><div class="f-news sp"><div class="f-nl-copy"><p class="f-nl-t">Join the list</p><p class="f-nl-s">Suite openings, studio stories. No spam.</p></div><form class="f-nl-form" onsubmit="return false"><input type="text" placeholder="Full name" autocomplete="name" aria-label="Full name"><input type="email" placeholder="Email address" autocomplete="email" aria-label="Email address"><button class="btn-og2" type="submit">Subscribe</button></form></div><div class="f-slim2"><img src="assets/opt/revive_gold_logo_large.png" alt="Revive Salon Collective"><ul class="f-links"><li><a class="on" href="#">Home</a></li><li><a href="#">How to Join</a></li><li><a href="#">A Look Inside</a></li><li><a href="#">Directory</a></li><li><a href="#">Contact</a></li></ul><div class="f-soc"><a href="#" aria-label="Revive on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="Revive on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3L14.1 2.3C11 2.3 10.3 4.6 10.3 6.1v2.4H8v3.6h2.3V22H14v-9.9h2.7l.4-3.6H14z"/></svg></a></div></div><div class="f-legal f-legal2"><span>&copy; 2026 Revive Salon Collective. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+          </div>
+        </div>
+        <p class="phone-cap">slim strip + slim bar</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer-block">
     <div>
       <h3>Summary</h3>
       <p><b>01 The Classic Column</b> is the traditional choice &mdash; everything visible, quiet confidence.
         <b>02 The Navy Standard</b> matches her current site identity and the navy navs of the winning hero.
         <b>03 The Closer Band</b> ends the page on the Book a Tour ask instead of the legal line.</p>
+      <p style="margin-top:.9rem"><b>07&ndash;10</b> are variations on 03 (Julia&rsquo;s pick): <b>07</b> is what&rsquo;s live on the new pages now, <b>08</b> a light band, <b>09</b> a photo band, <b>10</b> a compact strip.</p>
       <p style="margin-top:.9rem">Same content in all six: logo, tagline, links, contact, Book a Tour,
         legal. Pick one (or blend) and it becomes the build standard. 04&ndash;06 use the official
         brand kit from Julia&rsquo;s files (gold #DB9446, Blue Mirage #48516B, official logo lockups).</p>
     </div>
     <div>
-      <h3>Shared content &mdash; all three</h3>
+      <h3>Shared content &mdash; every option</h3>
       <ul>
         <li>Links: <code>How to Join &middot; A Look Inside &middot; Directory &middot; Contact</code> + Privacy / Terms</li>
         <li>Contact: <code>(919) 346-6607</code> (her live number) &middot; business Gmail &middot; Raleigh, NC</li>
