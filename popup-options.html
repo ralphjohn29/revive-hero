@@ -99,12 +99,13 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   .pu .sms{font-size:12px;line-height:1.45}
   .pu .btn{padding:14px}
   .pu .eye{font-size:12px;letter-spacing:.16em;line-height:1.5}
-  .pu1 .crest{width:40px;margin-bottom:10px}
+  .pu1 .crest{width:88px;margin-bottom:14px}
 }
 
 /* 01 Refined card */
 .pu1{border-top:4px solid var(--gold)}
-.pu1 .crest{width:44px;height:auto;display:block;margin-bottom:10px}
+.pu1 .crest{width:112px;height:auto;display:block;margin-bottom:18px}
+@container (max-width:480px){.pu1 .crest{width:88px;margin-bottom:14px}}
 
 /* 02 Photo split */
 .pu2{width:min(720px,calc(100% - 48px));display:grid;grid-template-columns:38% 1fr}
@@ -127,8 +128,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .pu3 .legal{color:rgba(250,247,242,.7)}
 .pu3 .legal a{color:var(--gold)}
 .pu3 .later{color:rgba(250,247,242,.75)}
-.pu3 .crest{width:52px;margin:0 auto 10px;display:block}
-@container (max-width:480px){.pu3 .crest{display:block;width:44px;margin:0 auto 8px}}
+.pu3 .crest{width:112px;height:auto;margin:0 auto 18px;display:block}
+@container (max-width:480px){.pu3 .crest{display:block;width:88px;margin:0 auto 14px}}
 
 /* 04 Two-step */
 .pu4{width:min(420px,calc(100% - 32px))}
@@ -142,16 +143,16 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 /* 05 Cream editorial */
 .pu5{background:var(--canvas);width:min(440px,calc(100% - 32px));text-align:center}
 .pu5 .frame5{position:absolute;inset:12px;border:1px solid rgba(219,148,70,.55);pointer-events:none}
-.pu5 .bd{padding:48px 44px 38px}
+.pu5 .bd{padding:34px 44px 28px}
 .pu5 .bd > h3,.pu5 .bd > .eye{padding-left:0;padding-right:0}
-.pu5 .crest{width:48px;margin:0 auto 12px;display:block}
-.pu5 h3{font-size:34px}
+.pu5 .crest{width:92px;height:auto;margin:0 auto 14px;display:block}
+.pu5 h3{font-size:32px}
 .pu5 .rule5{width:48px;height:1px;background:var(--gold);margin:14px auto 0}
 .pu5 label{text-align:left}
 .pu5 input[type=text],.pu5 input[type=email],.pu5 input[type=tel]{background:#fff}
 .pu5 .sms{text-align:left}
 .pu5 .x{top:22px;right:22px}
-@container (max-width:480px){.pu5 .bd{padding:34px 30px 30px}.pu5 h3{font-size:27px}.pu5 .x{top:20px;right:20px;width:36px;height:36px;font-size:24px}.pu5 .crest{display:block;width:42px;margin:0 auto 10px}.pu5 .rule5{margin-top:10px}}
+@container (max-width:480px){.pu5 .bd{padding:34px 30px 30px}.pu5 h3{font-size:27px}.pu5 .x{top:20px;right:20px;width:36px;height:36px;font-size:24px}.pu5 .crest{display:block;width:84px;margin:0 auto 12px}.pu5 .rule5{margin-top:10px}}
 
 /* 06 Photo header */
 .pu6{width:min(460px,calc(100% - 32px))}
@@ -167,7 +168,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 /* 07 Benefits split */
 .pu7{width:min(680px,calc(100% - 48px));display:grid;grid-template-columns:240px 1fr}
 .pu7 .side{background:var(--navy);color:var(--canvas);padding:34px 26px}
-.pu7 .side .crest{width:40px;display:block;margin-bottom:16px}
+.pu7 .side .crest{width:120px;height:auto;display:block;margin-bottom:22px}
 .pu7 .side h4{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2}
 .pu7 .side ul{list-style:none;margin-top:18px}
 .pu7 .side li{font-size:15px;line-height:1.45;padding:10px 0;border-top:1px solid rgba(250,247,242,.18);color:rgba(250,247,242,.85)}
@@ -225,13 +226,13 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <div class="stage">
       <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
         <div class="scr desk" data-page="desk"><div class="pu pu1" role="dialog" aria-label="Join the mailing list"><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
-          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+          <h3>Join Our Mailing List</h3>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div></div>
       <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu1"><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
-          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+          <h3>Join Our Mailing List</h3>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div>
     </div>
@@ -261,13 +262,13 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <div class="stage">
       <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
         <div class="scr desk" data-page="desk"><div class="pu pu3"><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
-          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+          <h3>Join Our Mailing List</h3>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div></div>
       <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu3"><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
-          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
+          <h3>Join Our Mailing List</h3>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div>
     </div>
@@ -304,12 +305,12 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <div class="stage">
       <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
         <div class="scr desk" data-page="desk"><div class="pu pu5"><span class="frame5"></span><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
           <h3>Join Our Mailing List</h3><div class="rule5"></div>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div></div>
       <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu5"><span class="frame5"></span><button class="x" aria-label="Close">&times;</button><div class="bd">
-          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective">
           <h3>Join Our Mailing List</h3><div class="rule5"></div>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div>
@@ -337,8 +338,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     <p class="v-desc">A navy side panel lists <b>what people get</b> by joining, and the form sits next to it. Showing the benefits gives visitors a reason to sign up. It&rsquo;s <b>680px wide</b>. On phones the benefits become a neat row of three checkmarks under the form.</p>
     <div class="stage">
       <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
-        <div class="scr desk" data-page="desk"><div class="pu pu7"><div class="side"><img class="crest" src="assets/opt/square_gold_logo_large.png" alt=""><h4>Why join the list?</h4><ul><li><b>Suite openings</b>Hear about available suites first.</li><li><b>News from Revive</b>Updates from the collective.</li><li><b>No spam</b>Unsubscribe anytime.</li></ul></div>
-          <div style="position:relative"><button class="x" aria-label="Close">&times;</button><div class="bd"><p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3><form data-fields></form></div></div></div></div></div></div>
+        <div class="scr desk" data-page="desk"><div class="pu pu7"><div class="side"><img class="crest" src="assets/opt/square_gold_logo_large.png" alt="Revive Salon Collective"><h4>Why join the list?</h4><ul><li><b>Suite openings</b>Hear about available suites first.</li><li><b>News from Revive</b>Updates from the collective.</li><li><b>No spam</b>Unsubscribe anytime.</li></ul></div>
+          <div style="position:relative"><button class="x" aria-label="Close">&times;</button><div class="bd"><p class="eye">Stay in the loop</p><h3>Join Our Mailing List</h3><form data-fields></form></div></div></div></div></div></div>
       <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu7"><button class="x" aria-label="Close">&times;</button><div class="side"><ul><li><b>Suite openings</b>Hear about available suites first.</li><li><b>Revive news</b>Updates from the collective.</li><li><b>No spam</b>Unsubscribe anytime.</li></ul></div>
           <div class="bd"><h3>Join Our Mailing List</h3><form data-fields></form></div></div></div></div>
     </div>
