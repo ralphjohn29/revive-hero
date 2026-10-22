@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective — Why Choose Revive Cards (6 Designs)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME ============ */
+:root{--canvas:#FAF7F2;--gold:#C6A55C;--coal:#171614}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(16px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:46rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.75);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:46rem;font-size:.88rem;line-height:1.7;color:rgba(250,247,242,.6)}
+.deck-note b{color:var(--canvas);font-weight:600}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.4rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;padding:.9rem 1.3rem;color:var(--canvas);min-width:220px;transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.72rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.15rem;margin-top:.25rem}
+.pickbar .p{font-size:.78rem;color:rgba(250,247,242,.6);margin-top:.3rem}
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.95rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.stage > div:first-child{flex:1;min-width:0;width:100%}
+.stage-cap{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.55);margin-bottom:.8rem}
+.browser{background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.72rem;letter-spacing:.06em;color:rgba(250,247,242,.5);text-align:center}
+.phone{width:375px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%;max-width:375px}}
+.screen{border-radius:34px;overflow:hidden;overflow-y:auto;max-height:760px;background:#FAF7F2}
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block li{font-size:.9rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78);margin-bottom:.5rem;list-style:none}
+
+/* ============ SECTION (shared) ============ */
+[data-v]{container-type:inline-size}
+.why{--navy:#121E3F;--gold:#DB9446;--gold-ink:#9a5f1f;--muted:#48516b;--taupe:#E7DFD3;--paper:#fff;--canvas:#FAF7F2;
+  background:var(--canvas);color:#1C1B1A;padding:64px 40px;font-family:'Josefin Sans',sans-serif}
+.why .head{text-align:center;max-width:640px;margin:0 auto 36px}
+.why .head .eye{font-size:15px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.why .head h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:40px;line-height:1.15;color:var(--navy);margin-top:10px}
+.why .head p{font-size:17px;line-height:1.6;color:var(--muted);margin-top:14px}
+.why .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1040px;margin:0 auto}
+.why h4{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--navy);line-height:1.2;text-wrap:balance}
+.why .desc{font-size:16px;line-height:1.6}
+.why .tour{display:inline-block;margin-top:16px;color:var(--gold);font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(219,148,70,.6);padding-bottom:3px}
+.why .rule{width:44px;height:1px;background:var(--gold);margin:16px auto}
+@container (max-width:560px){
+  .why{padding:44px 18px}
+  .why .head{margin-bottom:24px}
+  .why .head h3{font-size:30px}
+  .why .grid{grid-template-columns:1fr;gap:14px}
+}
+
+/* ---- flip base ---- */
+.flip{perspective:1200px;cursor:pointer;border-radius:2px;-webkit-tap-highlight-color:transparent;display:grid}
+.flip:focus-visible{outline:2px solid #DB9446;outline-offset:4px}
+.flip .inner{display:grid;transition:transform .7s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d;min-height:260px}
+.flip .face{grid-area:1/1;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:2px;display:flex;flex-direction:column;justify-content:center;padding:32px 30px}
+.flip .back{transform:rotateY(180deg);background:var(--navy);color:#FAF7F2}
+.flip .back .desc{color:rgba(250,247,242,.92)}
+.flip .back .bt{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.flip.on .inner{transform:rotateY(180deg)}
+.m-desk .flip:hover .inner{transform:rotateY(180deg)}
+.m-touch .flip:not(.on) .back a{pointer-events:none}
+@container (max-width:560px){.flip .inner{min-height:220px}.flip .face{padding:26px 22px}}
+
+/* 01 Corner Icon */
+.v1 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center;position:relative}
+.v1 .front h4{font-size:28px}
+.v1 .icon{position:absolute;right:16px;bottom:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-ink);display:grid;place-items:center;font-size:22px;line-height:1;transition:transform .3s}
+.v1 .back .icon{border-color:rgba(219,148,70,.7);color:var(--gold)}
+.v1 .back{position:relative}
+.m-desk .v1 .flip:hover .front .icon{transform:rotate(90deg)}
+@container (max-width:560px){.v1 .front h4{font-size:24px}}
+
+/* 02 Suite Photo */
+.v2 .front{padding:0;overflow:hidden;position:relative;justify-content:flex-end;background:#121E3F}
+.v2 .front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.v2 .front::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,30,63,0) 35%,rgba(18,30,63,.88))}
+.v2 .front .cap{position:relative;z-index:1;padding:24px 26px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.v2 .front h4{color:#fff;font-size:26px}
+.v2 .front .arrow{flex:none;width:40px;height:40px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:20px}
+.v2 .inner{min-height:300px}
+@container (max-width:560px){.v2 .inner{min-height:240px}.v2 .front h4{font-size:22px}}
+
+/* 03 Teaser Line */
+.v3 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
+.v3 .front h4{font-size:28px}
+.v3 .front .tease{font-size:17px;color:var(--muted);max-width:30ch}
+.v3 .front .more{margin-top:18px;width:34px;height:34px;border-radius:50%;background:var(--canvas);border:1px solid var(--taupe);display:grid;place-items:center;color:var(--gold-ink);font-size:18px}
+@container (max-width:560px){.v3 .front h4{font-size:24px}}
+
+/* 04 Flips on Scroll (phone) */
+.v4 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
+.v4 .front h4{font-size:28px}
+.v4 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:16px}
+.replay{margin:16px auto 0;display:block;font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9a5f1f;background:none;border:1px solid var(--taupe);padding:8px 14px;border-radius:2px;cursor:pointer}
+@container (max-width:560px){.v4 .front h4{font-size:24px}}
+
+/* 05 Open on Phone */
+.v5 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
+.v5 .front h4{font-size:28px}
+.v5 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:16px}
+.v5 .stack{display:none;background:#fff;border:1px solid var(--taupe);padding:24px 22px}
+.v5 .stack h4{font-size:23px}
+.v5 .stack .bar{width:36px;height:1px;background:var(--gold);margin:12px 0}
+.v5 .stack .desc{color:var(--muted)}
+.m-touch .v5 .flip{display:none}
+.m-touch .v5 .stack{display:block}
+
+/* 06 Slide-Up Panel (not a flip) */
+.v6 .card{position:relative;overflow:hidden;min-height:300px;border-radius:2px;background:#121E3F;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end}
+.v6 .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.v6 .card .panel{position:relative;z-index:1;background:linear-gradient(180deg,rgba(18,30,63,0),rgba(18,30,63,.94) 46px);color:#fff;padding:56px 26px 24px}
+.v6 .card .more6{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .5s cubic-bezier(.2,.7,.2,1),opacity .35s}
+.v6 .card .more6 > div{overflow:hidden}
+.v6 .card h4{color:#fff;font-size:25px}
+.v6 .card .desc{color:rgba(250,247,242,.92);margin-top:12px}
+.m-desk .v6 .card:hover .more6,.v6 .card.on .more6,.v6 .card:focus-visible .more6{grid-template-rows:1fr;opacity:1}
+.m-desk .v6 .card:hover img{transform:scale(1.04)}
+.m-touch .v6 .card{min-height:0}
+.m-touch .v6 .card img{position:relative;height:160px}
+.m-touch .v6 .card .panel{background:#121E3F;padding:20px 20px 22px}
+.m-touch .v6 .card .more6{grid-template-rows:1fr;opacity:1}
+.m-touch .v6 .card .tour{margin-top:12px}
+
+@media (prefers-reduced-motion:reduce){.flip .inner,.v6 .card .more6,.v6 .card img{transition:none}}
+</style>
+</head>
+<body>
+<div class="deck">
+  <header class="deck-head">
+    <p class="eyebrow">Why Choose Revive &middot; For Review</p>
+    <h1>Six Ways to Show the Four Reasons</h1>
+    <p class="lede">Six designs for the &ldquo;Why choose Revive?&rdquo; cards, all using your four headings and descriptions. None of them need instructions on the card: an icon, a photo or the layout shows people there&rsquo;s more to see.</p>
+    <p class="deck-note"><b>Try them:</b> on the desktop previews, move your mouse over a card. On the phone previews, tap a card, just like on a real phone. No cartoon pictures, only real Revive photos and the Revive colors.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a design">
+    <a href="#c1"><span class="n">01</span><span class="t">The Corner Icon</span><span class="p">Clean card, small + turns into &times;</span></a>
+    <a href="#c2"><span class="n">02</span><span class="t">The Suite Photo</span><span class="p">Real suite photo on the front</span></a>
+    <a href="#c3"><span class="n">03</span><span class="t">The Teaser Line</span><span class="p">A short line hints at the back</span></a>
+    <a href="#c4"><span class="n">04</span><span class="t">The Scroll Flip</span><span class="p">On phones, cards flip on their own</span></a>
+    <a href="#c5"><span class="n">05</span><span class="t">The Open Phone</span><span class="p">Flips on desktop, fully open on phones</span></a>
+    <a href="#c6"><span class="n">06</span><span class="t">The Slide-Up Panel</span><span class="p">Photo card, text slides up</span></a>
+  </nav>
+
+  <section class="variant" id="c1">
+    <div class="v-head"><span class="num">01</span><h2>The Corner Icon</h2></div>
+    <p class="v-desc">A clean white card with the heading, and a small gold <b>+</b> in the corner. The + tells people there&rsquo;s more without any words. It flips on hover on desktop and on tap on phones, and the + turns into &times; on the back.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="1"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="1"></div></div></div>
+  </section>
+
+  <section class="variant" id="c2">
+    <div class="v-head"><span class="num">02</span><h2>The Suite Photo</h2></div>
+    <p class="v-desc">Each card&rsquo;s front is a <b>real Revive suite photo</b> with the heading on it and a gold arrow button. It flips to the navy description. This one adds the most warmth, and it shows the actual space.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="2"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="2"></div></div></div>
+  </section>
+
+  <section class="variant" id="c3">
+    <div class="v-head"><span class="num">03</span><h2>The Teaser Line</h2></div>
+    <p class="v-desc">The front shows the heading plus <b>one short line taken from your own description</b>, so the card says something useful even before it flips. A small arrow button shows there&rsquo;s more on the back.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="3"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="3"></div></div></div>
+  </section>
+
+  <section class="variant" id="c4">
+    <div class="v-head"><span class="num">04</span><h2>The Scroll Flip</h2></div>
+    <p class="v-desc">Desktop flips on hover. On phones, where there&rsquo;s no hover, <b>each card flips by itself</b> as it scrolls into view, one after another, so visitors see the description without doing anything. Tap to flip a card back.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="4"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="4"></div><button class="replay" type="button" data-replay>Replay phone flip</button></div></div>
+  </section>
+
+  <section class="variant" id="c5">
+    <div class="v-head"><span class="num">05</span><h2>The Open Phone</h2></div>
+    <p class="v-desc">Flip cards on desktop. On phones the cards <b>don&rsquo;t flip at all</b>: each one shows its heading and full description together. This is the simplest to read on a small screen, with nothing to tap or guess.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="5"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="5"></div></div></div>
+  </section>
+
+  <section class="variant" id="c6">
+    <div class="v-head"><span class="num">06</span><h2>The Slide-Up Panel</h2></div>
+    <p class="v-desc">Not a flip. Each card is a suite photo with the heading at the bottom. On hover, a navy panel <b>slides up</b> with the description. On phones the photo sits on top and the text is always visible underneath.</p>
+    <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="6"></div></div></div>
+      <div class="phone"><div class="screen m-touch" data-v="6"></div></div></div>
+  </section>
+
+  <div class="footer-block">
+    <div><h3>Same in every design</h3><ul>
+      <li>Your four headings and descriptions, word for word</li>
+      <li>Every card works with a keyboard and screen readers</li>
+      <li>A &ldquo;Request a private tour&rdquo; link on each card</li></ul></div>
+    <div><h3>On phones</h3><ul>
+      <li>Nothing depends on hover</li>
+      <li>Options 04, 05 and 06 show the full text without any tapping</li></ul></div>
+    <div><h3>Next step</h3><ul>
+      <li>Pick a design, and I&rsquo;ll build it on the homepage draft</li>
+      <li>Nothing changes on the live site until it&rsquo;s approved</li></ul></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var P=[
+    {t:'Your Business. Your Revenue.',d:'Keep 100% of what you earn from your services. Set your prices, build your clientele, and grow your beauty business on your terms.',s:'Keep 100% of what you earn.',img:'assets/opt/suite-2.jpg'},
+    {t:'Luxury, Ready for You.',d:'Step into a beautifully designed, move-in-ready private studio featuring a sink in every suite, custom cabinetry, and included Wi-Fi and utilities. Premium styling chairs and shampoo bowls are available for beauty professionals who need them. Focus on your clients while we provide the space.',s:'A move-in-ready private studio.',img:'assets/opt/suite-1.jpg'},
+    {t:'Freedom to Work Your Way.',d:'Create a schedule that fits your life and your clients. Enjoy the independence of your own studio, with the flexibility to shape your business around your goals.',s:'A schedule that fits your life.',img:'assets/opt/suite-8.jpg'},
+    {t:'A Space That Reflects Your Brand.',d:'Create a studio that feels uniquely yours. Personalize your space, express your style, and give your clients an elevated experience that makes your brand stand out.',s:'A studio that feels uniquely yours.',img:'assets/opt/suite-7.jpg'}
+  ];
+  var HEAD='<div class="head"><p class="eye">Why Revive</p><h3>Why choose Revive?</h3><p>A thoughtfully designed space for independent beauty professionals to build their brand, grow their business, and create an exceptional client experience.</p></div>';
+  var TOUR='<a class="tour" href="#" onclick="return false">Request a private tour &rarr;</a>';
+  function back(p,extra){return '<div class="face back"><p class="bt">'+p.t+'</p><p class="desc">'+p.d+'</p><div>'+TOUR+'</div>'+(extra||'')+'</div>';}
+  function flip(front,p,extra){return '<div class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="'+p.t+'"><div class="inner">'+front+back(p,extra)+'</div></div>';}
+  var R={
+    1:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="icon" aria-hidden="true">+</span></div>',p,'<span class="icon" aria-hidden="true">&times;</span>');},
+    2:function(p){return flip('<div class="face front"><img src="'+p.img+'" alt=""><div class="cap"><h4>'+p.t+'</h4><span class="arrow" aria-hidden="true">&rarr;</span></div></div>',p);},
+    3:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><div class="rule"></div><p class="tease">'+p.s+'</p><span class="more" aria-hidden="true">&rarr;</span></div>',p);},
+    4:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="bar"></span></div>',p);},
+    5:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="bar"></span></div>',p)+'<div class="stack"><h4>'+p.t+'</h4><div class="bar"></div><p class="desc">'+p.d+'</p>'+TOUR+'</div>';},
+    6:function(p){return '<div class="card" tabindex="0" role="button" aria-label="'+p.t+'"><img src="'+p.img+'" alt=""><div class="panel"><h4>'+p.t+'</h4><div class="more6"><div><p class="desc">'+p.d+'</p>'+TOUR+'</div></div></div></div>';}
+  };
+  document.querySelectorAll('[data-v]').forEach(function(host){
+    var v=host.dataset.v;
+    host.innerHTML='<section class="why v'+v+'">'+HEAD+'<div class="grid">'+P.map(R[v]).join('')+'</div></section>';
+  });
+  function wire(card){
+    function t(){var on=card.classList.toggle('on');card.setAttribute('aria-pressed',on?'true':'false');}
+    card.addEventListener('click',function(e){if(e.target.closest('a'))return;t();});
+    card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
+  }
+  document.querySelectorAll('.flip,.v6 .card').forEach(function(c){
+    var host=c.closest('[data-v]');
+    if(host.dataset.v==='5'&&host.classList.contains('m-touch'))return;
+    if(host.dataset.v==='6'&&host.classList.contains('m-touch'))return;
+    wire(c);
+  });
+  // 04: on the phone preview, cards flip on their own as they scroll into view
+  var phone4=document.querySelector('.screen.m-touch[data-v="4"]');
+  function arm(){
+    var cards=[].slice.call(phone4.querySelectorAll('.flip'));
+    cards.forEach(function(c){c.classList.remove('on');c.setAttribute('aria-pressed','false');});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=cards.indexOf(e.target);setTimeout(function(){e.target.classList.add('on');e.target.setAttribute('aria-pressed','true');},350+i*120);io.unobserve(e.target);}});},{root:phone4,threshold:.6});
+    cards.forEach(function(c){io.observe(c);});
+  }
+  arm();
+  document.querySelector('[data-replay]').addEventListener('click',function(){phone4.scrollTop=0;setTimeout(arm,50);});
+})();
+</script>
+</body>
+</html>
