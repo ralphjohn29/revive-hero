@@ -73,9 +73,9 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .pu .x:hover{background:var(--canvas)}
 .pu .x:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .pu .bd > .eye,.pu .bd > h3{padding-right:44px}
-.pu3 .bd > .eye,.pu3 .bd > h3{padding-left:44px}
+.pu3 .bd > .eye,.pu3 .bd > h3{padding-left:0;padding-right:0}
 .pu .bd{padding:32px 32px 28px}
-.pu .eye{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.pu .eye{font-size:13px;font-weight:600;letter-spacing:.22em;line-height:1.5;text-transform:uppercase;color:var(--gold-ink)}
 .pu h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:30px;line-height:1.12;color:var(--navy);margin-top:8px;text-wrap:balance}
 .pu .lead{font-size:16px;line-height:1.55;color:var(--muted);margin-top:10px}
 .pu form{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -98,7 +98,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   .pu input[type=text],.pu input[type=email],.pu input[type=tel]{padding:10px}
   .pu .sms{font-size:12px;line-height:1.45}
   .pu .btn{padding:14px}
-  .pu .crest{display:none}
+  .pu .eye{font-size:12px;letter-spacing:.16em;line-height:1.5}
+  .pu1 .crest{width:40px;margin-bottom:10px}
 }
 
 /* 01 Refined card */
@@ -229,6 +230,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div></div>
       <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu1"><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
           <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
           <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
           <form data-fields></form></div></div></div></div>
