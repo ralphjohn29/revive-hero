@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective — Mailing List Pop-up (4 Designs)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME ============ */
+:root{--canvas:#FAF7F2;--gold:#C6A55C;--coal:#171614}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(16px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:46rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.75);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:46rem;font-size:.88rem;line-height:1.7;color:rgba(250,247,242,.6)}
+.deck-note b{color:var(--canvas);font-weight:600}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.4rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;padding:.9rem 1.3rem;color:var(--canvas);min-width:220px;transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.72rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.15rem;margin-top:.25rem}
+.pickbar .p{font-size:.78rem;color:rgba(250,247,242,.6);margin-top:.3rem}
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.95rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.stage > div:first-child{flex:1;min-width:0;width:100%}
+.stage-cap{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.55);margin-bottom:.8rem}
+.browser{background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.72rem;letter-spacing:.06em;color:rgba(250,247,242,.5);text-align:center}
+.phone{width:375px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%;max-width:375px}}
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block li{font-size:.9rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78);margin-bottom:.5rem;list-style:none}
+
+/* ============ SCREEN: fake page + backdrop ============ */
+.scr{position:relative;overflow:hidden;background:#121E3F;container-type:inline-size;font-family:'Josefin Sans',sans-serif}
+.scr.desk{height:760px}
+.scr.mob{height:740px;border-radius:34px}
+.pg{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.pg .cp{padding:120px 56px 0;color:#FAF7F2}
+.pg .cp small{display:block;color:#DB9446;font-size:13px;letter-spacing:.22em;margin-bottom:16px}
+.pg .cp b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:46px;line-height:1.08}
+.pg .ph{background:url(assets/opt/suite-1.jpg) center/cover}
+.pg .nav{position:absolute;left:0;right:0;top:0;height:76px;border-bottom:1px solid rgba(255,255,255,.12);background:#121E3F}
+.mob .pg{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+.mob .pg .cp{padding:110px 24px 24px}
+.mob .pg .cp b{font-size:34px}
+.veil{position:absolute;inset:0;background:rgba(13,23,48,.62);backdrop-filter:blur(2px)}
+
+/* ============ POP-UP SHARED ============ */
+.pu{--navy:#121E3F;--gold:#DB9446;--gold-ink:#9a5f1f;--muted:#48516b;--taupe:#E7DFD3;--paper:#fff;--canvas:#FAF7F2;
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(460px,calc(100% - 32px));max-height:calc(100% - 48px);overflow:auto;
+  background:var(--paper);color:#1C1B1A;box-shadow:0 24px 70px rgba(0,0,0,.35);border-radius:4px}
+.pu .x{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;background:transparent;font-size:24px;line-height:1;color:var(--navy);cursor:pointer;border-radius:50%}
+.pu .x:hover{background:rgba(18,30,63,.06)}
+.pu .bd{padding:32px 32px 28px}
+.pu .eye{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.pu h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:30px;line-height:1.12;color:var(--navy);margin-top:8px;text-wrap:balance}
+.pu .lead{font-size:16px;line-height:1.55;color:var(--muted);margin-top:10px}
+.pu form{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pu label{display:block;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--navy);margin-bottom:5px}
+.pu .full{grid-column:1/-1}
+.pu input[type=text],.pu input[type=email],.pu input[type=tel]{width:100%;font:inherit;font-size:16px;padding:12px 12px;border:1px solid var(--taupe);background:var(--canvas);border-radius:2px;color:#1C1B1A}
+.pu input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.pu .sms{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.5;color:var(--muted)}
+.pu .sms input{margin-top:3px;width:16px;height:16px;flex:none;accent-color:var(--navy)}
+.pu .btn{grid-column:1/-1;font:inherit;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px;border:0;background:var(--gold);color:var(--navy);border-radius:2px;cursor:pointer}
+.pu .legal{grid-column:1/-1;font-size:12.5px;color:var(--muted);text-align:center}
+.pu .legal a{color:var(--gold-ink)}
+.pu .later{grid-column:1/-1;text-align:center;font-size:14px;color:var(--muted);text-decoration:underline;background:none;border:0;cursor:pointer;font-family:inherit}
+@container (max-width:480px){
+  .pu .bd{padding:22px 18px 18px}
+  .pu h3{font-size:25px}
+  .pu .lead{font-size:15px;margin-top:6px}
+  .pu form{grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .pu label{margin-bottom:3px}
+  .pu input[type=text],.pu input[type=email],.pu input[type=tel]{padding:10px}
+  .pu .sms{font-size:12px;line-height:1.45}
+  .pu .btn{padding:14px}
+  .pu .crest{display:none}
+}
+
+/* 01 Refined card */
+.pu1{border-top:4px solid var(--gold)}
+.pu1 .crest{width:44px;height:auto;display:block;margin-bottom:10px}
+
+/* 02 Photo split */
+.pu2{width:min(720px,calc(100% - 48px));display:grid;grid-template-columns:38% 1fr}
+.pu2 .img{background:url(assets/opt/suite-2.jpg) center/cover;min-height:100%}
+@container (max-width:480px){
+  .pu2{grid-template-columns:1fr;width:calc(100% - 32px)}
+  .pu2 .img{min-height:120px;height:120px}
+}
+
+/* 03 Navy invitation — bottom sheet on mobile */
+.pu3{background:var(--navy);color:var(--canvas);width:min(440px,calc(100% - 32px));text-align:center;border:1px solid rgba(219,148,70,.4)}
+.pu3 .x{color:var(--canvas)}
+.pu3 .x:hover{background:rgba(255,255,255,.08)}
+.pu3 .eye{color:var(--gold)}
+.pu3 h3{color:var(--canvas)}
+.pu3 .lead{color:rgba(250,247,242,.82)}
+.pu3 label{color:var(--canvas);text-align:left}
+.pu3 input[type=text],.pu3 input[type=email],.pu3 input[type=tel]{background:#fff;border-color:#fff}
+.pu3 .sms{color:rgba(250,247,242,.78);text-align:left}
+.pu3 .legal{color:rgba(250,247,242,.7)}
+.pu3 .legal a{color:var(--gold)}
+.pu3 .later{color:rgba(250,247,242,.75)}
+.pu3 .crest{width:52px;margin:0 auto 10px;display:block}
+@container (max-width:480px){
+  .pu3{top:auto;bottom:0;left:0;transform:none;width:100%;max-height:88%;border-radius:18px 18px 0 0;border-width:1px 0 0}
+  .pu3 .grab{display:block;width:44px;height:4px;border-radius:9px;background:rgba(250,247,242,.35);margin:10px auto 0}
+}
+.pu3 .grab{display:none}
+
+/* 04 Two-step */
+.pu4{width:min(420px,calc(100% - 32px))}
+.pu4 .steps{display:flex;gap:6px;margin-top:16px}
+.pu4 .steps i{flex:1;height:3px;background:var(--taupe);border-radius:3px}
+.pu4 .steps i.on{background:var(--gold)}
+.pu4 .stepnote{font-size:13px;color:var(--muted);margin-top:8px}
+.pu4 .step2{display:none}
+.pu4.show2 .step1{display:none}
+.pu4.show2 .step2{display:grid}
+@container (max-width:480px){
+  .pu4{top:auto;bottom:0;left:0;transform:none;width:100%;border-radius:18px 18px 0 0;max-height:88%}
+}
+.pair{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
+.pair button{font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(198,165,92,.4);padding:.5rem .9rem;border-radius:3px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="deck">
+  <header class="deck-head">
+    <p class="eyebrow">Mailing List Pop-up &middot; For Review</p>
+    <h1>Four Designs for the Mailing List Pop-up</h1>
+    <p class="lede">Four ways to show the mailing list pop-up. Each one is a <b>compact card</b> over a darkened backdrop, so the page still shows behind it and visitors can easily close it. On phones it fits the screen with room to spare, or slides up from the bottom.</p>
+    <p class="deck-note">Every design keeps the <b>same form fields</b> (first name, last name, email, phone) and the <b>same SMS consent wording</b>, word for word. Timing stays as agreed: after 30 seconds, or when someone is about to leave.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a design">
+    <a href="#p1"><span class="n">01</span><span class="t">The Refined Card</span><span class="p">Today&rsquo;s pop-up, cleaned up &middot; 460px</span></a>
+    <a href="#p2"><span class="n">02</span><span class="t">The Suite Photo</span><span class="p">Photo on the left, form on the right</span></a>
+    <a href="#p3"><span class="n">03</span><span class="t">The Navy Invitation</span><span class="p">Brand navy &middot; slides up on phones</span></a>
+    <a href="#p4"><span class="n">04</span><span class="t">The Two-Step</span><span class="p">Email first, phone second</span></a>
+  </nav>
+
+  <template id="fields">
+    <div><label>First name *</label><input type="text" placeholder="First name"></div>
+    <div><label>Last name *</label><input type="text" placeholder="Last name"></div>
+    <div class="full"><label>Email *</label><input type="email" placeholder="Email address"></div>
+    <div class="full"><label>Phone number *</label><input type="tel" placeholder="(919) 000-0000"></div>
+    <label class="sms full"><input type="checkbox"><span>I agree to receive automated marketing and promotional text messages from Revive Salon Collective at the phone number provided. Consent is not required to submit this form. Reply STOP to unsubscribe or HELP for help. Message &amp; data rates may apply.</span></label>
+    <button class="btn" type="button">Join the Mailing List</button>
+    <p class="legal">We respect your privacy. See our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+  </template>
+
+  <template id="page-desk"><div class="pg"><div class="nav"></div><div class="cp"><small>ELEVATE &middot; OWN &middot; INSPIRE</small><b>Luxury Private Salon Suites for Rent in Raleigh, NC</b></div><div class="ph"></div></div><div class="veil"></div></template>
+  <template id="page-mob"><div class="pg"><div class="nav"></div><div class="cp"><small>ELEVATE &middot; OWN &middot; INSPIRE</small><b>Luxury Private Salon Suites for Rent in Raleigh, NC</b></div><div class="ph"></div></div><div class="veil"></div></template>
+
+  <!-- 01 -->
+  <section class="variant" id="p1">
+    <div class="v-head"><span class="num">01</span><h2>The Refined Card</h2></div>
+    <p class="v-desc">The same layout as today, with <b>brand fonts</b>, larger and easier-to-read fields, a clear close button, and a gold accent line. It&rsquo;s the smallest change, at <b>460px wide</b>.</p>
+    <div class="stage">
+      <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="scr desk" data-page="desk"><div class="pu pu1" role="dialog" aria-label="Join the mailing list"><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <form data-fields></form></div></div></div></div></div>
+      <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu1"><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <form data-fields></form></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="variant" id="p2">
+    <div class="v-head"><span class="num">02</span><h2>The Suite Photo</h2></div>
+    <p class="v-desc">A <b>real suite photo</b> next to the form, so the pop-up feels like part of Revive instead of a generic sign-up box. It&rsquo;s the widest option at 720px, but still leaves the page visible on both sides. On phones the photo becomes a thin banner on top.</p>
+    <div class="stage">
+      <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="scr desk" data-page="desk"><div class="pu pu2"><div class="img" role="img" aria-label="Salon suite at Revive"></div><div style="position:relative"><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <p class="eye">Stay in the loop</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Suite openings and news from Revive, sent to you first.</p>
+          <form data-fields></form></div></div></div></div></div></div>
+      <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu2"><div class="img"></div><div style="position:relative"><button class="x" aria-label="Close" style="color:#fff;top:-110px">&times;</button><div class="bd">
+          <p class="eye">Stay in the loop</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Suite openings and news from Revive, sent to you first.</p>
+          <form data-fields></form></div></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="variant" id="p3">
+    <div class="v-head"><span class="num">03</span><h2>The Navy Invitation</h2></div>
+    <p class="v-desc">Brand navy with the gold crest, which matches the header and footer. It&rsquo;s <b>440px wide</b> on desktop. On phones it <b>slides up from the bottom</b> like an app sheet, so it&rsquo;s easy to reach with a thumb and quick to close.</p>
+    <div class="stage">
+      <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="scr desk" data-page="desk"><div class="pu pu3"><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <img class="crest" src="assets/opt/square_gold_logo_large.png" alt="">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <form data-fields></form></div></div></div></div></div>
+      <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu3"><span class="grab"></span><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <form data-fields></form></div></div></div></div>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="variant" id="p4">
+    <div class="v-head"><span class="num">04</span><h2>The Two-Step</h2></div>
+    <p class="v-desc">Step 1 asks only for a <b>name and email</b>. Step 2 asks for the phone number and SMS consent. A shorter first step usually means more people sign up. It&rsquo;s the smallest card at <b>420px</b>, and a bottom sheet on phones. Use the buttons to switch steps.</p>
+    <div class="stage">
+      <div><p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+        <div class="scr desk" data-page="desk"><div class="pu pu4" data-two><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <div class="steps"><i class="on"></i><i data-s2></i></div>
+          <form class="step1"><div><label>First name *</label><input type="text" placeholder="First name"></div><div><label>Last name *</label><input type="text" placeholder="Last name"></div><div class="full"><label>Email *</label><input type="email" placeholder="Email address"></div><button class="btn" type="button" data-next>Continue</button><p class="legal">We respect your privacy. See our <a href="#">Privacy Policy</a>.</p></form>
+          <form class="step2"><p class="stepnote full">Almost done. Add your phone to get text updates too.</p><div class="full"><label>Phone number *</label><input type="tel" placeholder="(919) 000-0000"></div><label class="sms full"><input type="checkbox"><span>I agree to receive automated marketing and promotional text messages from Revive Salon Collective at the phone number provided. Consent is not required to submit this form. Reply STOP to unsubscribe or HELP for help. Message &amp; data rates may apply.</span></label><button class="btn" type="button">Join the Mailing List</button><p class="legal">See our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p></form>
+        </div></div></div></div>
+        <div class="pair"><button type="button" data-goto="1">Show step 1</button><button type="button" data-goto="2">Show step 2</button></div></div>
+      <div class="phone"><div class="scr mob" data-page="mob"><div class="pu pu4" data-two><button class="x" aria-label="Close">&times;</button><div class="bd">
+          <p class="eye">Revive Salon Collective</p><h3>Join Our Mailing List</h3>
+          <p class="lead">Be the first to hear about suite openings and news from Revive.</p>
+          <div class="steps"><i class="on"></i><i data-s2></i></div>
+          <form class="step1"><div><label>First name *</label><input type="text" placeholder="First name"></div><div><label>Last name *</label><input type="text" placeholder="Last name"></div><div class="full"><label>Email *</label><input type="email" placeholder="Email address"></div><button class="btn" type="button" data-next>Continue</button></form>
+          <form class="step2"><div class="full"><label>Phone number *</label><input type="tel" placeholder="(919) 000-0000"></div><label class="sms full"><input type="checkbox"><span>I agree to receive automated marketing and promotional text messages from Revive Salon Collective at the phone number provided. Consent is not required to submit this form. Reply STOP to unsubscribe or HELP for help. Message &amp; data rates may apply.</span></label><button class="btn" type="button">Join the Mailing List</button></form>
+        </div></div></div></div>
+    </div>
+  </section>
+
+  <div class="footer-block">
+    <div><h3>Same in every design</h3><ul>
+      <li>Same fields and SMS consent wording as today</li>
+      <li>Close button, Escape key and tapping the backdrop all close it</li>
+      <li>Never wider than the screen, and scrolls inside if needed</li></ul></div>
+    <div><h3>Timing</h3><ul>
+      <li>Shows after 30 seconds, or when someone is about to leave</li>
+      <li>Stays out of the way of the tour form at the top of the homepage</li></ul></div>
+    <div><h3>Next step</h3><ul>
+      <li>Pick a design, and I&rsquo;ll build it on the website for review first</li>
+      <li>Nothing changes on the live site until it&rsquo;s approved</li></ul></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('fields').innerHTML;
+  document.querySelectorAll('[data-fields]').forEach(function(el){el.innerHTML=f});
+  document.querySelectorAll('[data-page]').forEach(function(s){
+    s.insertAdjacentHTML('afterbegin',document.getElementById('page-'+s.dataset.page).innerHTML);
+  });
+  function setStep(n){document.querySelectorAll('[data-two]').forEach(function(p){p.classList.toggle('show2',n===2);p.querySelector('[data-s2]').classList.toggle('on',n===2)})}
+  document.querySelectorAll('[data-goto]').forEach(function(b){b.addEventListener('click',function(){setStep(+b.dataset.goto)})});
+  document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){setStep(2)})});
+})();
+</script>
+</body>
+</html>
