@@ -78,11 +78,11 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .flip .face{grid-area:1/1;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:2px;display:flex;flex-direction:column;justify-content:center;padding:32px 30px}
 .flip .back{transform:rotateY(180deg);background:var(--navy);color:#FAF7F2}
 .flip .back .desc{color:rgba(250,247,242,.92)}
-.flip .back .bt{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.flip .back .bt{font-size:13px;font-weight:600;letter-spacing:.18em;line-height:1.5;text-transform:uppercase;color:var(--gold);margin-bottom:12px;text-wrap:balance}
 .flip.on .inner{transform:rotateY(180deg)}
 .m-desk .flip:hover .inner{transform:rotateY(180deg)}
 .m-touch .flip:not(.on) .back a{pointer-events:none}
-@container (max-width:560px){.flip .inner{min-height:220px}.flip .face{padding:26px 22px}}
+@container (max-width:560px){.flip .inner{min-height:220px}.flip .face{padding:26px 22px}.flip .back .bt{font-size:12px;letter-spacing:.14em}}
 
 /* icons + teaser (shared) */
 .why .ico{width:54px;height:54px;color:var(--gold-ink);flex:none;margin-bottom:16px}
@@ -98,6 +98,8 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .v1 .icon{position:absolute;right:16px;bottom:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-ink);display:grid;place-items:center;font-size:22px;line-height:1;transition:transform .3s}
 .v1 .back .icon{border-color:rgba(219,148,70,.7);color:var(--gold)}
 .v1 .back{position:relative}
+.v1 .back .icon{top:16px;bottom:auto}
+.v1 .back .bt{padding-right:52px}
 .m-desk .v1 .flip:hover .front .icon{transform:rotate(90deg)}
 @container (max-width:560px){.v1 .front h4{font-size:24px}}
 
