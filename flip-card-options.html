@@ -84,8 +84,16 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 .m-touch .flip:not(.on) .back a{pointer-events:none}
 @container (max-width:560px){.flip .inner{min-height:220px}.flip .face{padding:26px 22px}}
 
+/* icons + teaser (shared) */
+.why .ico{width:54px;height:54px;color:var(--gold-ink);flex:none;margin-bottom:16px}
+.why .tease{font-size:17px;line-height:1.5;color:var(--muted);max-width:30ch;margin-top:10px}
+.why .front{text-align:center;align-items:center}
+.v5 .stack-h{display:flex;align-items:center;gap:14px}
+.v5 .stack-h .ico{width:38px;height:38px;margin:0}
+@container (max-width:560px){.why .ico{width:46px;height:46px;margin-bottom:12px}.v1 .front{padding-bottom:68px}.why .tease{font-size:16px}}
+
 /* 01 Corner Icon */
-.v1 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center;position:relative}
+.v1 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center;position:relative;padding-bottom:64px}
 .v1 .front h4{font-size:28px}
 .v1 .icon{position:absolute;right:16px;bottom:16px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-ink);display:grid;place-items:center;font-size:22px;line-height:1;transition:transform .3s}
 .v1 .back .icon{border-color:rgba(219,148,70,.7);color:var(--gold)}
@@ -106,21 +114,21 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 /* 03 Teaser Line */
 .v3 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
 .v3 .front h4{font-size:28px}
-.v3 .front .tease{font-size:17px;color:var(--muted);max-width:30ch}
+.v3 .front .tease{margin-top:0}
 .v3 .front .more{margin-top:18px;width:34px;height:34px;border-radius:50%;background:var(--canvas);border:1px solid var(--taupe);display:grid;place-items:center;color:var(--gold-ink);font-size:18px}
 @container (max-width:560px){.v3 .front h4{font-size:24px}}
 
 /* 04 Flips on Scroll (phone) */
 .v4 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
 .v4 .front h4{font-size:28px}
-.v4 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:16px}
+.v4 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:14px}
 .replay{margin:16px auto 0;display:block;font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9a5f1f;background:none;border:1px solid var(--taupe);padding:8px 14px;border-radius:2px;cursor:pointer}
 @container (max-width:560px){.v4 .front h4{font-size:24px}}
 
 /* 05 Open on Phone */
 .v5 .front{background:#fff;border:1px solid var(--taupe);text-align:center;align-items:center}
 .v5 .front h4{font-size:28px}
-.v5 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:16px}
+.v5 .front .bar{width:44px;height:1px;background:var(--gold);margin-top:14px}
 .v5 .stack{display:none;background:#fff;border:1px solid var(--taupe);padding:24px 22px}
 .v5 .stack h4{font-size:23px}
 .v5 .stack .bar{width:36px;height:1px;background:var(--gold);margin:12px 0}
@@ -152,7 +160,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
   <header class="deck-head">
     <p class="eyebrow">Why Choose Revive &middot; For Review</p>
     <h1>Six Ways to Show the Four Reasons</h1>
-    <p class="lede">Six designs for the &ldquo;Why choose Revive?&rdquo; cards, all using your four headings and descriptions. None of them need instructions on the card: an icon, a photo or the layout shows people there&rsquo;s more to see.</p>
+    <p class="lede">Six designs for the &ldquo;Why choose Revive?&rdquo; cards, all using your four headings and descriptions, with a matching gold icon for each heading. None of them need instructions on the card: an icon, a photo or the layout shows people there&rsquo;s more to see.</p>
     <p class="deck-note"><b>Try them:</b> on the desktop previews, move your mouse over a card. On the phone previews, tap a card, just like on a real phone. No cartoon pictures, only real Revive photos and the Revive colors.</p>
   </header>
 
@@ -167,7 +175,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
 
   <section class="variant" id="c1">
     <div class="v-head"><span class="num">01</span><h2>The Corner Icon</h2></div>
-    <p class="v-desc">A clean white card with the heading, and a small gold <b>+</b> in the corner. The + tells people there&rsquo;s more without any words. It flips on hover on desktop and on tap on phones, and the + turns into &times; on the back.</p>
+    <p class="v-desc">A clean white card with an icon, the heading and a short line, plus a small gold <b>+</b> in the corner. The + tells people there&rsquo;s more without any words. It flips on hover on desktop and on tap on phones, and the + turns into &times; on the back.</p>
     <div class="stage"><div><p class="stage-cap">Desktop &middot; hover a card</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div><div class="m-desk" data-v="1"></div></div></div>
       <div class="phone"><div class="screen m-touch" data-v="1"></div></div></div>
   </section>
@@ -229,16 +237,18 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--ca
     {t:'Freedom to Work Your Way.',d:'Create a schedule that fits your life and your clients. Enjoy the independence of your own studio, with the flexibility to shape your business around your goals.',s:'A schedule that fits your life.',img:'assets/opt/suite-8.jpg'},
     {t:'A Space That Reflects Your Brand.',d:'Create a studio that feels uniquely yours. Personalize your space, express your style, and give your clients an elevated experience that makes your brand stand out.',s:'A studio that feels uniquely yours.',img:'assets/opt/suite-7.jpg'}
   ];
+  var ICONS=["<svg class=\"ico\" viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 40h32\"/><path d=\"M13 34v-5\"/><path d=\"M21 34v-9\"/><path d=\"M29 34v-7\"/><path d=\"M37 34V20\"/><path d=\"M11 22l9-8 7 5 10-9\"/><path d=\"M31 10h6v6\"/></svg>", "<svg class=\"ico\" viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><g transform=\"rotate(-40 24 24)\"><circle cx=\"13\" cy=\"24\" r=\"9\"/><circle cx=\"13\" cy=\"24\" r=\"3\"/><path d=\"M22 24h22\"/><path d=\"M36 24v7\"/><path d=\"M42 24v5\"/></g></svg>", "<svg class=\"ico\" viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"8\" y=\"11\" width=\"32\" height=\"29\" rx=\"2.5\"/><path d=\"M8 19h32\"/><path d=\"M16 7v8\"/><path d=\"M32 7v8\"/><path d=\"M18 30l4 4 8-9\"/></svg>", "<svg class=\"ico\" viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"21\" cy=\"20\" r=\"11\"/><path d=\"M16 15a7 7 0 0 1 5-2\"/><path d=\"M21 31v9\"/><path d=\"M14 40h14\"/><path d=\"M38 7v7\"/><path d=\"M34.5 10.5h7\"/><path d=\"M37 24v4\"/><path d=\"M35 26h4\"/></svg>"];
+  P.forEach(function(p,i){p.ic=ICONS[i];});
   var HEAD='<div class="head"><p class="eye">Why Revive</p><h3>Why choose Revive?</h3><p>A thoughtfully designed space for independent beauty professionals to build their brand, grow their business, and create an exceptional client experience.</p></div>';
   var TOUR='<a class="tour" href="#" onclick="return false">Request a private tour &rarr;</a>';
   function back(p,extra){return '<div class="face back"><p class="bt">'+p.t+'</p><p class="desc">'+p.d+'</p><div>'+TOUR+'</div>'+(extra||'')+'</div>';}
   function flip(front,p,extra){return '<div class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="'+p.t+'"><div class="inner">'+front+back(p,extra)+'</div></div>';}
   var R={
-    1:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="icon" aria-hidden="true">+</span></div>',p,'<span class="icon" aria-hidden="true">&times;</span>');},
+    1:function(p){return flip('<div class="face front">'+p.ic+'<h4>'+p.t+'</h4><p class="tease">'+p.s+'</p><span class="icon" aria-hidden="true">+</span></div>',p,'<span class="icon" aria-hidden="true">&times;</span>');},
     2:function(p){return flip('<div class="face front"><img src="'+p.img+'" alt=""><div class="cap"><h4>'+p.t+'</h4><span class="arrow" aria-hidden="true">&rarr;</span></div></div>',p);},
-    3:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><div class="rule"></div><p class="tease">'+p.s+'</p><span class="more" aria-hidden="true">&rarr;</span></div>',p);},
-    4:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="bar"></span></div>',p);},
-    5:function(p){return flip('<div class="face front"><h4>'+p.t+'</h4><span class="bar"></span></div>',p)+'<div class="stack"><h4>'+p.t+'</h4><div class="bar"></div><p class="desc">'+p.d+'</p>'+TOUR+'</div>';},
+    3:function(p){return flip('<div class="face front">'+p.ic+'<h4>'+p.t+'</h4><div class="rule"></div><p class="tease">'+p.s+'</p><span class="more" aria-hidden="true">&rarr;</span></div>',p);},
+    4:function(p){return flip('<div class="face front">'+p.ic+'<h4>'+p.t+'</h4><span class="bar"></span><p class="tease">'+p.s+'</p></div>',p);},
+    5:function(p){return flip('<div class="face front">'+p.ic+'<h4>'+p.t+'</h4><span class="bar"></span><p class="tease">'+p.s+'</p></div>',p)+'<div class="stack"><div class="stack-h">'+p.ic+'<h4>'+p.t+'</h4></div><div class="bar"></div><p class="desc">'+p.d+'</p>'+TOUR+'</div>';},
     6:function(p){return '<div class="card" tabindex="0" role="button" aria-label="'+p.t+'"><img src="'+p.img+'" alt=""><div class="panel"><h4>'+p.t+'</h4><div class="more6"><div><p class="desc">'+p.d+'</p>'+TOUR+'</div></div></div></div>';}
   };
   document.querySelectorAll('[data-v]').forEach(function(host){
