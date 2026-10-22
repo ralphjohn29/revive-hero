@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective — Suite Options Section (3 Layouts)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* ============ MOCK-DECK CHROME ============ */
+:root{
+  --ink:#1C1B1A; --canvas:#FAF7F2; --gold:#C6A55C; --taupe:#E7DFD3; --ink60:rgba(28,27,26,.62);
+  --paper:#FFFFFF; --navy:#121E3F; --navy-deep:#0d1730; --coal:#171614;
+  --brand-gold:#DB9446; --gold-ink:#9a5f1f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(16px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15}
+.deck-head .lede{margin:1.2rem auto 0;max-width:46rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.75);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:46rem;font-size:.88rem;line-height:1.7;color:rgba(250,247,242,.6)}
+.deck-note b{color:var(--canvas);font-weight:600}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:2rem auto 0;max-width:60rem;font-size:.8rem;letter-spacing:.06em}
+.flow span{border:1px solid rgba(250,247,242,.2);border-radius:99px;padding:.45rem .9rem;color:rgba(250,247,242,.65)}
+.flow span.new{border-color:var(--brand-gold);color:var(--brand-gold);font-weight:600}
+.pickbar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:2.4rem 0 4rem}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;padding:.9rem 1.3rem;color:var(--canvas);min-width:220px;transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.72rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.15rem;margin-top:.25rem}
+.pickbar .p{font-size:.78rem;color:rgba(250,247,242,.6);margin-top:.3rem}
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.95rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.stage > div:first-child{flex:1;min-width:0;width:100%}
+.browser{background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.72rem;letter-spacing:.06em;color:rgba(250,247,242,.5);text-align:center}
+.frame{container-type:inline-size;background:var(--canvas)}
+.phone{width:399px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%}}
+.screen{container-type:inline-size;border-radius:34px;overflow:hidden;background:var(--canvas);max-height:1180px;overflow-y:auto}
+.stage-cap{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.55);margin-bottom:.8rem}
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block p,.footer-block li{font-size:.9rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78)}
+.footer-block ul{list-style:none}
+.footer-block li{margin-bottom:.5rem}
+
+/* ============ PAGE CONTEXT (ghost neighbours) ============ */
+.ghost{font-family:'Josefin Sans',sans-serif;color:rgba(28,27,26,.45);background:#fff;text-align:center;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;padding:18px 16px;border-bottom:1px dashed #d9cfc0}
+.ghost.after{background:var(--canvas);border-top:1px dashed #d9cfc0;border-bottom:0}
+.ghost b{display:block;font-family:'DM Serif Display',serif;font-weight:400;letter-spacing:0;text-transform:none;font-size:1.1rem;color:rgba(28,27,26,.55);margin-top:4px}
+
+/* ============ SHARED SECTION PIECES ============ */
+.so{--ink:#1C1B1A;--navy:#121E3F;--paper:#fff;--canvas:#FAF7F2;--taupe:#E7DFD3;--gold:#DB9446;--gold-ink:#9a5f1f;--muted:#48516b;
+  font-family:'Josefin Sans',sans-serif;color:var(--ink);padding:72px 24px}
+.so .wrap{max-width:1120px;margin:0 auto}
+.so .eye{font-size:15px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:12px}
+.so h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(30px,3.6cqi,40px);line-height:1.15;color:var(--navy);text-wrap:balance}
+.so .intro{font-size:17px;line-height:1.6;color:var(--muted);max-width:620px;margin-top:14px;text-wrap:pretty}
+.so .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px dashed var(--gold);color:var(--gold-ink);padding:3px 8px;border-radius:2px;background:rgba(219,148,70,.06)}
+.so .more{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.so .btn{display:inline-block;background:var(--gold);color:var(--navy);font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px 28px;border-radius:2px;text-decoration:none}
+.so .feat{list-style:none;margin-top:14px}
+.so .feat li{font-size:16px;line-height:1.5;color:var(--muted);padding:6px 0;border-top:1px solid var(--taupe)}
+.so .feat li:first-child{border-top:0}
+.so img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* ---- Option 01: The Three Suites (navy band) ---- */
+.so1{background:var(--navy);color:var(--canvas)}
+.so1 .eye{color:var(--gold)}
+.so1 h2{color:var(--canvas)}
+.so1 .intro{color:rgba(250,247,242,.8)}
+.so1 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.so1 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.so1 .card{background:var(--paper);color:var(--ink);display:flex;flex-direction:column}
+.so1 .card .ph{aspect-ratio:4/3;overflow:hidden}
+.so1 .card .bd{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.so1 .card .bd .tag{align-self:flex-start}
+.so1 .card h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.25;color:var(--navy);margin-top:10px}
+.so1 .card .more{margin-top:auto;padding-top:18px;border:0;align-self:flex-start}
+.so1 .card .more span{border-bottom:1px solid var(--gold);padding-bottom:4px}
+.so1 .note{margin-top:28px;font-size:16px;color:rgba(250,247,242,.8);text-align:center}
+.so1 .more.light{color:var(--canvas)}
+@container (max-width:720px){.so1 .cards{grid-template-columns:1fr}.so1 .head{margin-bottom:28px}}
+@container (max-width:720px){.so{padding:48px 20px}}
+
+/* ---- Option 02: The Size Switcher (tabs) ---- */
+.so2{background:#fff}
+.so2 .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;margin-top:36px}
+.so2 .ph{aspect-ratio:5/4;overflow:hidden;border-radius:2px}
+.so2 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.so2 .tabs button{font:inherit;font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:12px 16px;border:1px solid var(--taupe);background:#fff;color:var(--navy);cursor:pointer;border-radius:2px}
+.so2 .tabs button[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.so2 .tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.so2 h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:28px;line-height:1.2;color:var(--navy);margin-top:12px}
+.so2 .panel p{font-size:17px;line-height:1.6;color:var(--muted);margin-top:10px}
+.so2 .acts{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:26px}
+.so2 .incl{margin-top:30px;font-size:15px;color:var(--muted);border-top:1px solid var(--taupe);padding-top:16px}
+@container (max-width:820px){.so2 .grid{grid-template-columns:1fr;gap:28px}}
+
+/* ---- Option 03: The Feature + List ---- */
+.so3{background:var(--canvas)}
+.so3 .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:stretch}
+.so3 .ph{min-height:460px;overflow:hidden;border-radius:2px;position:relative}
+.so3 .ph img{position:absolute;inset:0}
+.so3 .ph .cap{position:absolute;left:16px;bottom:16px;background:rgba(18,30,63,.88);color:#fff;font-size:14px;letter-spacing:.08em;padding:8px 12px}
+.so3 .rows{list-style:none;margin-top:28px}
+.so3 .row{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:center;padding:18px 0;border-top:1px solid var(--taupe)}
+.so3 .row:last-child{border-bottom:1px solid var(--taupe)}
+.so3 .row .th{aspect-ratio:1;overflow:hidden;border-radius:2px}
+.so3 .row h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:22px;color:var(--navy);line-height:1.25}
+.so3 .row p{font-size:16px;color:var(--muted);margin-top:4px;line-height:1.5}
+.so3 .acts{margin-top:28px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+@container (max-width:820px){.so3 .grid{grid-template-columns:minmax(0,1fr);gap:28px}.so3 .ph{min-height:0;aspect-ratio:4/3}.so3 .row{grid-template-columns:72px 1fr}}
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <header class="deck-head">
+    <p class="eyebrow">Homepage Section &middot; For Review</p>
+    <h1>A New &ldquo;Suite Options&rdquo; Section</h1>
+    <p class="lede">The FAQ says our studios come in different sizes, but the homepage doesn&rsquo;t show that yet. This section would let visitors see the suite types before they book a tour. It sits right after the &ldquo;Your Own Studio. Your Own Success.&rdquo; gallery, so there&rsquo;s another visual section before the page moves into mostly text.</p>
+    <p class="deck-note"><b>Everything here is a sample.</b> Suite names, sizes and which photo goes with which suite are placeholders using the current gallery photos. They&rsquo;re there to show the layout. Julia would confirm the real suite types, sizes and photos (the October 23 photo shoot could be a good source). No prices are shown.</p>
+    <div class="flow" aria-label="Homepage order">
+      <span>Hero</span><span>Your Own Studio gallery</span><span class="new">+ Suite Options (new)</span><span>Why choose Revive?</span><span>Reviews</span><span>How to Join Revive</span><span>Location</span><span>FAQ</span><span>Final tour form</span>
+    </div>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a layout option">
+    <a href="#o1"><span class="n">01</span><span class="t">The Three Suites</span><span class="p">Three photo cards on a navy band</span></a>
+    <a href="#o2"><span class="n">02</span><span class="t">The Size Switcher</span><span class="p">One large photo, tap a size to switch</span></a>
+    <a href="#o3"><span class="n">03</span><span class="t">The Feature + List</span><span class="p">Hero photo with a short list of sizes</span></a>
+  </nav>
+
+  <!-- ==================== OPTION 01 ==================== -->
+  <section class="variant" id="o1">
+    <div class="v-head"><span class="num">01</span><h2>The Three Suites</h2></div>
+    <p class="v-desc">Each suite type gets its own photo card. The <b>navy background</b> also breaks up the run of light sections that follows, so the page has more rhythm. This is the easiest option to scan on a phone, since the cards stack.</p>
+    <div class="stage">
+      <div>
+        <p class="stage-cap">Desktop &middot; placed after the gallery</p>
+        <div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="ghost">Above &middot; <b>Your Own Studio. Your Own Success.</b></div>
+            <section class="so so1"><div class="wrap">
+              <div class="head">
+                <div><p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2>
+                <p class="intro">Our private studios come in a variety of sizes. Every suite includes a sink, custom cabinetry, Wi-Fi and utilities.</p></div>
+                <a class="more light" href="#">Request a private tour &rarr;</a>
+              </div>
+              <div class="cards">
+                <article class="card"><div class="ph"><img src="assets/opt/suite-2.jpg" alt="Salon suite with shampoo bowl and styling chair"></div><div class="bd"><span class="tag">Size to confirm</span><h3>Single Suite</h3><ul class="feat"><li>Styling chair and shampoo bowl</li><li>Ideal for one professional</li></ul><a class="more" href="#"><span>Ask about availability &rarr;</span></a></div></article>
+                <article class="card"><div class="ph"><img src="assets/opt/suite-1.jpg" alt="Salon suite with a large window"></div><div class="bd"><span class="tag">Size to confirm</span><h3>Window Suite</h3><ul class="feat"><li>Large window with natural light</li><li>Room to personalize</li></ul><a class="more" href="#"><span>Ask about availability &rarr;</span></a></div></article>
+                <article class="card"><div class="ph"><img src="assets/opt/suite-7.jpg" alt="Larger salon suite with two styling chairs"></div><div class="bd"><span class="tag">Size to confirm</span><h3>Large Suite</h3><ul class="feat"><li>Space for more than one station</li><li>Great for growing businesses</li></ul><a class="more" href="#"><span>Ask about availability &rarr;</span></a></div></article>
+              </div>
+            </div></section>
+            <div class="ghost after">Below &middot; <b>Why choose Revive?</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="phone"><p class="stage-cap" style="text-align:center;margin:.6rem 0">Mobile</p><div class="screen">
+        <section class="so so1"><div class="wrap">
+          <div class="head"><div><p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2><p class="intro">Our private studios come in a variety of sizes. Every suite includes a sink, custom cabinetry, Wi-Fi and utilities.</p></div></div>
+          <div class="cards">
+            <article class="card"><div class="ph"><img src="assets/opt/suite-2.jpg" alt=""></div><div class="bd"><span class="tag">Size to confirm</span><h3>Single Suite</h3><ul class="feat"><li>Styling chair and shampoo bowl</li><li>Ideal for one professional</li></ul><a class="more" href="#"><span>Ask about availability &rarr;</span></a></div></article>
+            <article class="card"><div class="ph"><img src="assets/opt/suite-1.jpg" alt=""></div><div class="bd"><span class="tag">Size to confirm</span><h3>Window Suite</h3><ul class="feat"><li>Large window with natural light</li><li>Room to personalize</li></ul><a class="more" href="#"><span>Ask about availability &rarr;</span></a></div></article>
+          </div>
+          <p class="note">+ more suites below</p>
+        </div></section>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ==================== OPTION 02 ==================== -->
+  <section class="variant" id="o2">
+    <div class="v-head"><span class="num">02</span><h2>The Size Switcher</h2></div>
+    <p class="v-desc">One large photo with a row of size buttons. Tapping a size swaps the photo and the details. It&rsquo;s <b>compact</b> and keeps the page short, and it feels interactive without being busy. Try the buttons below.</p>
+    <div class="stage">
+      <div>
+        <p class="stage-cap">Desktop &middot; placed after the gallery</p>
+        <div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="ghost">Above &middot; <b>Your Own Studio. Your Own Success.</b></div>
+            <section class="so so2" data-switcher><div class="wrap">
+              <p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2>
+              <div class="grid">
+                <div class="ph"><img data-img src="assets/opt/suite-2.jpg" alt="Salon suite with shampoo bowl and styling chair"></div>
+                <div>
+                  <div class="tabs" role="tablist" aria-label="Suite sizes"></div>
+                  <div class="panel" aria-live="polite"><span class="tag">Size to confirm</span><h3 data-title></h3><p data-text></p></div>
+                  <div class="acts"><a class="btn" href="#">Request a private tour</a><a class="more" href="#">See the full gallery &rarr;</a></div>
+                  <p class="incl">Every suite includes a sink, custom cabinetry, Wi-Fi and utilities.</p>
+                </div>
+              </div>
+            </div></section>
+            <div class="ghost after">Below &middot; <b>Why choose Revive?</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="phone"><p class="stage-cap" style="text-align:center;margin:.6rem 0">Mobile</p><div class="screen">
+        <section class="so so2" data-switcher><div class="wrap">
+          <p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2>
+          <div class="grid">
+            <div class="ph"><img data-img src="assets/opt/suite-2.jpg" alt=""></div>
+            <div>
+              <div class="tabs" role="tablist" aria-label="Suite sizes"></div>
+              <div class="panel" aria-live="polite"><span class="tag">Size to confirm</span><h3 data-title></h3><p data-text></p></div>
+              <div class="acts"><a class="btn" href="#">Request a private tour</a></div>
+              <p class="incl">Every suite includes a sink, custom cabinetry, Wi-Fi and utilities.</p>
+            </div>
+          </div>
+        </div></section>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ==================== OPTION 03 ==================== -->
+  <section class="variant" id="o3">
+    <div class="v-head"><span class="num">03</span><h2>The Feature + List</h2></div>
+    <p class="v-desc">One tall photo on one side, and a short list of suite sizes with small photos on the other. It looks <b>editorial and calm</b>, and works well if there are only two or three suite types.</p>
+    <div class="stage">
+      <div>
+        <p class="stage-cap">Desktop &middot; placed after the gallery</p>
+        <div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div>
+          <div class="frame">
+            <div class="ghost">Above &middot; <b>Your Own Studio. Your Own Success.</b></div>
+            <section class="so so3"><div class="wrap"><div class="grid">
+              <div class="ph"><img src="assets/opt/suite-8.jpg" alt="Bright salon suite with a large window"><span class="cap">Every suite: sink, cabinetry, Wi-Fi, utilities</span></div>
+              <div>
+                <p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2>
+                <p class="intro">Our private studios come in a variety of sizes, so you can choose the space that fits your services.</p>
+                <ul class="rows">
+                  <li class="row"><div class="th"><img src="assets/opt/suite-2.jpg" alt=""></div><div><h3>Single Suite</h3><p>Styling chair and shampoo bowl. <span class="tag">Size to confirm</span></p></div></li>
+                  <li class="row"><div class="th"><img src="assets/opt/suite-1.jpg" alt=""></div><div><h3>Window Suite</h3><p>Large window with natural light. <span class="tag">Size to confirm</span></p></div></li>
+                  <li class="row"><div class="th"><img src="assets/opt/suite-7.jpg" alt=""></div><div><h3>Large Suite</h3><p>Space for more than one station. <span class="tag">Size to confirm</span></p></div></li>
+                </ul>
+                <div class="acts"><a class="btn" href="#">Request a private tour</a></div>
+              </div>
+            </div></div></section>
+            <div class="ghost after">Below &middot; <b>Why choose Revive?</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="phone"><p class="stage-cap" style="text-align:center;margin:.6rem 0">Mobile</p><div class="screen">
+        <section class="so so3"><div class="wrap"><div class="grid">
+          <div><p class="eye">Suite options</p><h2>Find the Right Suite for Your Business</h2><p class="intro">Our private studios come in a variety of sizes, so you can choose the space that fits your services.</p></div>
+          <div class="ph"><img src="assets/opt/suite-8.jpg" alt=""><span class="cap">Every suite: sink, cabinetry, Wi-Fi, utilities</span></div>
+          <div>
+            <ul class="rows" style="margin-top:0">
+              <li class="row"><div class="th"><img src="assets/opt/suite-2.jpg" alt=""></div><div><h3>Single Suite</h3><p>Styling chair and shampoo bowl.</p></div></li>
+              <li class="row"><div class="th"><img src="assets/opt/suite-1.jpg" alt=""></div><div><h3>Window Suite</h3><p>Large window with natural light.</p></div></li>
+              <li class="row"><div class="th"><img src="assets/opt/suite-7.jpg" alt=""></div><div><h3>Large Suite</h3><p>Space for more than one station.</p></div></li>
+            </ul>
+            <div class="acts"><a class="btn" href="#">Request a private tour</a></div>
+          </div>
+        </div></div></section>
+      </div></div>
+    </div>
+  </section>
+
+  <div class="footer-block">
+    <div><h3>What Julia would confirm</h3><ul>
+      <li>Which layout she prefers, or whether to skip the section</li>
+      <li>The real suite types and how many to show (2&ndash;4 works best)</li>
+      <li>Each suite&rsquo;s size and features</li>
+      <li>Which photo goes with each suite (new shoot photos welcome)</li></ul></div>
+    <div><h3>Why after the gallery</h3><ul>
+      <li>Visitors have just seen the space. Next they ask, &ldquo;which one fits me?&rdquo;</li>
+      <li>Everything below it is mostly text, so this keeps a visual beat in the middle of the page</li>
+      <li>Every button leads to the same private tour form</li></ul></div>
+    <div><h3>What stays the same</h3><ul>
+      <li>No prices, as with the FAQ</li>
+      <li>Same fonts, colors and spacing as the rest of the homepage</li>
+      <li>Nothing goes on the website until it&rsquo;s approved</li></ul></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var suites=[
+    {k:'Single',t:'Single Suite',d:'A private studio with a styling chair and shampoo bowl. Ideal for one professional.',img:'assets/opt/suite-2.jpg',alt:'Salon suite with shampoo bowl and styling chair'},
+    {k:'Window',t:'Window Suite',d:'A bright studio with a large window and natural light, with room to personalize.',img:'assets/opt/suite-1.jpg',alt:'Salon suite with a large window'},
+    {k:'Large',t:'Large Suite',d:'Extra space for more than one station. Great for a growing business.',img:'assets/opt/suite-7.jpg',alt:'Larger salon suite with two styling chairs'}
+  ];
+  document.querySelectorAll('[data-switcher]').forEach(function(root){
+    var tabs=root.querySelector('.tabs'),img=root.querySelector('[data-img]'),ti=root.querySelector('[data-title]'),tx=root.querySelector('[data-text]');
+    function show(i){
+      tabs.querySelectorAll('button').forEach(function(b,j){b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1});
+      img.src=suites[i].img;img.alt=suites[i].alt;ti.textContent=suites[i].t;tx.textContent=suites[i].d;
+    }
+    suites.forEach(function(s,i){
+      var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.textContent=s.k;
+      b.addEventListener('click',function(){show(i)});
+      b.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=(i+(e.key==='ArrowRight'?1:suites.length-1))%suites.length;show(n);tabs.children[n].focus()}});
+      tabs.appendChild(b);
+    });
+    show(0);
+  });
+})();
+</script>
+</body>
+</html>
