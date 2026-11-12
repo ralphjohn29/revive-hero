@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Revive Salon Collective · Cookie Notice (6 Designs)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--canvas:#FAF7F2;--gold:#C6A55C;--coal:#171614}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Josefin Sans',sans-serif;background:var(--coal);color:var(--canvas);-webkit-font-smoothing:antialiased}
+.deck{max-width:1560px;margin:0 auto;padding:56px clamp(16px,3.5vw,64px) 120px}
+.deck-head{max-width:980px;margin:0 auto 20px;text-align:center}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.deck-head h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2rem,3.6vw,3rem);line-height:1.15;text-wrap:balance}
+.deck-head .lede{margin:1.2rem auto 0;max-width:46rem;font-weight:300;line-height:1.8;color:rgba(250,247,242,.75);font-size:1rem}
+.deck-note{margin:1.4rem auto 0;max-width:46rem;font-size:.88rem;line-height:1.7;color:rgba(250,247,242,.6)}
+.deck-note b,.deck-head .lede b{color:var(--canvas);font-weight:600}
+.pickbar{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1100px;margin:2.4rem auto 4rem}
+@media (max-width:760px){.pickbar{grid-template-columns:1fr 1fr}}
+@media (max-width:440px){.pickbar{grid-template-columns:1fr}}
+.pickbar a{display:block;text-decoration:none;border:1px solid rgba(198,165,92,.35);border-radius:4px;padding:.9rem 1.3rem;color:var(--canvas);transition:border-color .2s,background .2s}
+.pickbar a:hover{border-color:var(--gold);background:rgba(198,165,92,.08)}
+.pickbar .n,.pickbar .t,.pickbar .p{display:block}
+.pickbar .n{font-size:.72rem;letter-spacing:.26em;color:var(--gold);text-transform:uppercase}
+.pickbar .t{font-family:'DM Serif Display',serif;font-size:1.15rem;margin-top:.25rem}
+.pickbar .p{font-size:.78rem;color:rgba(250,247,242,.6);margin-top:.3rem}
+.variant{margin-bottom:110px}
+.v-head{display:flex;align-items:baseline;gap:1.2rem;border-bottom:1px solid rgba(250,247,242,.14);padding-bottom:1.1rem;margin-bottom:1.4rem}
+.v-head .num{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--gold);line-height:1}
+.v-head h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(1.5rem,2.4vw,2rem)}
+.v-desc{max-width:72rem;margin-bottom:1.6rem;font-size:.95rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78)}
+.v-desc b{font-weight:600;color:var(--canvas)}
+.stage{display:flex;gap:26px;align-items:flex-start}
+@media (max-width:1080px){.stage{flex-direction:column;align-items:center}}
+.stage > div:first-child{flex:1;min-width:0;width:100%}
+.stage-cap{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,247,242,.55);margin-bottom:.8rem}
+.browser{background:#26231f;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.chrome{display:flex;align-items:center;gap:.8rem;background:#1b1917;padding:.65rem 1rem}
+.dots{display:flex;gap:.42rem}
+.dots i{width:.62rem;height:.62rem;border-radius:50%;display:block}
+.dots i:nth-child(1){background:#ff5f57}.dots i:nth-child(2){background:#febc2e}.dots i:nth-child(3){background:#28c840}
+.url{flex:1;background:#26231f;border-radius:99px;padding:.32rem 1rem;font-size:.72rem;letter-spacing:.06em;color:rgba(250,247,242,.5);text-align:center}
+.phone{width:375px;flex:none;background:#0c0b0a;border-radius:46px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+@media (max-width:480px){.phone{width:100%;max-width:375px}}
+.replay{display:inline-block;margin-top:14px;font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(198,165,92,.4);padding:.55rem 1rem;border-radius:3px;cursor:pointer}
+.replay:hover{background:rgba(198,165,92,.08)}
+.replay[hidden]{display:none}
+.footer-block{border-top:1px solid rgba(250,247,242,.14);padding-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.footer-block h3{font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.footer-block li{font-size:.9rem;line-height:1.75;font-weight:300;color:rgba(250,247,242,.78);margin-bottom:.5rem;list-style:none}
+
+/* fake Revive page */
+.scr{position:relative;overflow:hidden;background:#121E3F;container-type:inline-size;font-family:'Josefin Sans',sans-serif}
+.scr.desk{height:640px}
+.scr.mob{height:720px;border-radius:34px}
+.pg{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.pg .nav{position:absolute;left:0;right:0;top:0;height:76px;border-bottom:1px solid rgba(255,255,255,.12);background:#121E3F;display:flex;align-items:center;padding:0 40px}
+.pg .nav img{height:40px;width:auto}
+.pg .cp{padding:150px 56px 0;color:#FAF7F2}
+.pg .cp small{display:block;color:#DB9446;font-size:13px;letter-spacing:.22em;margin-bottom:16px}
+.pg .cp b{display:block;font-family:'DM Serif Display',serif;font-weight:400;font-size:44px;line-height:1.08}
+.pg .ph{background:url(assets/opt/suite-1.jpg) center/cover}
+.mob .pg{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+.mob .pg .nav{height:64px;padding:0 20px}
+.mob .pg .nav img{height:32px}
+.mob .pg .cp{padding:100px 24px 24px}
+.mob .pg .cp b{font-size:32px}
+.veil{position:absolute;inset:0;background:rgba(13,23,48,.62);opacity:0;pointer-events:none;transition:opacity .3s}
+.scr.has-veil .veil{opacity:1}
+.scr.done .veil{opacity:0}
+
+/* cookie notice shared */
+.ck{--navy:#121E3F;--gold:#DB9446;--gold-ink:#9a5f1f;--muted:#48516b;--taupe:#E7DFD3;--canvas:#FAF7F2;
+  position:absolute;z-index:5;color:#1C1B1A;font-size:15px;line-height:1.55;transition:opacity .3s,transform .3s}
+.scr.done .ck{opacity:0;transform:translateY(16px);pointer-events:none}
+.ck h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--navy);line-height:1.15;text-wrap:balance}
+.ck p{color:var(--muted)}
+.ck p a{color:var(--gold-ink);text-underline-offset:2px}
+.ck .acts{display:flex;gap:10px;flex-wrap:wrap}
+.ck button{font:inherit;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;min-height:44px;padding:0 20px;border-radius:2px;cursor:pointer;white-space:nowrap}
+.ck button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.ck .b-ok{background:var(--gold);color:var(--navy);border:1px solid var(--gold)}
+.ck .b-ok:hover{background:#e6a35c}
+.ck .b-no{background:transparent;color:var(--navy);border:1px solid var(--navy)}
+.ck .b-no:hover{background:rgba(18,30,63,.06)}
+.ck .b-link{background:none;border:0;padding:0 4px;color:var(--gold-ink);text-decoration:underline;text-underline-offset:3px;letter-spacing:.06em;text-transform:none;font-size:14px;font-weight:400}
+.ck .crest{display:block;height:auto}
+
+/* 01 navy bar */
+.ck1{left:0;right:0;bottom:0;background:var(--navy);border-top:2px solid var(--gold);padding:20px 40px;display:flex;align-items:center;gap:32px;color:var(--canvas)}
+.ck1 .tx{flex:1;min-width:0}
+.ck1 h3{color:var(--canvas);font-size:20px;margin-bottom:2px}
+.ck1 p{color:rgba(250,247,242,.82)}
+.ck1 p a{color:var(--gold)}
+.ck1 .b-no{color:var(--canvas);border-color:rgba(250,247,242,.6)}
+.ck1 .b-no:hover{background:rgba(250,247,242,.08)}
+@container (max-width:480px){.ck1{flex-direction:column;align-items:stretch;gap:14px;padding:18px 20px 22px}.ck1 .acts button{flex:1}}
+
+/* 02 corner card */
+.ck2{left:28px;bottom:28px;width:380px;background:#fff;border-radius:4px;box-shadow:0 18px 50px rgba(0,0,0,.35);padding:26px 26px 22px}
+.ck2 .crest{width:64px;margin-bottom:14px}
+.ck2 h3{font-size:24px;margin-bottom:8px}
+.ck2 .acts{margin-top:18px}
+.ck2 .acts button{flex:1}
+@container (max-width:480px){.ck2{left:16px;right:16px;bottom:16px;width:auto;padding:22px 20px 20px}.ck2 .crest{width:52px;margin-bottom:10px}.ck2 h3{font-size:22px}}
+
+/* 03 cream ribbon */
+.ck3{left:50%;bottom:28px;transform:translateX(-50%);width:min(760px,calc(100% - 48px));background:var(--canvas);border:1px solid rgba(219,148,70,.55);border-radius:4px;box-shadow:0 14px 40px rgba(0,0,0,.3);padding:16px 18px 16px 22px;display:flex;align-items:center;gap:20px}
+.scr.done .ck3{transform:translate(-50%,16px)}
+.ck3 .crest{width:44px;flex:none}
+.ck3 p{flex:1;min-width:0;font-size:15px}
+.ck3 p b{color:var(--navy);font-weight:600}
+@container (max-width:480px){.ck3{width:calc(100% - 32px);bottom:16px;flex-wrap:wrap;gap:12px;padding:16px}.ck3 .crest{width:36px}.ck3 p{flex-basis:calc(100% - 52px);font-size:14.5px}.ck3 .acts{width:100%}.ck3 .acts button{flex:1}}
+
+/* 04 centered welcome */
+.ck4{left:50%;top:50%;transform:translate(-50%,-50%);width:min(440px,calc(100% - 32px));background:#fff;border-top:4px solid var(--gold);border-radius:4px;box-shadow:0 24px 70px rgba(0,0,0,.4);padding:34px 34px 28px;text-align:center}
+.scr.done .ck4{transform:translate(-50%,-46%)}
+.ck4 .crest{width:96px;margin:0 auto 16px}
+.ck4 h3{font-size:28px}
+.ck4 p{margin-top:10px}
+.ck4 .acts{margin-top:22px;flex-direction:column}
+.ck4 .acts button{width:100%}
+.ck4 .b-link{margin-top:4px;min-height:36px}
+@container (max-width:480px){.ck4{padding:26px 22px 20px}.ck4 .crest{width:78px;margin-bottom:12px}.ck4 h3{font-size:25px}}
+
+/* 05 preferences panel */
+.ck5{right:28px;bottom:28px;width:420px;max-height:calc(100% - 56px);overflow:auto;background:#fff;border-radius:4px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.ck5 .hd{background:var(--navy);border-top:3px solid var(--gold);padding:18px 22px;display:flex;align-items:center;gap:14px}
+.ck5 .hd .crest{width:40px}
+.ck5 .hd h3{color:var(--canvas);font-size:21px}
+.ck5 .bd{padding:18px 22px 20px}
+.ck5 .bd > p{font-size:14.5px}
+.ck5 ul{list-style:none;margin-top:12px}
+.ck5 li{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--taupe)}
+.ck5 li div{flex:1;min-width:0}
+.ck5 li b{display:block;color:var(--navy);font-weight:600;font-size:14px;letter-spacing:.06em}
+.ck5 li span{display:block;font-size:13px;color:var(--muted);line-height:1.45;margin-top:2px}
+.ck5 .sw{position:relative;width:46px;height:26px;flex:none}
+.ck5 .sw input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer;z-index:1}
+.ck5 .sw i{position:absolute;inset:0;border-radius:99px;background:#c9c3b8;transition:background .2s}
+.ck5 .sw i::after{content:"";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .2s}
+.ck5 .sw input:checked + i{background:var(--navy)}
+.ck5 .sw input:checked + i::after{transform:translateX(20px)}
+.ck5 .sw input:disabled{cursor:not-allowed}
+.ck5 .sw input:disabled + i{background:#8d93a6}
+.ck5 .sw input:focus-visible + i{outline:2px solid var(--gold);outline-offset:2px}
+.ck5 .acts{margin-top:14px}
+.ck5 .acts button{flex:1}
+@container (max-width:480px){.ck5{left:12px;right:12px;bottom:12px;width:auto;max-height:calc(100% - 24px)}.ck5 .hd{padding:14px 18px}.ck5 .bd{padding:14px 18px 18px}}
+
+/* 06 photo card */
+.ck6{right:28px;bottom:28px;width:360px;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.ck6 .img{position:relative;height:118px;background:url(assets/opt/suite-5.jpg) center 40%/cover}
+.ck6 .img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,30,63,.1),rgba(18,30,63,.82))}
+.ck6 .img h3{position:absolute;left:22px;right:22px;bottom:14px;z-index:1;color:#fff;font-size:24px}
+.ck6 .bd{padding:16px 22px 20px}
+.ck6 .acts{margin-top:16px}
+.ck6 .acts button{flex:1}
+@container (max-width:480px){.ck6{left:16px;right:16px;bottom:16px;width:auto}.ck6 .img{height:96px}.ck6 .img h3{font-size:22px;left:18px;bottom:12px}.ck6 .bd{padding:14px 18px 18px}}
+</style>
+</head>
+<body>
+<div class="deck">
+  <header class="deck-head">
+    <p class="eyebrow">Cookie Notice &middot; For Review</p>
+    <h1>Six Designs for the Cookie Notice</h1>
+    <p class="lede">Six ways to let visitors know the website uses cookies, all in Revive&rsquo;s <b>navy, gold and cream</b> with the same fonts as the site. Each is shown on a laptop and a phone. Click any button to see it close, then use <b>Show again</b> to bring it back.</p>
+    <p class="deck-note">Every design gives visitors a <b>clear way to accept or decline</b>, with both buttons equally easy to find, and links to the <b>Privacy Policy</b>. Once someone chooses, it won&rsquo;t ask again.</p>
+  </header>
+
+  <nav class="pickbar" aria-label="Jump to a design">
+    <a href="#c1"><span class="n">01</span><span class="t">The Navy Bar</span><span class="p">Full-width strip along the bottom</span></a>
+    <a href="#c2"><span class="n">02</span><span class="t">The Corner Card</span><span class="p">Small white card with the crest</span></a>
+    <a href="#c3"><span class="n">03</span><span class="t">The Cream Ribbon</span><span class="p">One slim line, the quietest option</span></a>
+    <a href="#c4"><span class="n">04</span><span class="t">The Welcome Card</span><span class="p">Centered, asks before browsing</span></a>
+    <a href="#c5"><span class="n">05</span><span class="t">The Preferences Panel</span><span class="p">Visitors choose each cookie type</span></a>
+    <a href="#c6"><span class="n">06</span><span class="t">The Suite Photo Card</span><span class="p">Lobby photo on top of the card</span></a>
+  </nav>
+
+  <template id="page"><div class="pg"><div class="nav"><img src="assets/opt/revive_gold_logo_large.png" alt=""></div><div class="cp"><small>ELEVATE &middot; OWN &middot; INSPIRE</small><b>Luxury Private Salon Suites for Rent in Raleigh, NC</b></div><div class="ph"></div></div><div class="veil"></div></template>
+
+  <template id="t1"><div class="ck ck1" role="region" aria-label="Cookie notice">
+    <div class="tx"><h3>We use cookies</h3><p>Cookies help us understand how visitors use our site so we can make it better. See our <a href="#">Privacy Policy</a>.</p></div>
+    <div class="acts"><button class="b-no" type="button">Decline</button><button class="b-ok" type="button">Accept</button></div>
+  </div></template>
+
+  <template id="t2"><div class="ck ck2" role="region" aria-label="Cookie notice">
+    <img class="crest" src="assets/opt/square_navy_gold_logo_large.png" alt="Revive Salon Collective">
+    <h3>A quick note on cookies</h3>
+    <p>We use cookies to see how visitors find and use our site. You can accept or decline. Read more in our <a href="#">Privacy Policy</a>.</p>
+    <div class="acts"><button class="b-no" type="button">Decline</button><button class="b-ok" type="button">Accept</button></div>
+  </div></template>
+
+  <template id="t3"><div class="ck ck3" role="region" aria-label="Cookie notice">
+    <img class="crest" src="assets/opt/square_navy_gold_logo_large.png" alt="">
+    <p><b>This site uses cookies</b> to improve your visit. <a href="#">Privacy Policy</a></p>
+    <div class="acts"><button class="b-no" type="button">Decline</button><button class="b-ok" type="button">Accept</button></div>
+  </div></template>
+
+  <template id="t4"><div class="ck ck4" role="dialog" aria-label="Cookie notice">
+    <img class="crest" src="assets/opt/square_navy_gold_logo_large.png" alt="Revive Salon Collective">
+    <h3>Welcome to Revive</h3>
+    <p>We use cookies to understand how visitors use our site and to show you relevant updates. You can accept or decline before you continue.</p>
+    <div class="acts"><button class="b-ok" type="button">Accept cookies</button><button class="b-no" type="button">Decline</button><button class="b-link" type="button">Read our Privacy Policy</button></div>
+  </div></template>
+
+  <template id="t5"><div class="ck ck5" role="region" aria-label="Cookie preferences">
+    <div class="hd"><img class="crest" src="assets/opt/square_gold_logo_large.png" alt=""><h3>Your cookie choices</h3></div>
+    <div class="bd">
+      <p>Choose which cookies we can use. You can change this any time. See our <a href="#">Privacy Policy</a>.</p>
+      <ul>
+        <li><div><b>Necessary</b><span>Keeps the site and forms working. Always on.</span></div><label class="sw"><input type="checkbox" checked disabled aria-label="Necessary cookies, always on"><i></i></label></li>
+        <li><div><b>Analytics</b><span>Shows us which pages visitors find helpful.</span></div><label class="sw"><input type="checkbox" aria-label="Analytics cookies"><i></i></label></li>
+        <li><div><b>Marketing</b><span>Lets us share Revive updates on social media.</span></div><label class="sw"><input type="checkbox" aria-label="Marketing cookies"><i></i></label></li>
+      </ul>
+      <div class="acts"><button class="b-no" type="button">Save choices</button><button class="b-ok" type="button">Accept all</button></div>
+    </div>
+  </div></template>
+
+  <template id="t6"><div class="ck ck6" role="region" aria-label="Cookie notice">
+    <div class="img" role="img" aria-label="Revive lobby"><h3>Cookies at Revive</h3></div>
+    <div class="bd">
+      <p>We use cookies to understand how visitors use our site and keep improving it. See our <a href="#">Privacy Policy</a>.</p>
+      <div class="acts"><button class="b-no" type="button">Decline</button><button class="b-ok" type="button">Accept</button></div>
+    </div>
+  </div></template>
+
+  <section class="variant" id="c1">
+    <div class="v-head"><span class="num">01</span><h2>The Navy Bar</h2></div>
+    <p class="v-desc">A <b>full-width navy strip</b> along the bottom of the screen with a thin gold line on top. It&rsquo;s the most familiar style, and it never covers the main content. On phones the buttons stack below the text.</p>
+    <div class="stage" data-t="t1"></div>
+  </section>
+
+  <section class="variant" id="c2">
+    <div class="v-head"><span class="num">02</span><h2>The Corner Card</h2></div>
+    <p class="v-desc">A <b>small white card</b> in the bottom-left corner with the Revive crest. It feels branded without taking over the page, and it sits on the opposite side from any chat or call buttons.</p>
+    <div class="stage" data-t="t2"></div>
+  </section>
+
+  <section class="variant" id="c3">
+    <div class="v-head"><span class="num">03</span><h2>The Cream Ribbon</h2></div>
+    <p class="v-desc">The <b>quietest option</b>: one slim cream line with a gold border, floating above the bottom of the page. Visitors can keep browsing and answer whenever they like.</p>
+    <div class="stage" data-t="t3"></div>
+  </section>
+
+  <section class="variant" id="c4">
+    <div class="v-head"><span class="num">04</span><h2>The Welcome Card</h2></div>
+    <p class="v-desc">A <b>centered card</b> that dims the page and asks before visitors start browsing. It&rsquo;s the most noticeable choice and the strongest for privacy, but it&rsquo;s one more step before someone sees the site.</p>
+    <div class="stage" data-t="t4" data-veil></div>
+  </section>
+
+  <section class="variant" id="c5">
+    <div class="v-head"><span class="num">05</span><h2>The Preferences Panel</h2></div>
+    <p class="v-desc">Lets visitors <b>choose each type of cookie</b>: necessary, analytics and marketing. It gives visitors the most control and is the style used by many larger brands. Try the switches.</p>
+    <div class="stage" data-t="t5"></div>
+  </section>
+
+  <section class="variant" id="c6">
+    <div class="v-head"><span class="num">06</span><h2>The Suite Photo Card</h2></div>
+    <p class="v-desc">A corner card with a <b>Revive lobby photo</b> on top, so even the cookie notice feels like part of the building. It matches the photo style used across the website.</p>
+    <div class="stage" data-t="t6"></div>
+  </section>
+
+  <div class="footer-block">
+    <div><h3>What every design does</h3><ul><li>Accept and decline are equally easy to find.</li><li>Links to the Privacy Policy.</li><li>Once someone chooses, it won&rsquo;t ask again on that device.</li></ul></div>
+    <div><h3>On phones</h3><ul><li>Buttons are full-size and easy to tap.</li><li>Nothing runs off the edge of the screen.</li><li>It sits apart from the mailing list pop-up, so the two never overlap.</li></ul></div>
+    <div><h3>Next step</h3><ul><li>Pick the design you like best.</li><li>We&rsquo;ll match the wording to the Privacy Policy before it goes live.</li></ul></div>
+  </div>
+</div>
+<script>
+document.querySelectorAll('.stage[data-t]').forEach(function(st){
+  var tpl=document.getElementById(st.dataset.t),page=document.getElementById('page'),veil=st.hasAttribute('data-veil');
+  function screen(kind){var s=document.createElement('div');s.className='scr '+kind+(veil?' has-veil':'');s.appendChild(page.content.cloneNode(true));s.appendChild(tpl.content.cloneNode(true));return s;}
+  var d=document.createElement('div');d.innerHTML='<p class="stage-cap">Desktop</p><div class="browser"><div class="chrome"><span class="dots"><i></i><i></i><i></i></span><span class="url">revivesaloncollective.com</span></div></div>';
+  var desk=screen('desk');d.querySelector('.browser').appendChild(desk);
+  var p=document.createElement('div');p.innerHTML='<p class="stage-cap">Phone</p><div class="phone"></div>';
+  var mob=screen('mob');p.querySelector('.phone').appendChild(mob);
+  st.appendChild(d);st.appendChild(p);
+  var again=document.createElement('button');again.className='replay';again.type='button';again.textContent='Show again';again.hidden=true;d.appendChild(again);
+  [desk,mob].forEach(function(s){s.addEventListener('click',function(e){var b=e.target.closest('.ck button');if(!b)return;desk.classList.add('done');mob.classList.add('done');again.hidden=false;});});
+  again.addEventListener('click',function(){desk.classList.remove('done');mob.classList.remove('done');again.hidden=true;});
+});
+</script>
+</body>
+</html>
